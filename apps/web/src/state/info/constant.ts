@@ -2,6 +2,8 @@ import {
   BLOCKS_CLIENT,
   BLOCKS_CLIENT_BASE,
   BLOCKS_CLIENT_ETH,
+  BLOCKS_CLIENT_ETHERLINK,
+  BLOCKS_CLIENT_ETHERLINK_TESTNET,
   BLOCKS_CLIENT_LINEA,
   BLOCKS_CLIENT_OPBNB,
   BLOCKS_CLIENT_ZKSYNC,
@@ -21,9 +23,43 @@ import {
 import mapValues from 'lodash/mapValues'
 import { arbitrum, base, bsc, linea, mainnet, opBNB, polygonZkEvm, zkSync } from 'wagmi/chains'
 
-export type MultiChainName = 'BSC' | 'ETH' | 'POLYGON_ZKEVM' | 'ZKSYNC' | 'ARB' | 'LINEA' | 'BASE' | 'OPBNB'
+const etherlink = {
+  id: 42793,
+  name: 'Etherlink',
+  network: 'etherlink',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.etherlink.com'] },
+    default: { http: ['https://node.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+    default: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 500,
+    },
+  },
+} as const
 
-export type MultiChainNameExtend = MultiChainName | 'BSC_TESTNET' | 'ZKSYNC_TESTNET'
+export type MultiChainName =
+  | 'BSC'
+  | 'ETH'
+  | 'POLYGON_ZKEVM'
+  | 'ZKSYNC'
+  | 'ARB'
+  | 'LINEA'
+  | 'BASE'
+  | 'OPBNB'
+  | 'ETHERLINK'
+
+export type MultiChainNameExtend = MultiChainName | 'BSC_TESTNET' | 'ZKSYNC_TESTNET' | 'ETHERLINK_TESTNET'
 
 export const multiChainName: Record<number | string, MultiChainNameExtend> = {
   [ChainId.BSC]: 'BSC',
@@ -35,6 +71,8 @@ export const multiChainName: Record<number | string, MultiChainNameExtend> = {
   [ChainId.BASE]: 'BASE',
   [ChainId.OPBNB]: 'OPBNB',
   [ChainId.ARBITRUM_ONE]: 'ARB',
+  [ChainId.ETHERLINK_TESTNET]: 'ETHERLINK_TESTNET',
+  [ChainId.ETHERLINK]: 'ETHERLINK',
 }
 
 export const multiChainShortName: Record<number, string> = {
@@ -50,6 +88,7 @@ export const multiChainQueryMainToken: Record<MultiChainName, string> = {
   LINEA: 'ETH',
   BASE: 'ETH',
   OPBNB: 'ETH',
+  ETHERLINK: 'XTZ',
 }
 
 export const multiChainBlocksClient: Record<MultiChainNameExtend, string> = {
@@ -63,6 +102,8 @@ export const multiChainBlocksClient: Record<MultiChainNameExtend, string> = {
   LINEA: BLOCKS_CLIENT_LINEA,
   BASE: BLOCKS_CLIENT_BASE,
   OPBNB: BLOCKS_CLIENT_OPBNB,
+  ETHERLINK_TESTNET: BLOCKS_CLIENT_ETHERLINK_TESTNET,
+  ETHERLINK: BLOCKS_CLIENT_ETHERLINK,
 }
 
 export const multiChainStartTime = {
@@ -74,6 +115,7 @@ export const multiChainStartTime = {
   LINEA: 1692878400,
   BASE: 1693483200,
   OPBNB: 1695945600,
+  ETHERLINK: 1695945600,
 }
 
 export const multiChainId: Record<MultiChainName, ChainId> = {
@@ -85,6 +127,7 @@ export const multiChainId: Record<MultiChainName, ChainId> = {
   LINEA: ChainId.LINEA,
   BASE: ChainId.BASE,
   OPBNB: ChainId.OPBNB,
+  ETHERLINK: ChainId.ETHERLINK,
 }
 
 export const multiChainPaths = {
@@ -96,6 +139,7 @@ export const multiChainPaths = {
   [ChainId.LINEA]: '/linea',
   [ChainId.BASE]: '/base',
   [ChainId.OPBNB]: '/opbnb',
+  [ChainId.ETHERLINK]: '/etherlink',
 }
 
 export const multiChainQueryClient = {
@@ -107,6 +151,7 @@ export const multiChainQueryClient = {
   LINEA: v2Clients[ChainId.LINEA],
   BASE: v2Clients[ChainId.BASE],
   OPBNB: v2Clients[ChainId.OPBNB],
+  ETHERLINK: v2Clients[ChainId.ETHERLINK],
 }
 
 export const multiChainQueryStableClient = {
@@ -127,6 +172,7 @@ export const multiChainScan: Record<MultiChainName, string> = {
   LINEA: linea.blockExplorers.default.name,
   BASE: base.blockExplorers.default.name,
   OPBNB: opBNB.blockExplorers.default.name,
+  ETHERLINK: etherlink.blockExplorers.default.name,
 }
 
 export const multiChainTokenBlackList: Record<MultiChainName, string[]> = mapValues(
@@ -139,6 +185,7 @@ export const multiChainTokenBlackList: Record<MultiChainName, string[]> = mapVal
     LINEA: ['0x'],
     BASE: ['0x'],
     OPBNB: ['0x'],
+    ETHERLINK: ['0x'],
   },
   (val) => val.map((address) => address.toLowerCase()),
 )
@@ -153,6 +200,7 @@ export const multiChainTokenWhiteList: Record<MultiChainName, string[]> = mapVal
     LINEA: [],
     BASE: [],
     OPBNB: [],
+    ETHERLINK: [],
   },
   (val) => val.map((address) => address.toLowerCase()),
 )

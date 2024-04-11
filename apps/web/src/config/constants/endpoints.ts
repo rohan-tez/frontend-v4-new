@@ -32,6 +32,8 @@ export const BLOCKS_CLIENT_ZKSYNC = BLOCKS_SUBGRAPHS[ChainId.ZKSYNC]
 export const BLOCKS_CLIENT_LINEA = BLOCKS_SUBGRAPHS[ChainId.LINEA]
 export const BLOCKS_CLIENT_BASE = BLOCKS_SUBGRAPHS[ChainId.BASE]
 export const BLOCKS_CLIENT_OPBNB = BLOCKS_SUBGRAPHS[ChainId.OPBNB]
+export const BLOCKS_CLIENT_ETHERLINK_TESTNET = BLOCKS_SUBGRAPHS[ChainId.ETHERLINK_TESTNET]
+export const BLOCKS_CLIENT_ETHERLINK = BLOCKS_SUBGRAPHS[ChainId.ETHERLINK]
 
 export const GRAPH_API_NFTMARKET = 'https://api.thegraph.com/subgraphs/name/pancakeswap/nft-market'
 export const GRAPH_HEALTH = 'https://api.thegraph.com/index-node/graphql'

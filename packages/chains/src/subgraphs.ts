@@ -43,6 +43,8 @@ export function getV3Subgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.SEPOLIA]: null,
     [ChainId.ARBITRUM_SEPOLIA]: null,
     [ChainId.BASE_SEPOLIA]: null,
+    [ChainId.ETHERLINK_TESTNET]: null,
+    [ChainId.ETHERLINK]: null,
   } satisfies Record<ChainId, string | null>
 }
 
@@ -58,6 +60,9 @@ export function getV2Subgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.LINEA]: 'https://api.studio.thegraph.com/query/45376/exchange-v2-linea/version/latest',
     [ChainId.BASE]: 'https://api.studio.thegraph.com/query/45376/exchange-v2-base/version/latest',
     [ChainId.OPBNB]: `https://open-platform-ap.nodereal.io/${noderealApiKey}/opbnb-mainnet-graph-query/subgraphs/name/pancakeswap/exchange-v2`,
+    [ChainId.ETHERLINK_TESTNET]:
+      'https://api.studio.thegraph.com/query/69431/exchange-v2-etherlink-testnet/version/latest',
+    [ChainId.ETHERLINK]: 'https://api.studio.thegraph.com/query/69431/exchange-v2-etherlink/version/latest',
   }
 }
 
@@ -71,5 +76,7 @@ export function getBlocksSubgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.LINEA]: 'https://api.studio.thegraph.com/query/45376/blocks-linea/version/latest',
     [ChainId.BASE]: 'https://api.studio.thegraph.com/query/48211/base-blocks/version/latest',
     [ChainId.OPBNB]: `https://open-platform-ap.nodereal.io/${noderealApiKey}/opbnb-mainnet-graph-query/subgraphs/name/pancakeswap/blocks`,
+    [ChainId.ETHERLINK_TESTNET]: 'https://api.studio.thegraph.com/query/69431/blocks-etherlink-testnet/version/latest',
+    [ChainId.ETHERLINK]: 'https://api.studio.thegraph.com/query/69431/blocks-etherlink/version/latest',
   }
 }
