@@ -18,7 +18,7 @@ export type FeatureRollOutConfig = {
 
 export type ExperimentalFeatureConfigs = FeatureRollOutConfig[]
 
-// Add new AB TESTS here aswell as their config
+// Add new AB TESTS here as well as their config
 export const EXPERIMENTAL_FEATURE_CONFIGS: ExperimentalFeatureConfigs = [
   {
     feature: EXPERIMENTAL_FEATURES.WebNotifications,

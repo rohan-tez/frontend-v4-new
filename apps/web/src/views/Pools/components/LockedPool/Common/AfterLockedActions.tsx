@@ -13,14 +13,14 @@ const msg: Record<VaultPosition, ReactNode> = {
   [VaultPosition.Locked]: null,
   [VaultPosition.LockedEnd]: (
     <Trans>
-      Extending or adding CAKE is not available for migrated positions. To get more veCAKE, withdraw from the unlocked
-      CAKE pool position, and add CAKE to veCAKE.
+      Extending or adding IGN is not available for migrated positions. To get more veIGN, withdraw from the unlocked IGN
+      pool position, and add IGN to veIGN.
     </Trans>
   ),
   [VaultPosition.AfterBurning]: (
     <Trans>
-      Extending or adding CAKE is not available for migrated positions. To get more veCAKE, withdraw from the unlocked
-      CAKE pool position, and add CAKE to veCAKE.
+      Extending or adding IGN is not available for migrated positions. To get more veIGN, withdraw from the unlocked IGN
+      pool position, and add IGN to veIGN.
     </Trans>
   ),
 }
@@ -67,7 +67,7 @@ const AfterLockedActions: React.FC<React.PropsWithChildren<AfterLockedActionsPro
         {isMigratedToVeCake
           ? msg[position]
           : t(
-              'The lock period has ended. To get more veCAKE, withdraw from the unlocked CAKE pool position, and add CAKE to veCAKE.',
+              'The lock period has ended. To get more veIGN, withdraw from the unlocked IGN pool position, and add IGN to veIGN.',
             )}
       </MessageText>
     </Message>

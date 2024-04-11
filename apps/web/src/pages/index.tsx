@@ -100,7 +100,7 @@ export const getStaticProps: GetStaticProps = async () => {
         }
       }
     `)
-    const cake = await (await fetch('https://farms-api.pancakeswap.com/price/cake')).json()
+    const cake = await (await fetch('https://farms-api.iguanadex.com/price/ign')).json()
     const { totalLiquidityUSD } = result.pancakeFactories[0]
     const cakeVaultV2 = getCakeVaultAddress()
     const cakeContract = getCakeContract()
@@ -125,6 +125,6 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 IndexPage.chains = []
-IndexPage.isShowV4IconButton = true
+IndexPage.isShowV4IconButton = false
 
 export default IndexPage

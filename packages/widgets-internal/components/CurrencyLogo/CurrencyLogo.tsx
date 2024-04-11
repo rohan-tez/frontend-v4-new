@@ -1,10 +1,10 @@
-import { Currency } from "@pancakeswap/sdk";
 import { ChainId } from "@pancakeswap/chains";
+import { useHttpLocations } from "@pancakeswap/hooks";
+import { Currency } from "@pancakeswap/sdk";
+import { BinanceIcon, TokenLogo } from "@pancakeswap/uikit";
 import { useMemo } from "react";
 import { styled } from "styled-components";
-import { space, SpaceProps } from "styled-system";
-import { useHttpLocations } from "@pancakeswap/hooks";
-import { TokenLogo, BinanceIcon } from "@pancakeswap/uikit";
+import { SpaceProps, space } from "styled-system";
 
 import { getCurrencyLogoUrls } from "./utils";
 
@@ -50,6 +50,20 @@ export function CurrencyLogo({
     if (currency.chainId === ChainId.BSC) {
       return <BinanceIcon width={size} style={style} {...props} />;
     }
+    if (currency.chainId === ChainId.ETHERLINK || currency.chainId === ChainId.ETHERLINK_TESTNET) {
+      return (
+        <StyledLogo
+          size={size}
+          srcs={[
+            `https://raw.githubusercontent.com/Iguana-DEX/assets/main/assets/0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8.png`,
+          ]}
+          width={size}
+          style={style}
+          {...props}
+        />
+      );
+    }
+
     return (
       <StyledLogo
         size={size}

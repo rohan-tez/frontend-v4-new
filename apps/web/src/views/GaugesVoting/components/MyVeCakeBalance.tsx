@@ -28,7 +28,7 @@ export const MyVeCakeBalance = () => {
       <img src="/images/cake-staking/token-vecake.png" alt="token-vecake" width="58px" />
       <Flex flexDirection={['column', 'column', 'row']} ml="4px">
         <Text fontSize="20px" bold lineHeight="120%" mr="16px">
-          {t('MY veCAKE')}
+          {t('MY veIGN')}
         </Text>
         <FlexGap gap="4px" alignItems="center">
           <Balance
@@ -44,7 +44,7 @@ export const MyVeCakeBalance = () => {
               content={
                 <>
                   {t(
-                    'Your positions are unlocking soon. Therefore, you have no veCAKE balance at the end of the current voting epoch while votes are being tallied. ',
+                    'Your positions are unlocking soon. Therefore, you have no veIGN balance at the end of the current voting epoch while votes are being tallied. ',
                   )}
                   <br />
                   <br />

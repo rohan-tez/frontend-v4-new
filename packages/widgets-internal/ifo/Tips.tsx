@@ -1,10 +1,10 @@
-import BigNumber from "bignumber.js";
-import { useMemo } from "react";
-import { SpaceProps } from "styled-system";
-import { FlexGap, Message, MessageText, InfoFilledIcon, Box, MessageProps } from "@pancakeswap/uikit";
-import Link from "next/link";
 import { useTranslation } from "@pancakeswap/localization";
+import { Box, FlexGap, InfoFilledIcon, Message, MessageProps, MessageText } from "@pancakeswap/uikit";
+import BigNumber from "bignumber.js";
+import Link from "next/link";
+import { useMemo } from "react";
 import styled from "styled-components";
+import { SpaceProps } from "styled-system";
 
 type Props = {
   amount?: BigNumber | number;
@@ -38,7 +38,7 @@ export function ZeroVeCakeTips({ amount = 0, ...props }: Props) {
         <FlexGap flexDirection="column" gap="1rem">
           <MessageText>{t("You have no veCAKE at the snapshot time.")}</MessageText>
           <MessageText>
-            {t("To participate, lock CAKE to get veCAKE. Or extend your veCAKE position beyond the snapshot time.")}
+            {t("To participate, lock IGN to get veIGN. Or extend your veIGN position beyond the snapshot time.")}
           </MessageText>
         </FlexGap>
       </WarningMessage>
@@ -58,7 +58,7 @@ export function MigrateVeCakeTips(props: SpaceProps) {
       <WarningMessage>
         <FlexGap flexDirection="column" gap="1rem">
           <MessageText>
-            {t("To participate, you need to migrate your fixed-term CAKE staking position to veCAKE.")}
+            {t("To participate, you need to migrate your fixed-term IGN staking position to veIGN.")}
           </MessageText>
           <LinkMessageText bold>
             <Link href="https://pancakeswap.finance">

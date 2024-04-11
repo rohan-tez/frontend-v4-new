@@ -1,12 +1,4 @@
-import {
-  DiscordIcon,
-  InstagramIcon,
-  Link,
-  RedditIcon,
-  TelegramIcon,
-  TwitterIcon,
-  YoutubeIcon,
-} from '@pancakeswap/uikit'
+import { DiscordIcon, GithubIcon, Link, TwitterIcon } from '@pancakeswap/uikit'
 import { cloneElement } from 'react'
 import { styled } from 'styled-components'
 
@@ -41,12 +33,9 @@ const CommunityTag = styled.div`
   }
 `
 const communityData = [
-  { icon: <TwitterIcon />, href: 'https://twitter.com/pancakeswap', alt: 'TwitterIcon' },
-  { icon: <TelegramIcon />, href: 'https://t.me/pancakeswap', alt: 'TelegramIcon' },
-  { icon: <DiscordIcon />, href: 'https://discord.gg/pancakeswap', alt: 'DiscordIcon' },
-  { icon: <InstagramIcon />, href: 'https://www.instagram.com/pancakeswap_official/', alt: 'InstagramIcon' },
-  { icon: <RedditIcon />, href: 'https://www.reddit.com/r/pancakeswap/', alt: 'RedditIcon' },
-  { icon: <YoutubeIcon />, href: 'https://www.youtube.com/@pancakeswap_official', alt: 'YoutubeIcon' },
+  { icon: <TwitterIcon />, href: 'https://x.com/iguanadex', alt: 'XIcon' },
+  { icon: <GithubIcon />, href: 'https://github.com/iguana-dex', alt: 'GitHubIcon' },
+  { icon: <DiscordIcon />, href: 'https://discord.gg/yq5bUaT7Cm', alt: 'DiscordIcon' },
 ]
 
 export const CommunityTags: React.FC = () => {

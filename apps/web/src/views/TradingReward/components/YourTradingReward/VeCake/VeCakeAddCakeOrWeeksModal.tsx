@@ -66,7 +66,7 @@ export const VeCakeAddCakeOrWeeksModal: React.FC<React.PropsWithChildren<VeCakeA
 
   return (
     <Modal
-      title="Increase your veCAKE"
+      title="Increase your veIGN"
       headerBorderColor="transparent"
       maxWidth={['100%', '100%', '100%', '500px']}
       onDismiss={onDismiss}
@@ -75,7 +75,7 @@ export const VeCakeAddCakeOrWeeksModal: React.FC<React.PropsWithChildren<VeCakeA
         <StyledSwitchTextContainer onClick={toggleViewMode}>
           <ArrowUpDownIcon mr="4px" color="primary" style={{ rotate: '90deg' }} />
           <Text bold color="primary">
-            {modalViewMode === VeCakeModalView.CAKE_FORM_VIEW ? t('Extend Lock Instead') : t('Add CAKE Instead')}
+            {modalViewMode === VeCakeModalView.CAKE_FORM_VIEW ? t('Extend Lock Instead') : t('Add IGN Instead')}
           </Text>
         </StyledSwitchTextContainer>
       )}

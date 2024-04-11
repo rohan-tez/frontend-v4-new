@@ -31,6 +31,8 @@ export const FACTORY_ADDRESS_MAP = {
   [ChainId.SEPOLIA]: '0x1bdc540dEB9Ed1fA29964DeEcCc524A8f5e2198e',
   [ChainId.ARBITRUM_SEPOLIA]: '0x02a84c1b3BBD7401a5f7fa98a384EBC70bB5749E',
   [ChainId.BASE_SEPOLIA]: '0x02a84c1b3BBD7401a5f7fa98a384EBC70bB5749E',
+  [ChainId.ETHERLINK_TESTNET]: '0x6981ad2272010a6EF341497D6c3d109F6B87f3D9',
+  [ChainId.ETHERLINK]: '0x6981ad2272010a6EF341497D6c3d109F6B87f3D9',
 } as const satisfies Record<ChainId, Address>
 
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
@@ -57,7 +59,28 @@ export const INIT_CODE_HASH_MAP = {
   [ChainId.SEPOLIA]: INIT_CODE_HASH_ETH,
   [ChainId.ARBITRUM_SEPOLIA]: INIT_CODE_HASH_ETH,
   [ChainId.BASE_SEPOLIA]: INIT_CODE_HASH_ETH,
+  [ChainId.ETHERLINK]: INIT_CODE_HASH_ETH,
+  [ChainId.ETHERLINK_TESTNET]: INIT_CODE_HASH_ETH,
 } as const satisfies Record<ChainId, Hash>
+
+export const WXTZ = {
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
+    18,
+    'WXTZ',
+    'Wrapped XTZ',
+    'https://tezos.com'
+  ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
+    18,
+    'WXTZ',
+    'Wrapped XTZ',
+    'https://tezos.com'
+  ),
+}
 
 export const WETH9 = {
   [ChainId.ETHEREUM]: new ERC20Token(
@@ -220,6 +243,22 @@ export const WETH9 = {
     'Wrapped Ether',
     'https://weth.io'
   ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0x8DEF68408Bc96553003094180E5C90d9fe5b88C1',
+    18,
+    'ETH',
+    'Ether',
+    'https://ethereum.org'
+  ),
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0x8DEF68408Bc96553003094180E5C90d9fe5b88C1',
+    18,
+    'ETH',
+    'Ether',
+    'https://ethereum.org'
+  ),
 }
 
 export const WBNB = {
@@ -286,6 +325,8 @@ export const WNATIVE = {
   [ChainId.SEPOLIA]: WETH9[ChainId.SEPOLIA],
   [ChainId.ARBITRUM_SEPOLIA]: WETH9[ChainId.ARBITRUM_SEPOLIA],
   [ChainId.BASE_SEPOLIA]: WETH9[ChainId.BASE_SEPOLIA],
+  [ChainId.ETHERLINK_TESTNET]: WXTZ[ChainId.ETHERLINK_TESTNET],
+  [ChainId.ETHERLINK]: WXTZ[ChainId.ETHERLINK],
 } satisfies Record<ChainId, ERC20Token>
 
 const ETHER = { name: 'Ether', symbol: 'ETH', decimals: 18 } as const
@@ -294,6 +335,7 @@ const BNB = {
   symbol: 'BNB',
   decimals: 18,
 } as const
+const XTZ = { name: 'tez', symbol: 'XTZ', decimals: 18 } as const
 
 export const NATIVE = {
   [ChainId.ETHEREUM]: ETHER,
@@ -340,6 +382,8 @@ export const NATIVE = {
     symbol: 'ETH',
     decimals: 18,
   },
+  [ChainId.ETHERLINK_TESTNET]: XTZ,
+  [ChainId.ETHERLINK]: XTZ,
 } satisfies Record<
   ChainId,
   {

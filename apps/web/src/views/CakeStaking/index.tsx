@@ -1,7 +1,6 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Grid, Heading, ModalV2, PageHeader, QuestionHelper, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { formatBigInt, formatNumber } from '@pancakeswap/utils/formatBalance'
-import { formatAmount } from '@pancakeswap/utils/formatInfoNumbers'
 import Page from 'components/Layout/Page'
 import { useCakeDistributed } from 'hooks/useCakeDistributed'
 import useTheme from 'hooks/useTheme'
@@ -34,7 +33,7 @@ const CakeStaking = () => {
         <PageHead />
         <LockCake />
         <Heading scale="xl" color="secondary" mt={['40px', '40px', '45px']} mb={['24px', '24px', '48px']}>
-          {t('Benefits of veCAKE')}
+          {t('Benefits of veIGN')}
         </Heading>
         <Grid
           maxWidth="820px"
@@ -49,13 +48,13 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Claim freshly cooked CAKE rewards weekly on Thursday from veCAKE gauge emission as well as trading revenue sharing.',
+                  'Claim freshly cooked IGN rewards weekly on Thursday from veIGN gauge emission as well as trading revenue sharing.',
                 )}
                 placement="top"
                 ml="4px"
               />
             }
-            dataText={`${formatNumber(Number(formatBigInt(totalCakeDistributed)))} CAKE`}
+            dataText={`${formatNumber(Number(formatBigInt(totalCakeDistributed)))} IGN`}
             onClick={() => {
               setCakeRewardModalVisible(true)
             }}
@@ -65,7 +64,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Use your veCAKE to vote on your favourite farms, position managers, reward pools, and any CAKE emission products, increase their allocations, and get more CAKE rewards.',
+                  'Use your veIGN to vote for your favorite farms and any upcoming IGN emission product to increase your allocation and get more IGN rewards.',
                 )}
                 placement="top"
                 ml="4px"
@@ -77,7 +76,7 @@ const CakeStaking = () => {
           />
         </Grid>
       </StyledPageHeader>
-      <Page title={t('CAKE Staking')}>
+      <Page title={t('IGN Staking')}>
         <Heading scale="xl" mb={['24px', '24px', '48px']} mt={['16px', '16px', 0]}>
           {t('And So Much More...')}
         </Heading>
@@ -94,7 +93,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Boost your PancakeSwap farming APR by up to 2.5x. Aquire more veCAKE to receive a higher boost.',
+                  'Boost your IguanaDEX farming APR by up to 2.5x. Acquire more veIGN to receive a higher boost.',
                 )}
                 placement="top"
                 ml="4px"
@@ -108,7 +107,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Use veCAKE as your Snapshot voting power to vote on governance proposals. Including important protocol decisions, and adding new farming gauges.',
+                  'Use veIGN as your Snapshot voting power to vote on governance proposals. Including important protocol decisions, and adding new farming gauges.',
                 )}
                 placement="top"
                 ml="4px"
@@ -116,13 +115,13 @@ const CakeStaking = () => {
             }
             dataText={`${snapshotProposalsCount}`}
           />
-          <BenefitCard
+          {/* <BenefitCard
             type="ifo"
             headSlot={
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Use your veCAKE as your IFO Public Sales commit credits. Aquire more veCAKE to commit more in the next PancakeSwap IFOs.',
+                  'Use your veCAKE as your IFO Public Sales commit credits. Acquire more veIGN to commit more in the next IguanaDEX IFOs.',
                 )}
                 placement="top"
                 ml="4px"
@@ -130,7 +129,7 @@ const CakeStaking = () => {
             }
             dataText={`$${formatAmount(totalIFOSold, { notation: 'standard' })}`}
           />
-          <BenefitCard type="more" />
+          <BenefitCard type="more" /> */}
         </Grid>
       </Page>
     </>

@@ -78,7 +78,7 @@ export const LockedVeCakeStatus: React.FC<{
         <CardHeader>
           <RowBetween>
             <AutoColumn>
-              <Heading color="text">{t('My VeCAKE')}</Heading>
+              <Heading color="text">{t('My veIGN')}</Heading>
               <Tooltips
                 content={
                   proxyBalance.gt(0) ? (
@@ -120,7 +120,7 @@ const LockedInfo = () => {
         <RowBetween>
           <AutoColumn>
             <Text fontSize={12} color="textSubtle" textTransform="uppercase" bold>
-              {t('cake locked')}
+              {t('ign locked')}
             </Text>
             <CakeLocked
               proxyExpired={cakePoolLockExpired}
@@ -151,7 +151,7 @@ const LockedInfo = () => {
             <Message variant="warning" icon={<InfoFilledIcon color="warning" />}>
               <Text as="p">
                 {t(
-                  'CAKE Pool migrated position has unlocked. Go to the pool page to withdraw, add CAKE into veCAKE to increase your veCAKE benefits.',
+                  'IGN Pool migrated position has unlocked. Go to the pool page to withdraw, add IGN into veIGN to increase your veIGN benefits.',
                 )}
               </Text>
             </Message>
@@ -160,7 +160,7 @@ const LockedInfo = () => {
               <AutoColumn gap="8px">
                 <Text as="p">
                   {t(
-                    'Position migrated from CAKE Pool can not be extended or topped up. To extend or add more CAKE, set up a native veCAKE position.',
+                    'Position migrated from IGN Pool can not be extended or topped up. To extend or add more IGN, set up a native veIGN position.',
                   )}
                 </Text>
                 <LearnMore />
@@ -169,7 +169,7 @@ const LockedInfo = () => {
           )}
           <Link external style={{ textDecoration: 'none', width: '100%' }} href="/pools">
             <Button width="100%" variant="secondary">
-              {t('View CAKE Pool Position')}
+              {t('View IGN Pool Position')}
             </Button>
           </Link>
         </>
@@ -179,7 +179,7 @@ const LockedInfo = () => {
         <Message variant="warning" icon={<InfoFilledIcon color={CUSTOM_WARNING_COLOR} />}>
           <Text as="p" color={CUSTOM_WARNING_COLOR}>
             {t(
-              'Renew your veCAKE position to continue enjoying the benefits of weekly CAKE yield, revenue share, gauges voting, farm yield boosting, participating in IFOs, and so much more!',
+              'Renew your veIGN position to continue enjoying the benefits of weekly IGN yield, revenue share, gauges voting, farm yield boosting, and so much more!',
             )}
           </Text>
         </Message>
@@ -200,7 +200,7 @@ const SingleStakeTooltip = () => {
 
   return (
     <>
-      {t('veCAKE is calculated with number of CAKE locked, and the remaining time against maximum lock time.')}
+      {t('veIGN is calculated with number of IGN locked, and the remaining time against maximum lock time.')}
       <LearnMore />
     </>
   )
@@ -214,7 +214,7 @@ const DualStakeTooltip: React.FC<{
 
   return (
     <>
-      {t('veCAKE is calculated with number of CAKE locked, and the remaining time against maximum lock time.')}
+      {t('veIGN is calculated with number of IGN locked, and the remaining time against maximum lock time.')}
       <br />
       <br />
       <ul>
@@ -242,8 +242,8 @@ const ProxyUnlockTooltip: React.FC<{
     <>
       {t(
         proxyExpired
-          ? '%amount% CAKE from CAKE Pool migrated position is already unlocked. Go to the pool page to withdraw these CAKE.'
-          : '%amount% CAKE from CAKE Pool migrated position will unlock on %expiredAt%.',
+          ? '%amount% IGN from IGN Pool migrated position is already unlocked. Go to the pool page to withdraw these IGN.'
+          : '%amount% IGN from IGN Pool migrated position will unlock on %expiredAt%.',
         {
           amount: proxyCake,
           expiredAt: formatTime(Number(dayjs.unix(proxyUnlockTime))),

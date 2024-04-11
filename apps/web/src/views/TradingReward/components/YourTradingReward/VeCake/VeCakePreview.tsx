@@ -91,7 +91,7 @@ export const VeCakePreview: React.FC<React.PropsWithChildren<VeCakePreviewProps>
             {t('You have earn some trading REWARDS')}
           </Text>
           <Text bold fontSize="40px">{`$${formatNumber(rewardInUSD)}`}</Text>
-          <Text fontSize="14px" color="textSubtle">{`~${formatNumber(rewardInCake)} CAKE`}</Text>
+          <Text fontSize="14px" color="textSubtle">{`~${formatNumber(rewardInCake)} IGN`}</Text>
 
           <Message variant="danger" mt="10px">
             <MessageText>
@@ -131,22 +131,22 @@ export const VeCakePreview: React.FC<React.PropsWithChildren<VeCakePreviewProps>
 
       {status === CakeLockStatus.NotLocked || !cakeLocked ? (
         <VeCakeButtonWithMessage
-          messageText={t('Get veCAKE to start earning')}
-          buttonText={t('Get veCAKE')}
+          messageText={t('Get veIGN to start earning')}
+          buttonText={t('Get veIGN')}
           onClick={onPresentNoLockingCakeModal}
         />
       ) : cakeLockExpired ? (
         <VeCakeButtonWithMessage
           messageText={t(
-            'Your CAKE staking position is expired. Unlock your position and set up a new one to start earning.',
+            'Your IGN staking position is expired. Unlock your position and set up a new one to start earning.',
           )}
           buttonText={t('Unlock')}
           onClick={handleUnlockButton}
         />
       ) : (
         <VeCakeButtonWithMessage
-          messageText={t('Increase veCAKE to reach min. requirement')}
-          buttonText={t('Increase veCAKE')}
+          messageText={t('Increase veIGN to reach min. requirement')}
+          buttonText={t('Increase veIGN')}
           onClick={onPresentVeCakeAddCakeModal}
         />
       )}

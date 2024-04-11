@@ -91,12 +91,18 @@ type GetLogoUrlsOptions = {
 
 export const getCurrencyLogoUrls = memoize(
   (currency: Currency | undefined, { useTrustWallet = true }: GetLogoUrlsOptions = {}): string[] => {
-    const trustWalletLogo = getTokenLogoURL(currency?.wrapped);
-    const logoUrl = currency ? getTokenListTokenUrl(currency.wrapped) : null;
-    return [getCommonCurrencyUrl(currency), useTrustWallet ? trustWalletLogo : undefined, logoUrl].filter(
-      (url): url is string => !!url
-    );
-  },
-  (currency: Currency | undefined, options?: GetLogoUrlsOptions) =>
-    `logoUrls#${currency?.chainId}#${currency?.wrapped?.address}#${options ? JSON.stringify(options) : ""}`
+    return [`https://raw.githubusercontent.com/Iguana-DEX/assets/main/assets/${currency?.wrapped.address}.png`];
+  }
 );
+
+// export const getCurrencyLogoUrls = memoize(
+//   (currency: Currency | undefined, { useTrustWallet = true }: GetLogoUrlsOptions = {}): string[] => {
+//     const trustWalletLogo = getTokenLogoURL(currency?.wrapped);
+//     const logoUrl = currency ? getTokenListTokenUrl(currency.wrapped) : null;
+//     return [getCommonCurrencyUrl(currency), useTrustWallet ? trustWalletLogo : undefined, logoUrl].filter(
+//       (url): url is string => !!url
+//     );
+//   },
+//   (currency: Currency | undefined, options?: GetLogoUrlsOptions) =>
+//     `logoUrls#${currency?.chainId}#${currency?.wrapped?.address}#${options ? JSON.stringify(options) : ""}`
+// );

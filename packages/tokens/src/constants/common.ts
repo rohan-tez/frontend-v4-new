@@ -1,6 +1,25 @@
 import { ChainId } from '@pancakeswap/chains'
 import { ERC20Token } from '@pancakeswap/sdk'
 
+export const IGN = {
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    18,
+    'IGN',
+    'Iguana Token',
+    'https://iguanadex.com/',
+  ),
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    18,
+    'IGN',
+    'Iguana Token',
+    'https://iguanadex.com/',
+  ),
+}
+
 export const CAKE_MAINNET = new ERC20Token(
   ChainId.BSC,
   '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
@@ -323,6 +342,32 @@ export const USDC = {
     'USDC',
     'USD Coin',
   ),
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0xa7c9092A5D2C3663B7C5F714dbA806d02d62B58a',
+    18,
+    'USDC',
+    'USD Coin',
+  ),
+}
+
+export const WXTZ = {
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
+    18,
+    'WXTZ',
+    'Wrapped XTZ',
+    'https://tezos.com',
+  ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
+    18,
+    'WXTZ',
+    'Wrapped XTZ',
+    'https://tezos.com',
+  ),
 }
 
 export const USDT = {
@@ -371,6 +416,54 @@ export const USDT = {
     'Tether USD',
   ),
   [ChainId.LINEA]: new ERC20Token(ChainId.LINEA, '0xA219439258ca9da29E9Cc4cE5596924745e12B93', 6, 'USDT', 'Tether USD'),
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0xD21B917D2f4a4a8E3D12892160BFFd8f4cd72d4F',
+    18,
+    'USDT',
+    'Tether USD',
+  ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xD21B917D2f4a4a8E3D12892160BFFd8f4cd72d4F',
+    18,
+    'USDT',
+    'Tether USD',
+  ),
+}
+
+export const eUSD = {
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0x1A71f491fb0Ef77F13F8f6d2a927dd4C969ECe4f',
+    18,
+    'eUSD',
+    'Etherlink USD',
+  ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0x1A71f491fb0Ef77F13F8f6d2a927dd4C969ECe4f',
+    18,
+    'eUSD',
+    'Etherlink USD',
+  ),
+}
+
+export const tzBTC = {
+  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
+    ChainId.ETHERLINK_TESTNET,
+    '0x6bDE94725379334b469449f4CF49bCfc85ebFb27',
+    18,
+    'tzBTC',
+    'tzBTC',
+  ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0x6bDE94725379334b469449f4CF49bCfc85ebFb27',
+    18,
+    'tzBTC',
+    'tzBTC',
+  ),
 }
 
 export const WBTC_ETH = new ERC20Token(
@@ -402,4 +495,6 @@ export const STABLE_COIN = {
   [ChainId.SEPOLIA]: USDC[ChainId.SEPOLIA],
   [ChainId.ARBITRUM_SEPOLIA]: USDC[ChainId.ARBITRUM_SEPOLIA],
   [ChainId.BASE_SEPOLIA]: USDC[ChainId.BASE_SEPOLIA],
+  [ChainId.ETHERLINK_TESTNET]: eUSD[ChainId.ETHERLINK_TESTNET],
+  [ChainId.ETHERLINK]: eUSD[ChainId.ETHERLINK],
 } satisfies Record<ChainId, ERC20Token>

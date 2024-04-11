@@ -27,6 +27,10 @@ export const tokenImageChainNameMapping = {
 export const getImageUrlFromToken = (token: Token) => {
   const address = token?.isNative ? token.wrapped.address : token.address
 
+  if (token.chainId === ChainId.ETHERLINK_TESTNET || token.chainId === ChainId.ETHERLINK) {
+    return `https://raw.githubusercontent.com/Iguana-DEX/assets/main/assets/${address}.png`
+  }
+
   return token?.isNative && token.chainId !== ChainId.BSC
     ? `${ASSET_CDN}/web/native/${token.chainId}.png`
     : `https://tokens.pancakeswap.finance/images/${tokenImageChainNameMapping[token.chainId]}${address}.png`

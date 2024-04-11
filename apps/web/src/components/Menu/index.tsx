@@ -1,7 +1,7 @@
 import { languageList, useTranslation } from '@pancakeswap/localization'
 import { Menu as UikitMenu, footerLinks, useModal } from '@pancakeswap/uikit'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
-import { usePhishingBanner } from '@pancakeswap/utils/user'
+// import { usePhishingBanner } from '@pancakeswap/utils/user'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import USCitizenConfirmModal from 'components/Modal/USCitizenConfirmModal'
 import { NetworkSwitcher } from 'components/NetworkSwitcher'
@@ -12,7 +12,7 @@ import useTheme from 'hooks/useTheme'
 import { IdType } from 'hooks/useUserIsUsCitizenAcknowledgement'
 import { useWebNotifications } from 'hooks/useWebNotifications'
 import { useRouter } from 'next/router'
-import { Suspense, lazy, useMemo } from 'react'
+import { lazy, useMemo } from 'react'
 import GlobalSettings from './GlobalSettings'
 import { SettingsMode } from './GlobalSettings/types'
 import UserMenu from './UserMenu'
@@ -34,12 +34,12 @@ const Menu = (props) => {
   const { pathname } = useRouter()
 
   const [onUSCitizenModalPresent] = useModal(
-    <USCitizenConfirmModal title={t('PancakeSwap Perpetuals')} id={IdType.PERPETUALS} />,
+    <USCitizenConfirmModal title={t('IguanaDEX Perpetuals')} id={IdType.PERPETUALS} />,
     true,
     false,
     'usCitizenConfirmModal',
   )
-  const [showPhishingWarningBanner] = usePhishingBanner()
+  const [showPhishingWarningBanner] = [false] // usePhishingBanner()
 
   const menuItems = useMenuItems(onUSCitizenModalPresent)
 
@@ -61,11 +61,11 @@ const Menu = (props) => {
         rightSide={
           <>
             <GlobalSettings mode={SettingsMode.GLOBAL} />
-            {enabled && (
+            {/* {enabled && (
               <Suspense fallback={null}>
                 <Notifications />
               </Suspense>
-            )}
+            )} */}
             <NetworkSwitcher />
             <UserMenu />
           </>
@@ -83,8 +83,8 @@ const Menu = (props) => {
         footerLinks={getFooterLinks}
         activeItem={activeMenuItem?.href}
         activeSubItem={activeSubMenuItem?.href}
-        buyCakeLabel={t('Buy CAKE')}
-        buyCakeLink="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+        buyCakeLabel={t('Buy IGN')}
+        buyCakeLink={`https://iguanadex.com/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=${chainId}`}
         {...props}
       />
     </>

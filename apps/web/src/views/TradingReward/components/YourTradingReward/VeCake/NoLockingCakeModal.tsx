@@ -65,7 +65,7 @@ export const NoLockingCakeModal: React.FC<React.PropsWithChildren<NoLockingCakeM
   return (
     <StyledModal
       width="100%"
-      title={t('Lock CAKE to get veCAKE')}
+      title={t('Lock IGN to get veIGN')}
       headerBorderColor="transparent"
       maxWidth={['100%', '100%', '100%', '777px']}
       onDismiss={onDismiss}
@@ -79,7 +79,7 @@ export const NoLockingCakeModal: React.FC<React.PropsWithChildren<NoLockingCakeM
             <DataRow
               label={
                 <Text fontSize={14} color="textSubtle" style={{ textTransform: 'initial' }}>
-                  {t('veCAKE')}
+                  {t('veIGN')}
                 </Text>
               }
               value={<ValueText>{veCake}</ValueText>}

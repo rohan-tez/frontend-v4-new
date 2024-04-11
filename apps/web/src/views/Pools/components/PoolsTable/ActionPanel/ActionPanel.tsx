@@ -255,7 +255,7 @@ const ActionPanel: React.FC<React.PropsWithChildren<ActionPanelProps>> = ({ acco
                 <MessageText marginBottom="10px">
                   {vaultPosition === VaultPosition.Flexible ? (
                     <>
-                      {t('Flexible CAKE pool is discontinued and no longer distributing rewards.')}
+                      {t('Flexible IGN pool is discontinued and no longer distributing rewards.')}
                       <LearnMoreLink withArrow />
                     </>
                   ) : vaultPosition >= VaultPosition.LockedEnd ? (
@@ -263,11 +263,11 @@ const ActionPanel: React.FC<React.PropsWithChildren<ActionPanelProps>> = ({ acco
                       t('To check out your converted position, please visit the protocol page.')
                     ) : isMigratedToVeCake ? (
                       t(
-                        'Extending or adding CAKE is not available for migrated positions. To get more veCAKE, withdraw from the unlocked CAKE pool position, and add CAKE to veCAKE.',
+                        'Extending or adding IGN is not available for migrated positions. To get more veIGN, withdraw from the unlocked IGN pool position, and add IGN to veIGN.',
                       )
                     ) : (
                       t(
-                        'The lock period has ended. To get more veCAKE, withdraw from the unlocked CAKE pool position, and add CAKE to veCAKE.',
+                        'The lock period has ended. To get more veIGN, withdraw from the unlocked IGN pool position, and add IGN to veIGN.',
                       )
                     )
                   ) : null}

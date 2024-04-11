@@ -25,7 +25,7 @@ export const TableHeader: React.FC<{
       </Th>
       <Th>
         <Text color="secondary" textTransform="uppercase" fontWeight={600} textAlign="right">
-          {t('My veCake %')}
+          {t('My veIGN %')}
         </Text>
       </Th>
     </THeader>

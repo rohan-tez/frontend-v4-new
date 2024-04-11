@@ -15,7 +15,7 @@ export const NetworkLogo: React.FC<{
       <Image
         alt={`chain-${chainId}`}
         style={{ maxHeight: `${height}px` }}
-        src={`/images/networks/${type}/${chainId}.png`}
+        src={`https://raw.githubusercontent.com/Iguana-DEX/assets/main/chains/${chainId}.png`}
         width={width}
         height={height}
         unoptimized

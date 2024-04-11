@@ -22,11 +22,15 @@ export const MyVeCakeCard: React.FC<{
 
   return (
     <StyledBox px={type === 'row' ? '16px' : '24px'}>
-      <img src="/images/cake-staking/token-vecake.png" alt="token-vecake" width="58px" />
+      <img
+        src="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/veIGN_logo.png"
+        alt="token-veign"
+        width="58px"
+      />
       {type === 'column' ? (
         <AutoColumn gap="2px" ml="6px">
           <Text fontSize="12px" bold color="white" lineHeight="120%">
-            {t('MY veCAKE')}
+            {t('My veIGN')}
           </Text>
           <Text fontSize="24px" bold color="white" lineHeight="110%">
             {value ?? formatNumber(getBalanceNumber(balance))}
@@ -36,7 +40,7 @@ export const MyVeCakeCard: React.FC<{
       {type === 'row' ? (
         <AutoRow justifyContent="space-between" ml="8px">
           <Text fontSize="20px" bold color="white" lineHeight="120%">
-            {t('MY veCAKE')}
+            {t('My veIGN')}
           </Text>
 
           <Text fontSize="20px" bold color="white" lineHeight="110%">

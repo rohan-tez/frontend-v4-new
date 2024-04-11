@@ -85,16 +85,16 @@ export const VeCakePreviewTextInfo: React.FC<React.PropsWithChildren<VeCakePrevi
   return (
     <Box {...props}>
       <GreyCard>
-        <TextInfo title={t('Min. veCAKE at snapshot time:')} value={minVeCake} mb="12px" />
-        <TextInfo title={t('Preview of your veCAKE⌛ at snapshot time:')} value={previewVeCakeAtSnapshot} mb="12px" />
+        <TextInfo title={t('Min. veIGN at snapshot time:')} value={minVeCake} mb="12px" />
+        <TextInfo title={t('Preview of your veIGN⌛ at snapshot time:')} value={previewVeCakeAtSnapshot} mb="12px" />
         <TextInfo title={t('Snapshot at / Campaign Ends:')} value={timeFormat(locale, endTime)} />
         {showIncreaseButton && (
           <Box mt="12px">
             <Text fontSize={14} mb={12}>
-              {t('Increase your veCAKE to continue earning')}
+              {t('Increase your veIGN to continue earning')}
             </Text>
             <Button width="100%" onClick={onClickModal}>
-              {t('Increase veCAKE')}
+              {t('Increase veIGN')}
             </Button>
           </Box>
         )}

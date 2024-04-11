@@ -1,6 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { AtomBox, Box, Button, HelpIcon, Link, Svg, SvgProps, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
+import Image from 'next/legacy/image'
 import styled from 'styled-components'
 import { useCakeLockStatus } from '../hooks/useVeCakeUserInfo'
 import { CakeLockStatus } from '../types'
@@ -48,12 +49,18 @@ export const NewCakeStakingCard: React.FC = () => {
       >
         <SpeechBubbleBox display="flex">
           <Button variant="subtle" endIcon={<HelpIcon color="invertedContrast" width="24px" />}>
-            {t('New to CAKE Staking')}
+            {t('New to IGN Staking')}
           </Button>
           <SpeechBubble width="16px" height="16px" />
         </SpeechBubbleBox>
       </Link>
-      <img src="/images/cake-staking/new-staking-bunny.png" alt="new-staking-bunny" width="138px" />
+      <Image
+        src="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/iggies-club.webp"
+        alt="Get some help"
+        width={185}
+        height={108}
+      />
+      {/* <img src="/images/cake-staking/new-staking-bunny.png" alt="new-staking-bunny" width="138px" /> */}
     </AtomBox>
   )
 }

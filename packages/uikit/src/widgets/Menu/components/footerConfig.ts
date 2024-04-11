@@ -3,56 +3,27 @@ import { FooterLinkType } from "../../../components/Footer/types";
 
 export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
   {
-    label: t("Ecosystem"),
+    label: t("About"),
     items: [
       {
-        label: t("Trade"),
-        href: "https://pancakeswap.finance/swap",
+        label: t("Contact"),
+        href: "https://docs.iguanadex.com/community/contact-us",
       },
       {
-        label: t("Earn"),
-        href: "https://pancakeswap.finance/farms",
+        label: t("Community"),
+        href: "https://discord.com/invite/yq5bUaT7Cm",
       },
       {
-        label: t("Game"),
-        href: "https://pancakeswap.games/",
+        label: t("Brand Assets"),
+        href: "https://github.com/Iguana-DEX/assets/tree/main/iguana_brand_assets",
       },
       {
-        label: t("NFT"),
-        href: "https://pancakeswap.finance/nfts",
+        label: t("IGN Token"),
+        href: "https://docs.iguanadex.com/iguanadex-on-mainnet/tokenomics",
       },
       {
-        label: t("Tokenomics"),
-        href: "https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics",
-      },
-      {
-        label: t("Litepaper"),
-        href: "https://assets.pancakeswap.finance/litepaper/v2litepaper.pdf",
-      },
-      {
-        label: t("CAKE Emission Projection"),
-        href: "https://analytics.pancakeswap.finance/",
-      },
-      {
-        label: t("Merchandise"),
-        href: "https://merch.pancakeswap.finance/",
-      },
-    ],
-  },
-  {
-    label: "Business",
-    items: [
-      {
-        label: t("Farms and Syrup Pools"),
-        href: "https://docs.pancakeswap.finance/ecosystem-and-partnerships/business-partnerships/syrup-pools-and-farms",
-      },
-      {
-        label: t("IFO"),
-        href: "https://docs.pancakeswap.finance/ecosystem-and-partnerships/business-partnerships/initial-farm-offerings-ifos",
-      },
-      {
-        label: t("NFT Marketplace"),
-        href: "https://docs.pancakeswap.finance/ecosystem-and-partnerships/business-partnerships/nft-market-applications",
+        label: t("Terms Of Service"),
+        href: "https://iguanadex.com/terms-of-service",
       },
     ],
   },
@@ -60,58 +31,16 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     label: t("Developers"),
     items: [
       {
-        label: t("Contributing"),
-        href: "https://docs.pancakeswap.finance/developers/contributing",
-      },
-      {
-        label: t("Github"),
-        href: "https://github.com/pancakeswap",
-      },
-      {
-        label: t("Bug Bounty"),
-        href: "https://docs.pancakeswap.finance/developers/bug-bounty",
-      },
-      {
-        label: t("v4"),
-        href: "https://pancakeswap.finance/v4",
-      },
-    ],
-  },
-  {
-    label: t("Support"),
-    items: [
-      {
-        label: t("Contact"),
-        href: "https://docs.pancakeswap.finance/contact-us/customer-support",
-      },
-      {
-        label: t("Troubleshooting"),
-        href: "https://docs.pancakeswap.finance/readme/help/troubleshooting",
+        label: "GitHub",
+        href: "https://github.com/Iguana-DEX",
       },
       {
         label: t("Documentation"),
-        href: "https://docs.pancakeswap.finance/",
-      },
-    ],
-  },
-  {
-    label: t("About"),
-    items: [
-      {
-        label: t("Terms Of Service"),
-        href: "https://pancakeswap.finance/terms-of-service",
+        href: "https://docs.iguanadex.com",
       },
       {
-        label: t("Blog"),
-        href: "https://blog.pancakeswap.finance/",
-      },
-      {
-        label: t("Brand Assets"),
-        href: "https://docs.pancakeswap.finance/ecosystem-and-partnerships/brand",
-      },
-      {
-        label: t("Careers"),
-        href: "https://docs.pancakeswap.finance/team/become-a-chef",
+        label: t("Audits"),
+        href: "https://docs.iguanadex.com/iguanadex-on-mainnet/security-audits",
       },
     ],
   },

@@ -1,21 +1,21 @@
-import { useMemo } from 'react'
-import { Box, Text, Flex, MessageText, Message } from '@pancakeswap/uikit'
+import { Box, Flex, Message, MessageText, Text } from '@pancakeswap/uikit'
 import BN from 'bignumber.js'
+import { useMemo } from 'react'
 
+import { useTranslation } from '@pancakeswap/localization'
 import { LightGreyCard } from 'components/Card'
 import dayjs from 'dayjs'
 import { useVaultApy } from 'hooks/useVaultApy'
-import { useTranslation } from '@pancakeswap/localization'
 import _toNumber from 'lodash/toNumber'
 import { convertTimeToMilliseconds } from 'utils/timeHelper'
 import formatSecondsToWeeks from '../../../utils/formatSecondsToWeeks'
-import TextRow from './TextRow'
+import CalculatorButton from '../../Buttons/CalculatorButton'
+import { OverviewPropsType } from '../../types'
+import formatICake from '../../utils/formatICake'
+import formatRoi from '../../utils/formatRoi'
 import BalanceRow from './BalanceRow'
 import DateRow from './DateRow'
-import formatRoi from '../../utils/formatRoi'
-import formatICake from '../../utils/formatICake'
-import { OverviewPropsType } from '../../types'
-import CalculatorButton from '../../Buttons/CalculatorButton'
+import TextRow from './TextRow'
 
 const ZERO = new BN(0)
 
@@ -80,8 +80,8 @@ const Overview: React.FC<React.PropsWithChildren<OverviewPropsType>> = ({
           </Text>
         </Flex>
         <LightGreyCard>
-          <BalanceRow title={t('Cake to be locked')} value={lockedAmount} newValue={newLockedAmount} decimals={2} />
-          <BalanceRow title="iCake" decimals={2} value={formattediCake} newValue={newFormattediCake} />
+          <BalanceRow title={t('IGN to be locked')} value={lockedAmount} newValue={newLockedAmount} decimals={2} />
+          <BalanceRow title="iIGN" decimals={2} value={formattediCake} newValue={newFormattediCake} />
           <BalanceRow
             title="apr"
             unit="%"

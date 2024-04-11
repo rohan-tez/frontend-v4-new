@@ -105,16 +105,16 @@ const HasSharesActions: React.FC<React.PropsWithChildren<HasStakeActionProps>> =
         <MessageText>
           {lockPosition === VaultPosition.Flexible ? (
             <>
-              {t('Flexible CAKE pool is discontinued and no longer distributing rewards.')}
+              {t('Flexible IGN pool is discontinued and no longer distributing rewards.')}
               <LearnMoreLink withArrow />
             </>
           ) : isMigratedToVeCake ? (
             t(
-              'Extending or adding CAKE is not available for migrated positions. To get more veCAKE, withdraw from the unlocked CAKE pool position, and add CAKE to veCAKE.',
+              'Extending or adding IGN is not available for migrated positions. To get more veIGN, withdraw from the unlocked IGN pool position, and add IGN to veCAKE.',
             )
           ) : (
             t(
-              'The lock period has ended. To get more veCAKE, withdraw from the unlocked CAKE pool position, and add CAKE to veCAKE.',
+              'The lock period has ended. To get more veIGN, withdraw from the unlocked IGN pool position, and add IGN to veIGN.',
             )
           )}
         </MessageText>

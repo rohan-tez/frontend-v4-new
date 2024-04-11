@@ -53,6 +53,56 @@ const bsc = {
   },
 } satisfies Chain
 
+const etherlinkTestnet = {
+  id: ChainId.ETHERLINK_TESTNET,
+  name: 'Etherlink Testnet',
+  network: 'Etherlink Testnet',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.ghostnet.etherlink.com'] },
+    default: { http: ['https://node.ghostnet.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
+    default: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 500,
+    },
+  },
+} as const satisfies Chain
+
+const etherlink = {
+  id: ChainId.ETHERLINK,
+  name: 'Etherlink',
+  network: 'Etherlink',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.etherlink.com'] },
+    default: { http: ['https://node.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+    default: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 500,
+    },
+  },
+} as const satisfies Chain
+
 /**
  * Controls some L2 specific behavior, e.g. slippage tolerance, special UI behavior.
  * The expectation is that all of these networks have immediate transaction confirmation.
@@ -72,6 +122,8 @@ export const L2_CHAIN_IDS: ChainId[] = [
   ChainId.OPBNB_TESTNET,
   ChainId.ARBITRUM_SEPOLIA,
   ChainId.BASE_SEPOLIA,
+  ChainId.ETHERLINK_TESTNET,
+  ChainId.ETHERLINK,
 ]
 
 export const CHAINS = [
@@ -95,4 +147,6 @@ export const CHAINS = [
   opBNB,
   opBNBTestnet,
   scrollSepolia,
+  etherlinkTestnet,
+  etherlink,
 ]

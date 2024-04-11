@@ -14,13 +14,11 @@ import {
   UserMenuItem,
   useTooltip,
 } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import { useActiveChainId, useLocalNetworkChain } from 'hooks/useActiveChainId'
 import { useNetworkConnectorUpdater } from 'hooks/useActiveWeb3React'
 import { useHover } from 'hooks/useHover'
 import { useSessionChainId } from 'hooks/useSessionChainId'
 import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
@@ -28,11 +26,6 @@ import { chainNameConverter } from 'utils/chainNameConverter'
 import { chains } from 'utils/wagmi'
 import { useNetwork } from 'wagmi'
 import { ChainLogo } from './Logo/ChainLogo'
-
-const AptosChain = {
-  id: 1,
-  name: 'Aptos',
-}
 
 const NetworkSelect = ({ switchNetwork, chainId }) => {
   const { t } = useTranslation()
@@ -64,24 +57,6 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
             </Text>
           </UserMenuItem>
         ))}
-      <UserMenuItem
-        key={`aptos-${AptosChain.id}`}
-        style={{ justifyContent: 'flex-start' }}
-        as="a"
-        target="_blank"
-        href="https://aptos.pancakeswap.finance/swap"
-      >
-        <Image
-          src="https://aptos.pancakeswap.finance/images/apt.png"
-          width={24}
-          height={24}
-          unoptimized
-          alt={`chain-aptos-${AptosChain.id}`}
-        />{' '}
-        <Text color="text" pl="12px">
-          {AptosChain.name}
-        </Text>
-      </UserMenuItem>
     </>
   )
 }
@@ -162,6 +137,8 @@ const SHORT_SYMBOL = {
   [ChainId.SEPOLIA]: 'sepolia',
   [ChainId.BASE_SEPOLIA]: 'Base Sepolia',
   [ChainId.ARBITRUM_SEPOLIA]: 'Arb Sepolia',
+  [ChainId.ETHERLINK_TESTNET]: 'tXTZ',
+  [ChainId.ETHERLINK]: 'XTZ',
 } as const satisfies Record<ChainId, string>
 
 export const NetworkSwitcher = () => {
@@ -197,7 +174,7 @@ export const NetworkSwitcher = () => {
         mr="8px"
         placement="bottom"
         variant={isLoading ? 'pending' : isWrongNetwork ? 'danger' : 'default'}
-        avatarSrc={`${ASSET_CDN}/web/chains/${chainId}.png`}
+        avatarSrc={`https://raw.githubusercontent.com/Iguana-DEX/assets/main/chains/${chainId}.png`}
         disabled={cannotChangeNetwork}
         text={
           isLoading ? (

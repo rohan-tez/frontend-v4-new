@@ -101,7 +101,7 @@ export const PreviewOfVeCakeSnapShotTime: React.FC<React.PropsWithChildren<Previ
             {t('Preview of')}
           </Text>
           <Text bold as="span" color="secondary" ml="4px" fontSize={12}>
-            {t('*veCAKE at snapshot time:')}
+            {t('*veIGN at snapshot time:')}
           </Text>
         </Box>
         <Text>{timeFormat(locale, endTime)}</Text>
@@ -117,7 +117,7 @@ export const PreviewOfVeCakeSnapShotTime: React.FC<React.PropsWithChildren<Previ
             />
           </Box>
           <Text style={{ alignSelf: 'center' }} bold ml="8px" fontSize="20px">
-            {`${t('veCAKE')}⌛`}
+            {`${t('veIGN')}⌛`}
           </Text>
         </Flex>
         <Flex>
@@ -129,11 +129,11 @@ export const PreviewOfVeCakeSnapShotTime: React.FC<React.PropsWithChildren<Previ
       </Flex>
       {valid ? (
         <Text fontSize={14} mt="8px" bold textAlign="right" color="success">
-          {t('Min. veCAKE will be reached at snapshot time')}
+          {t('Min. veIGN will be reached at snapshot time')}
         </Text>
       ) : (
         <Text fontSize={14} mt="8px" bold textAlign="right" color="warning">
-          {t('Min. veCAKE won’t be reached at snapshot time')}
+          {t('Min. veIGN won’t be reached at snapshot time')}
         </Text>
       )}
     </SnapShotTimeContainer>

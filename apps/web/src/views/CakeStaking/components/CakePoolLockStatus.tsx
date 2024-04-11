@@ -81,7 +81,7 @@ export const CakePoolLockInfo = () => {
       <Message variant="warning" icon={<InfoFilledIcon color="#D67E0A" />}>
         <Text as="p" color="#D67E0A">
           {t(
-            'Migrate your CAKE staking position to veCAKE and enjoy the benefits of weekly CAKE yield, revenue share, gauges voting, farm yield boosting, participating in IFOs, and so much more!',
+            'Migrate your IGN staking position to veCAKE and enjoy the benefits of weekly IGN yield, revenue share, gauges voting, farm yield boosting, participating in IFOs, and so much more!',
           )}
         </Text>
       </Message>
@@ -97,10 +97,13 @@ export const CakePoolLockStatus = () => {
         <CardHeader>
           <RowBetween>
             <AutoColumn>
-              <Heading color="text">{t('My VeCAKE')}</Heading>
+              <Heading color="text">{t('My veIGN')}</Heading>
               <Balance fontSize="20px" bold color="failure" value={0} decimals={2} />
             </AutoColumn>
-            <img srcSet="/images/cake-staking/token-vecake.png 2x" alt="token-vecake" />
+            <img
+              srcSet="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/veIGN_logo.png"
+              alt="token-veign"
+            />
           </RowBetween>
         </CardHeader>
         <CakePoolLockInfo />
