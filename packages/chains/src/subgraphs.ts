@@ -43,7 +43,8 @@ export function getV3Subgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.SEPOLIA]: null,
     [ChainId.ARBITRUM_SEPOLIA]: null,
     [ChainId.BASE_SEPOLIA]: null,
-    [ChainId.ETHERLINK_TESTNET]: null,
+    [ChainId.ETHERLINK_TESTNET]:
+      'https://api.studio.thegraph.com/query/69431/exchange-v3-etherlink-test/version/latest',
     [ChainId.ETHERLINK]: null,
   } satisfies Record<ChainId, string | null>
 }
