@@ -317,7 +317,7 @@ const opBNBTestnetClient = createPublicClient({
   },
 })
 
-const etherlinkTestnetClient = createPublicClient({
+export const etherlinkTestnetClient = createPublicClient({
   chain: etherlinkTestnet,
   transport: http(ETHERLINK_TESTNET_NODE),
   batch: {
@@ -329,7 +329,7 @@ const etherlinkTestnetClient = createPublicClient({
   pollingInterval: 6_000,
 })
 
-const etherlinkClient = createPublicClient({
+export const etherlinkClient = createPublicClient({
   chain: etherlink,
   transport: http(ETHERLINK_NODE),
   batch: {

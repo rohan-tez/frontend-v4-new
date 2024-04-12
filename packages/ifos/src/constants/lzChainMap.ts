@@ -7,7 +7,6 @@ export const LZ_CHAIN_MAP = {
   [ChainId.POLYGON_ZKEVM]: 158,
   [ChainId.ZKSYNC]: 165,
   [ChainId.ARBITRUM_ONE]: 110,
-
   // Testnets
   [ChainId.BSC_TESTNET]: 10102,
   [ChainId.GOERLI]: 10121,
