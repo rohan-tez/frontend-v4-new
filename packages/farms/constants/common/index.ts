@@ -62,6 +62,15 @@ export const priceHelperTokens = {
     chain: 'etherlink',
     list: [etherlinkTokens.eusd, etherlinkTokens.usdt, etherlinkTokens.usdc, etherlinkTokens.wxtz],
   },
+  [ChainId.ETHERLINK_TESTNET]: {
+    chain: 'etherlink-testnet',
+    list: [
+      etherlinkTestnetTokens.eusd,
+      etherlinkTestnetTokens.usdt,
+      etherlinkTestnetTokens.usdc,
+      etherlinkTestnetTokens.wxtz,
+    ],
+  },
 } satisfies Record<number, PriceHelper>
 
 // for testing purposes

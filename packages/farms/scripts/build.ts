@@ -6,17 +6,23 @@ import ethFarms from '../constants/eth'
 import goerliFarms from '../constants/goerli'
 import bscTestnetFarms from '../constants/bscTestnet'
 import bscFarms from '../constants/bsc'
+import etherlinkFarms from '../constants/etherlink'
+import etherlinkTestnetFarms from '../constants/etherlinkTestnet'
 
 import lpHelpers1 from '../constants/priceHelperLps/1'
 import lpHelpers5 from '../constants/priceHelperLps/5'
 import lpHelpers97 from '../constants/priceHelperLps/97'
 import lpHelpers56 from '../constants/priceHelperLps/56'
+import lpHelpers128123 from '../constants/priceHelperLps/128123'
+import lpHelpers42793 from '../constants/priceHelperLps/42793'
 
 const chains = [
   [1, ethFarms, lpHelpers1],
   [5, goerliFarms, lpHelpers5],
   [56, bscFarms, lpHelpers56],
   [97, bscTestnetFarms, lpHelpers97],
+  [128123, etherlinkTestnetFarms, lpHelpers128123],
+  [42793, etherlinkFarms, lpHelpers42793],
 ]
 
 export const saveList = async () => {

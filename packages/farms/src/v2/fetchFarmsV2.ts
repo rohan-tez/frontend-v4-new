@@ -38,6 +38,16 @@ const evmNativeStableLpMap: Record<
     wNative: 'WBNB',
     stable: 'BUSD',
   },
+  [ChainId.ETHERLINK_TESTNET]: {
+    address: '0x9644e26Ef0Ec0659E453dD8035d6b2A169Eb65aa',
+    wNative: 'WXTZ',
+    stable: 'eUSD',
+  },
+  [ChainId.ETHERLINK]: {
+    address: '0x9644e26Ef0Ec0659E453dD8035d6b2A169Eb65aa',
+    wNative: 'WXTZ',
+    stable: 'eUSD',
+  },
 }
 
 export const getTokenAmount = (balance: BN, decimals: number) => {

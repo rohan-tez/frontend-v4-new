@@ -6,12 +6,70 @@ import { bsc, bscTestnet, goerli, mainnet } from 'viem/chains'
 
 import { SupportedChainId } from './constants'
 
-const requireCheck = [ETH_NODE, GOERLI_NODE, BSC_NODE, BSC_TESTNET_NODE, NODE_REAL_SUBGRAPH_API_KEY]
+const requireCheck = [
+  ETH_NODE,
+  GOERLI_NODE,
+  BSC_NODE,
+  BSC_TESTNET_NODE,
+  NODE_REAL_SUBGRAPH_API_KEY,
+  ETHERLINK_TESTNET_NODE,
+  ETHERLINK_NODE,
+]
 requireCheck.forEach((node) => {
   if (!node) {
     throw new Error('Missing env var')
   }
 })
+
+const etherlinkTestnet = {
+  id: 128123,
+  name: 'Etherlink Testnet',
+  network: 'etherlink-testnet',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.ghostnet.etherlink.com'] },
+    default: { http: ['https://node.ghostnet.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
+    default: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 500,
+    },
+  },
+} as const satisfies Chain
+
+const etherlink = {
+  id: 42793,
+  name: 'Etherlink',
+  network: 'etherlink',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.etherlink.com'] },
+    default: { http: ['https://node.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+    default: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 500,
+    },
+  },
+} as const satisfies Chain
 
 const V3_SUBGRAPHS = getV3Subgraphs({
   noderealApiKey: NODE_REAL_SUBGRAPH_API_KEY,
@@ -37,6 +95,16 @@ const goerliClient = createPublicClient({
   transport: http(GOERLI_NODE),
 })
 
+const etherlinkClient = createPublicClient({
+  chain: etherlink,
+  transport: http(ETHERLINK_NODE),
+})
+
+const etherlinkTestnetClient = createPublicClient({
+  chain: etherlinkTestnet,
+  transport: http(ETHERLINK_TESTNET_NODE),
+})
+
 // @ts-ignore
 export const viemProviders: OnChainProvider = ({ chainId }: { chainId?: ChainId }) => {
   switch (chainId) {
@@ -48,6 +116,10 @@ export const viemProviders: OnChainProvider = ({ chainId }: { chainId?: ChainId 
       return bscTestnetClient
     case ChainId.GOERLI:
       return goerliClient
+    case ChainId.ETHERLINK_TESTNET:
+      return etherlinkTestnetClient
+    case ChainId.ETHERLINK:
+      return etherlinkClient
     default:
       return bscClient
   }
@@ -67,8 +139,8 @@ export const v3SubgraphClients: Record<SupportedChainId, GraphQLClient> = {
   [ChainId.BASE_TESTNET]: new GraphQLClient(V3_SUBGRAPHS[ChainId.BASE_TESTNET], { fetch }),
   [ChainId.BASE]: new GraphQLClient(V3_SUBGRAPHS[ChainId.BASE], { fetch }),
   [ChainId.OPBNB]: new GraphQLClient(V3_SUBGRAPHS[ChainId.OPBNB], { fetch }),
-  [ChainId.ETHERLINK_TESTNET]: new GraphQLClient(V3_SUBGRAPHS[ChainId.OPBNB], { fetch }),
-  [ChainId.ETHERLINK]: new GraphQLClient(V3_SUBGRAPHS[ChainId.OPBNB], { fetch }),
+  [ChainId.ETHERLINK_TESTNET]: new GraphQLClient(V3_SUBGRAPHS[ChainId.ETHERLINK_TESTNET], { fetch }),
+  [ChainId.ETHERLINK]: new GraphQLClient(V3_SUBGRAPHS[ChainId.ETHERLINK], { fetch }),
 } as const
 
 export const v3SubgraphProvider: SubgraphProvider = ({ chainId = ChainId.BSC }: { chainId?: ChainId }) => {
