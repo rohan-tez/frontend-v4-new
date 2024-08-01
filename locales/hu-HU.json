@@ -3035,7 +3035,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Az ösztönzőket vagy a Merkl vagy a Farm esetében lehet megszerezni, de NEM mindkettőnél",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Úgy juthat Farm jutalmakhoz, ha továbbra is likviditást vet a PanIGNSwapon, és az LP zsetonját teszi fel a Farmra.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Úgy juhat Merkl jutalmakhoz, hogy folytatja a likviditás vetését a PanIGNSwapon, de NEM teszi fel az LP zsetonját a Farmra. Igényelje jutalmait közvetlenül a ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "A gazdaság hozamfokozóinak aktiválásához aktív veIGN tétpozíció szükséges.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "A gazdaság hozamfokozóinak aktiválásához aktív veIGN tétpozíció szükséges.",
   "Yield booster active": "A hozamfokozó aktív",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Alkalmazza a hozamfokozót korlátlan számú pozícióra az összes V3 farmon. A hozamfokozót a tét elhelyezésekor alkalmazzuk. Zároljon több IGN-t vagy bővítse a zárolását, hogy erősebb legyen a hozamfokozó hatása.",
   "Go to Lock": "Ugrás a zárolásra",

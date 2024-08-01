@@ -84,7 +84,7 @@ export const SERVER_NODES = {
   [ChainId.ARBITRUM_SEPOLIA]: arbitrumSepolia.rpcUrls.public.http,
   [ChainId.BASE_SEPOLIA]: baseSepolia.rpcUrls.public.http,
   [ChainId.ETHERLINK_TESTNET]: ['https://node.ghostnet.etherlink.com'],
-  [ChainId.ETHERLINK]: ['https://node.etherlink.com'],
+  [ChainId.ETHERLINK]: ['https://node.mainnet.etherlink.com'],
 } satisfies Record<ChainId, readonly string[]>
 
 export const PUBLIC_NODES = {
@@ -158,5 +158,5 @@ export const PUBLIC_NODES = {
   [ChainId.ARBITRUM_SEPOLIA]: arbitrumSepolia.rpcUrls.public.http,
   [ChainId.BASE_SEPOLIA]: baseSepolia.rpcUrls.public.http,
   [ChainId.ETHERLINK_TESTNET]: ['https://node.ghostnet.etherlink.com'],
-  [ChainId.ETHERLINK]: ['https://node.etherlink.com'],
+  [ChainId.ETHERLINK]: ['https://node.mainnet.etherlink.com'],
 } satisfies Record<ChainId, readonly string[]>

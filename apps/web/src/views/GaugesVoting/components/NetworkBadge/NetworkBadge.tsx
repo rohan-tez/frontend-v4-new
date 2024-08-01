@@ -14,6 +14,7 @@ const SHORT_NAME = {
   [ChainId.LINEA]: 'LINEA',
   [ChainId.BASE]: 'BASE',
   [ChainId.OPBNB]: 'opBNB',
+  [ChainId.ETHERLINK]: 'etherlink',
 }
 
 const NETWORK_COLOR_DEFAULT = {
@@ -25,6 +26,7 @@ const NETWORK_COLOR_DEFAULT = {
   [ChainId.ARBITRUM_ONE]: '#2D364D',
   [ChainId.LINEA]: '#1E1E1E',
   [ChainId.BASE]: '#FFFFFF',
+  [ChainId.ETHERLINK]: '#FFFFFF',
 }
 
 const NETWORK_COLOR_COLORED = {
@@ -36,6 +38,7 @@ const NETWORK_COLOR_COLORED = {
   [ChainId.ARBITRUM_ONE]: '#2D364D',
   [ChainId.LINEA]: '#83DCFB',
   [ChainId.BASE]: '#0052FF',
+  [ChainId.ETHERLINK]: '#0052FF',
 }
 
 const NETWORK_COLOR_PURE_BLACK = '#000000'

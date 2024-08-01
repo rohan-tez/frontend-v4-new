@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Merkl-এ বা খামারে প্রণোদনা অর্জিত হতে পারে, কিন্তু উভয়টিতে নয়",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "খামার পুরষ্কার অর্জন করতে PanIGNSwap-এ তারল্য বিনিয়োগ করা চালিয়ে যান এবং খামারে আপনার LP টোকেন স্টেক করুন।",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Merkl পুরষ্কার অর্জন করতে PanIGNSwap-এ তারল্য বিনিয়োগ করা চালিয়ে যান, কিন্তু আপনার LP টোকেন খামারে স্টেক করবেন না। সরাসরি আপনার পুরস্কার দাবি করুন",
-  "An active veIGN staking position is required for activating farm yield boosters.": "খামার প্রাপ্তি বুস্টার সক্রিয় করার জন্য সক্রিয় veIGN স্টেকিং অবস্থান প্রয়োজন।",
+  "An active veIGN staking position is required to activate farm yield boosters.": "খামার প্রাপ্তি বুস্টার সক্রিয় করার জন্য সক্রিয় veIGN স্টেকিং অবস্থান প্রয়োজন।",
   "Yield booster active": "প্রাপ্তির জন্য বুস্টার বিদ্যমান",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "সমস্ত V3 খামারে সীমাহীন সংখ্যক অবস্থান বুস্ট করুন। স্টেকিং করার সময় বুস্ট প্রয়োগ করা হবে। আরো IGN লক করুন বা উচ্চতর বুস্ট পেতে আপনার লক সম্প্রসারিত করুন।",
   "Go to Lock": "লক-এ যান",

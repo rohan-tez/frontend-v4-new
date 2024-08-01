@@ -63,6 +63,8 @@ export const SUBGRAPH_START_BLOCK = {
   [ChainId.LINEA]: 1444,
   [ChainId.BASE]: 2912007,
   [ChainId.OPBNB]: 1721753,
+  [ChainId.ETHERLINK]: 110090,
+  [ChainId.ETHERLINK_TESTNET]: 4190090,
 }
 
 export const NODE_REAL_ADDRESS_LIMIT = 50

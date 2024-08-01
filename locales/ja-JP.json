@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "インセンティブはMerklまたはファームの両方ではなくいずれかで獲得可能です",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "ファーム報酬を獲得するには、PanIGNSwapで流動性をシードし続けてファームでLPトークンをステーキングします。",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Merkl報酬の獲得には、PanIGNSwapで流動性をシードし続ける必要がありますが、ファームにLPトークンをステーキングしてはいけません。報酬の請求場所は",
-  "An active veIGN staking position is required for activating farm yield boosters.": "ファーム利回りブースターを有効化するには、アクティブなveIGNステーキングポジションが必要です。",
+  "An active veIGN staking position is required to activate farm yield boosters.": "ファーム利回りブースターを有効化するには、アクティブなveIGNステーキングポジションが必要です。",
   "Yield booster active": "利回りブースター有効",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "すべてのV3ファームで無限の数のポジションを強化します。強化はステーキング時に適用されます。より高い強化を適用するには、さらに多くのIGNをロックするかロックを延長してください。",
   "Go to Lock": "ロックに移動",

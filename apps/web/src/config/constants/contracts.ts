@@ -232,6 +232,8 @@ export default {
   veCake: {
     [ChainId.BSC]: '0x5692DB8177a81A6c6afc8084C2976C9933EC1bAB',
     [ChainId.BSC_TESTNET]: '0x4879fcB447E7F4c7843A6D15dF5526061304dcFb',
+    [ChainId.ETHERLINK_TESTNET]: '0xe17b80db400Df4054947EF71453922449FeaaC3d',
+    [ChainId.ETHERLINK]: '0x',
   },
   gaugesVoting: GAUGES_ADDRESS,
   gaugesVotingCalc: GAUGES_CALC_ADDRESS,

@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Stimulentele pot fi câștigate la Merkl sau fermă, dar nu la ambele",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Pentru a câștiga recompense la fermă, continuă să plasezi lichidități pe PanIGNSwap și plasează-ți jetonul LP în fermă.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Pentru a câștiga recompense Merkl, continuă să plasezi lichiditate pe PanIGNSwap, dar NU plasa jetonul LP în fermă. Revendică-ți recompensele direct pe ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "O poziție de staking veIGN activă este necesară pentru a activa amplificatoarele de randament al fermei.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "O poziție de staking veIGN activă este necesară pentru a activa amplificatoarele de randament al fermei.",
   "Yield booster active": "Amplificator de randament activ",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Amplifică un număr nelimitat de poziții la toate fermele V3. Amplificarea va fi aplicată la staking. Blochează mai multe IGN pentru a-ți extinde blocarea ca să primești un amplificator mai mare.",
   "Go to Lock": "Accesează blocarea",

@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Поощрения можно зарабатывать либо в Merkl, либо в фарминге, но не в обоих местах",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Для получения вознаграждений за фарминг продолжайте делиться ликвидностью в PanIGNSwap и вложите свой LP-токен в фарминг.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Чтобы заработать вознаграждения Merkl, продолжайте делиться ликвидностью в PanIGNSwap, но НЕ вкладывайте свой LP-токен в фарминг. Получайте свои вознаграждения непосредственно в ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Для активации бустеров выручки фарма нужна активная позиция по вложению veIGN.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Для активации бустеров выручки фарма нужна активная позиция по вложению veIGN.",
   "Yield booster active": "Бустер выручки активен",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Увеличьте доход по неограниченному количеству позиций по всем фармам V3. Бустер будет применяться при вложении. Заблокируйте больше IGN или продлите блокировку, чтобы получить более высокий бустер.",
   "Go to Lock": "Перейти к блокировке",

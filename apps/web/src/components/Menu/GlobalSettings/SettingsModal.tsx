@@ -32,15 +32,15 @@ import { ExpertModal } from '@pancakeswap/widgets-internal'
 import { TOKEN_RISK } from 'components/AccessRisk'
 import AccessRiskTooltips from 'components/AccessRisk/AccessRiskTooltips'
 import { useActiveChainId } from 'hooks/useActiveChainId'
+import { useSpeedQuote } from 'hooks/useSpeedQuote'
 import useTheme from 'hooks/useTheme'
 import { useWebNotifications } from 'hooks/useWebNotifications'
-import { ReactNode, Suspense, lazy, useCallback, useState } from 'react'
+import { ReactNode, lazy, useCallback, useState } from 'react'
 import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
 import { useSubgraphHealthIndicatorManager, useUserUsernameVisibility } from 'state/user/hooks'
 import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
 import { useUserTokenRisk } from 'state/user/hooks/useUserTokenRisk'
 import { useMMLinkedPoolByDefault } from 'state/user/mmLinkedPool'
-import { useSpeedQuote } from 'hooks/useSpeedQuote'
 import {
   useOnlyOneAMMSourceEnabled,
   useRoutingSettingChanged,
@@ -150,7 +150,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                 <Text>{t('Dark mode')}</Text>
                 <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'light' : 'dark')} />
               </Flex>
-              <Flex justifyContent="space-between" alignItems="center" mb="24px">
+              {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Subgraph Health Indicator')}</Text>
                   <QuestionHelper
@@ -169,8 +169,8 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                     setSubgraphHealth(!subgraphHealth)
                   }}
                 />
-              </Flex>
-              <Flex justifyContent="space-between" alignItems="center" mb="24px">
+              </Flex> */}
+              {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Show username')}</Text>
                   <QuestionHelper text={t('Shows username of wallet instead of bunnies')} placement="top" ml="4px" />
@@ -183,8 +183,8 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                     setUserUsernameVisibility(!userUsernameVisibility)
                   }}
                 />
-              </Flex>
-              <Flex justifyContent="space-between" alignItems="center" mb="24px">
+              </Flex> */}
+              {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Allow notifications')}</Text>
                   <QuestionHelper
@@ -199,10 +199,10 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                 <Suspense fallback={null}>
                   <WebNotiToggle enabled={enabled} />
                 </Suspense>
-              </Flex>
+              </Flex> */}
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
-                  <Text>{t('Show testnet')}</Text>
+                  <Text>{t('Show testnets')}</Text>
                 </Flex>
                 <Toggle
                   id="toggle-show-testnet"

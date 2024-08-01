@@ -3035,7 +3035,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Los incentivos pueden ganarse en Merkl o en la Granja, pero NO en ambos",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Para ganar recompensas de la Granja, sigue sembrando liquidez en PanIGNSwap e invierte tu token LP en la Granja.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Para ganar recompensas en Merkl, sigue sembrando liquidez en PanIGNSwap pero NO inviertas tu token LP en la Granja. Cobra tus recompensas directamente en ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Para activar los potenciadores de rendimiento de las granjas se requiere una posición de inversión activa de veIGN.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Para activar los potenciadores de rendimiento de las granjas se requiere una posición de inversión activa de veIGN.",
   "Yield booster active": "Potenciador de rendimiento activo",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Aumenta un número ilimitado de posiciones en todas las Granjas V3. El aumento se aplicará al invertir. Bloquea más IGN o amplía tu bloqueo para recibir un mayor incremento.",
   "Go to Lock": "Ve al asegurado",

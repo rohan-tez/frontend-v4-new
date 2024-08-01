@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Kannustimia voi ansaita joko Merklissä tai viljelmässä mutta EI molemmissa",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Ansaitaksesi viljelmäpalkintoja jatka likviditeetin kylvämistä PanIGNSwapissa ja LP-polettiasi viljelmässä.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Ansaitaksesi Merkl-palkintoja jatka likviditeetin kylvämistä PanIGNSwapissa, mutta älä panosta LP-polettiasi viljelmässä. Lunasta palkintosi suoraan kohteessa ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Aktiivinen veIGN-panostuspositio vaaditaan viljelmän tuoton parannusten aktivoimiseen.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Aktiivinen veIGN-panostuspositio vaaditaan viljelmän tuoton parannusten aktivoimiseen.",
   "Yield booster active": "Tuoton parannus aktiivinen",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Paranna rajoittamatonta määrää positioita kaikissa V3-viljelmissä. Parannusta käytetään panostettaessa. Lukitse enemmän IGNa tai pidennä lukitustasi saadaksesi suuremman parannuksen.",
   "Go to Lock": "Siirry lukitukseen",

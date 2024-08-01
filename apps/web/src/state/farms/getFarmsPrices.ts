@@ -22,13 +22,13 @@ export const nativeStableLpMap = {
     stable: 'BUSD',
   },
   [ChainId.ETHERLINK_TESTNET]: {
-    address: '0x9644e26Ef0Ec0659E453dD8035d6b2A169Eb65aa',
+    address: '',
     wNative: 'WXTZ',
-    stable: 'eUSD',
+    stable: 'USDC',
   },
   [ChainId.ETHERLINK]: {
-    address: '0x9644e26Ef0Ec0659E453dD8035d6b2A169Eb65aa',
+    address: '',
     wNative: 'WXTZ',
-    stable: 'eUSD',
+    stable: 'USDC',
   },
 }

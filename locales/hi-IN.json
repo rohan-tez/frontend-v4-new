@@ -3035,7 +3035,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "इंसेंटिव को Merkl या फार्म पर कमाया जा सकता है लेकिन दोनों पर नहीं",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "फार्म पुरस्कार जीतने के लिए PanIGNSwap पर सीडिंग लिक्विडिटी जारी रखें और फार्म में अपने LP टोकन को स्टेक करें।",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Merkl पुरस्कार जीतने के लिए PanIGNSwap में लिक्विडिटी सीडिंग जारी रखें लेकिन फार्म में अपना LP टोकन स्टेक न करें। अपने पुरस्कार सीधे यहां क्लेम करें ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "फ़ार्म यील्ड बूस्टर एक्टिवेट करने के लिए एक सक्रिय veIGN स्टेकिंग पोजीशन आवश्यक है।",
+  "An active veIGN staking position is required to activate farm yield boosters.": "फ़ार्म यील्ड बूस्टर एक्टिवेट करने के लिए एक सक्रिय veIGN स्टेकिंग पोजीशन आवश्यक है।",
   "Yield booster active": "यील्ड बूस्टर सक्रिय",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "सभी V3 फार्म पर पोजीशन की असीमित संख्या बूस्ट करें। बूस्ट स्टेकिंग करते समय लागू किया जाएगा। अधिक IGN लॉक करें या ज्यादा बूस्ट पाने के लिए अपना लॉक विस्तारित करें।",
   "Go to Lock": "लॉक पर जाएं",

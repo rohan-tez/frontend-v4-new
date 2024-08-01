@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "ஊக்கத்தொகைகளை Merkl அல்லது ஃபார்மில் பெறலாம் ஆனால் இரண்டிலும் அல்ல",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "ஃபார்ம் வெகுமதிகளைப் பெற, PanIGNSwapல் லிக்விடிட்டி உள்ளிடுவதைத் தொடரவும் மற்றும் ஃபார்மில் உங்கள் LP டோக்கனை ஸ்டேக் செய்யவும்.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Merkl வெகுமதிகளைப் பெற, PanIGNSwapல் லிக்விடிட்டியை உள்ளிடுவதைத் தொடரவும், ஆனால் உங்கள் LP டோக்கனை ஃபார்மில் ஸ்டேக் செய்ய வேண்டாம். உங்கள் வெகுமதிகளை இதில் நேரடியாகப் பெறுங்கள் ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "ஃபார்ம் மகசூல் பூஸ்டர்களைச் செயல்படுத்துவதற்கு செயலில் உள்ள veIGN ஸ்டேக்கிங் நிலை அவசியம்.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "ஃபார்ம் மகசூல் பூஸ்டர்களைச் செயல்படுத்துவதற்கு செயலில் உள்ள veIGN ஸ்டேக்கிங் நிலை அவசியம்.",
   "Yield booster active": "மகசூல் பூஸ்டர் செயலில் உள்ளது",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "அனைத்து V3 ஃபார்ம்களிலும் வரம்பற்ற நிலைகளை பூஸ்ட் செய்யவும். ஸ்டேக்கிங்கின்போது பூஸ்ட் பயன்படுத்தப்படும். அதிக மேம்படுத்தலைப் பெற, அதிக IGN-ஐப் பூட்டவும் அல்லது உங்கள் பூட்டை நீட்டிக்கவும்.",
   "Go to Lock": "பூட்டுக்குச் செல்",

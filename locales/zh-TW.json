@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "可以在 Merkl 或農場中賺取激勵，但不能兩者兼得",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "要賺取農場獎勵，請繼續在 PanIGNSwap 上播種流動性並在農場中質押您的 LP 代幣。",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "如要獲得 Markl 獎勵，您需要一直持有在 PanIGNSwap 上的流動性。注意不要將您的 LP 代幣質押進農場。請在這裡直接領取您的獎勵：",
-  "An active veIGN staking position is required for activating farm yield boosters.": "需要一個有效的 veIGN 質押倉位才能啟動農場收益助推器。",
+  "An active veIGN staking position is required to activate farm yield boosters.": "需要一個有效的 veIGN 質押倉位才能啟動農場收益助推器。",
   "Yield booster active": "收益助推器啟動",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "助推功能，可使用在無限制數量的 V3 農場質押部位以及 V3 農場上。質押時助推功能會啟動。鎖倉更多 IGN 或延長鎖倉期限以提升助推乘數。",
   "Go to Lock": "我要鎖倉",

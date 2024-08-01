@@ -48,6 +48,8 @@ export const v3Clients = {
   [ChainId.BASE_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BASE_TESTNET]),
   [ChainId.SCROLL_SEPOLIA]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.SCROLL_SEPOLIA]),
   [ChainId.OPBNB]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.OPBNB]),
+  [ChainId.ETHERLINK]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.ETHERLINK]),
+  [ChainId.ETHERLINK_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.ETHERLINK_TESTNET]),
 }
 
 export const v3InfoClients = { ...v3Clients, [ChainId.BSC]: new GraphQLClient(V3_BSC_INFO_CLIENT) }
@@ -63,6 +65,8 @@ export const v2Clients = {
   [ChainId.BASE]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.BASE]),
   [ChainId.ARBITRUM_ONE]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.ARBITRUM_ONE]),
   [ChainId.OPBNB]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.OPBNB]),
+  [ChainId.ETHERLINK]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.ETHERLINK]),
+  [ChainId.ETHERLINK_TESTNET]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.ETHERLINK_TESTNET]),
 }
 
 export const infoStableSwapClients = {
@@ -73,7 +77,7 @@ export const infoStableSwapClients = {
 export const infoServerClient = new GraphQLClient(INFO_CLIENT, {
   timeout: 5000,
   headers: {
-    origin: 'https://pancakeswap.finance',
+    origin: 'https://iguanadex.com',
   },
 })
 

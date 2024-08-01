@@ -15,7 +15,7 @@ export const Staking = () => {
 
   return (
     <StyledCard innerCardProps={{ padding: ['24px 16px', '24px 16px', '24px'] }}>
-      <Heading scale="md">{t('Increase your veCAKE')}</Heading>
+      <Heading scale="md">{t('Increase your veIGN')}</Heading>
 
       <Grid gridTemplateColumns={isDesktop ? '1fr 1fr' : '1fr'} mt={32} gridColumnGap="24px" gridRowGap="24px">
         <LockCakeForm />

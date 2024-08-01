@@ -70,7 +70,7 @@ export const useBCakeTooltipContent = () => {
     <>
       <Box mb="20px">
         {t(
-          'Yield Boosters allow you to boost your farming yields by locking CAKE in the fixed-term staking CAKE pool. The more CAKE you lock, and the longer you lock them, the higher the boost you will receive.',
+          'Yield Boosters allow you to boost your farming yields by locking IGN in the fixed-term staking IGN pool. The more IGN you lock, and the longer you lock them, the higher the boost you will receive.',
         )}
       </Box>
       <Box>
@@ -132,7 +132,7 @@ const CardContent: React.FC = () => {
           {t('Connect wallet to view booster')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active veCAKE staking position is required for activating farm yield boosters.')}
+          {t('An active veIGN staking position is required to activate farm yield boosters.')}
         </Text>
         <ConnectWalletButton width="100%" style={{ backgroundColor: theme.colors.textSubtle }} />
       </Box>
@@ -141,14 +141,14 @@ const CardContent: React.FC = () => {
     return (
       <Box width="100%">
         <Text color="textSubtle" fontSize={12} bold>
-          {t('No CAKE locked')}
+          {t('No IGN locked')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active veCAKE staking position is required for activating farm yield boosters.')}
+          {t('An active veIGN staking position is required to activate farm yield boosters.')}
         </Text>
         <NextLink href="/cake-staking" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-            {t('Go to CAKE Staking')}
+            {t('Go to IGN Staking')}
           </Button>
         </NextLink>
       </Box>
@@ -163,12 +163,12 @@ const CardContent: React.FC = () => {
       </Flex>
       <Text color="textSubtle" fontSize={12} mb="10px">
         {t(
-          'Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more CAKE or extend your lock to receive a higher boost.',
+          'Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.',
         )}
       </Text>
       <NextLink href="/cake-staking" passHref>
         <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-          {t('Go to CAKE Staking')}
+          {t('Go to IGN Staking')}
         </Button>
       </NextLink>
     </Box>

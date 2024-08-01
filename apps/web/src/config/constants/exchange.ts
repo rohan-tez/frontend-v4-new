@@ -86,8 +86,8 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
   [ChainId.ARBITRUM_SEPOLIA]: [arbSepoliaTokens.usdc, arbSepoliaTokens.weth],
   [ChainId.BASE_SEPOLIA]: [baseSepoliaTokens.usdc, baseSepoliaTokens.weth],
-  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.wxtz, etherlinkTestnetTokens.eusd, etherlinkTestnetTokens.tzbtc],
-  [ChainId.ETHERLINK]: [etherlinkTokens.wxtz, etherlinkTokens.eusd, etherlinkTestnetTokens.tzbtc],
+  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.wxtz, etherlinkTestnetTokens.usdc],
+  [ChainId.ETHERLINK]: [etherlinkTokens.wxtz, etherlinkTokens.usdc],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -112,20 +112,8 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
   [ChainId.ARBITRUM_SEPOLIA]: [arbSepoliaTokens.usdc, arbSepoliaTokens.weth],
   [ChainId.BASE_SEPOLIA]: [baseSepoliaTokens.usdc, baseSepoliaTokens.weth],
-  [ChainId.ETHERLINK_TESTNET]: [
-    etherlinkTestnetTokens.wxtz,
-    etherlinkTestnetTokens.eusd,
-    etherlinkTestnetTokens.usdc,
-    etherlinkTestnetTokens.usdt,
-    etherlinkTestnetTokens.ign,
-  ],
-  [ChainId.ETHERLINK]: [
-    etherlinkTokens.wxtz,
-    etherlinkTokens.eusd,
-    etherlinkTokens.usdc,
-    etherlinkTokens.usdt,
-    etherlinkTokens.ign,
-  ],
+  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.wxtz, etherlinkTestnetTokens.usdc, etherlinkTestnetTokens.usdt],
+  [ChainId.ETHERLINK]: [etherlinkTokens.wxtz, etherlinkTokens.usdc, etherlinkTokens.usdt],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -154,15 +142,17 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   [ChainId.BASE]: [[baseTokens.usdc, baseTokens.weth]],
   [ChainId.BASE_TESTNET]: [[baseTestnetTokens.usdc, baseTestnetTokens.weth]],
   [ChainId.SCROLL_SEPOLIA]: [[scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth]],
+  [ChainId.ARBITRUM_SEPOLIA]: [
+    [arbitrumTokens.weth, arbitrumTokens.usdt],
+    [arbitrumTokens.weth, arbitrumTokens.usdc],
+  ],
   [ChainId.ETHERLINK_TESTNET]: [
-    [etherlinkTestnetTokens.ign, etherlinkTestnetTokens.wxtz],
-    [etherlinkTestnetTokens.wxtz, etherlinkTestnetTokens.eusd],
-    [etherlinkTestnetTokens.usdt, etherlinkTestnetTokens.eusd],
+    [etherlinkTestnetTokens.wxtz, etherlinkTestnetTokens.usdc],
+    [etherlinkTestnetTokens.usdt, etherlinkTestnetTokens.usdc],
   ],
   [ChainId.ETHERLINK]: [
-    [etherlinkTokens.ign, etherlinkTokens.wxtz],
-    [etherlinkTokens.wxtz, etherlinkTokens.eusd],
-    [etherlinkTokens.usdt, etherlinkTokens.eusd],
+    [etherlinkTokens.wxtz, etherlinkTokens.usdc],
+    [etherlinkTokens.usdt, etherlinkTokens.usdc],
   ],
 }
 

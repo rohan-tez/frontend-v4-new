@@ -24,7 +24,7 @@ import mapValues from 'lodash/mapValues'
 import { arbitrum, base, bsc, linea, mainnet, opBNB, polygonZkEvm, zkSync } from 'wagmi/chains'
 
 const etherlink = {
-  id: 42793,
+  id: 42_793,
   name: 'Etherlink',
   network: 'etherlink',
   nativeCurrency: {
@@ -33,8 +33,8 @@ const etherlink = {
     symbol: 'XTZ',
   },
   rpcUrls: {
-    public: { http: ['https://node.etherlink.com'] },
-    default: { http: ['https://node.etherlink.com'] },
+    public: { http: ['https://node.mainnet.etherlink.com'] },
+    default: { http: ['https://node.mainnet.etherlink.com'] },
   },
   blockExplorers: {
     etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
@@ -43,7 +43,7 @@ const etherlink = {
   contracts: {
     multicall3: {
       address: '0xcA11bde05977b3631167028862bE2a173976CA11',
-      blockCreated: 500,
+      blockCreated: 33899,
     },
   },
 } as const

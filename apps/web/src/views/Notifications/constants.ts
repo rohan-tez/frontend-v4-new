@@ -1,6 +1,6 @@
 import { ChainId } from '@pancakeswap/chains'
-import { OptionProps } from '@pancakeswap/uikit'
 import { ContextApi } from '@pancakeswap/localization'
+import { OptionProps } from '@pancakeswap/uikit'
 import {
   EventInformation,
   PancakeNotificationBuilders,
@@ -111,6 +111,7 @@ export const CHAIN_NAME_TO_CHAIN_ID = {
   arbitrum: ChainId.ARBITRUM_ONE,
   linea: ChainId.LINEA,
   base: ChainId.BASE,
+  etherlink: ChainId.ETHERLINK,
 }
 
 export const ENABLE_ALL_SCOPES = [

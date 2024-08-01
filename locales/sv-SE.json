@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Incitament kan tjänas in på antingen Merkl eller Farm men INTE på båda",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "För att få Farm-belöningar fortsätter du att sprida likviditet på PanIGNSwap och satsar din LP-token på Farmen.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "För att tjäna Merkl-belöningar, fortsätt att så likviditet på PanIGNSwap men satsa INTE din LP-token på farmen. Hämta dina belöningar direkt på ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Det krävs en aktiv veIGN-insatsposition för att aktivera avkastningsförbättringar i farmer.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Det krävs en aktiv veIGN-insatsposition för att aktivera avkastningsförbättringar i farmer.",
   "Yield booster active": "Avkastningsförbättring aktiv",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Förbättrar obegränsat antal positioner på alla V3-farmar. Boost kommer att tillämpas vid insats. Lås mer IGN eller förläng ditt lås för att få en högre boost.",
   "Go to Lock": "Gå till lås",

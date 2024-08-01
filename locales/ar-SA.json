@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "يمكن ربح الحوافز إما على Merkl أو المزرعة ولكن ليس على كليهما",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "لربح مكافآت المزرعة، استمر في بذر السيولة على PanIGNSwap ورهن رموز LP المميزة في المزرعة.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "لربح مكافآت Merkl، استمر في بذر السيولة على PanIGNSwap لكن لا ترهن رمز LP المميز الخاص بك في المزرعة. اطلب المكافآت مباشرة على ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "مطلوب مركز رهان veIGN نشط لتنسيط معززات عوائد المزرعة.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "مطلوب مركز رهان veIGN نشط لتنسيط معززات عوائد المزرعة.",
   "Yield booster active": "معزز العائد نشط",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "تعزيز عدد غير محدود من المراكز على جميع مزارع الإصدار الثالث V3. سيتم تطبيق التعزيز عند الرهن. قم بتجميد المزيد من IGN أو قم بتمديد التجميد لاستلام تعزيز أعلى.",
   "Go to Lock": "انتقل إلى التجميد",

@@ -3037,7 +3037,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Puwedeng makakuha ng mga insentibo sa alinman sa Merkl o Farm per HINDI sa pareho",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Para makakuha ng mga reward ng Farm, magpatuloy sa pag-seed ng liquidity sa PanIGNSwap at i-stake ang iyong LP token sa Farm.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Para makakuha ng mga reward ng Merkl, patuloy na mag-seed ng liquidity sa PanIGNSwap, pero HUWAG i-stake ang LP token mo sa Farm. I-claim ang mga reward mo nang direkta sa ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Kinakailangang ng aktibong veIGN staking position para sa pag-activate ng mga booster ng yield ng farm.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Kinakailangang ng aktibong veIGN staking position para sa pag-activate ng mga booster ng yield ng farm.",
   "Yield booster active": "Aktibong booster ng yield",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Mag-boost ng walang limitasyong bilang ng mga posisyon sa lahat ng V3 Farm. Ia-apply ang boost kapag nag-i-stake. Mag-lock ng higit pang IGN o i-extend ang iyong lock para tumanggap ng mas mataas na boost.",
   "Go to Lock": "Pumunta sa Lock",

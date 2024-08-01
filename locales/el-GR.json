@@ -3035,7 +3035,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Τα κίνητρα μπορούν να κερδηθούν είτε στο Merkl είτε στη Farm, αλλά ΟΧΙ και από τα δύο",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Για να κερδίσετε τις ανταμοιβές της Farm, συνεχίστε να παρέχετε ρευστότητα στο PanIGNSwap και κάντε stake το νόμισμά σας LP σας στη Farm.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Για να κερδίσετε ανταμοιβές Merkl, συνεχίστε να παρέχετε ρευστότητα στο PanIGNSwap, αλλά ΜΗΝ κάνετε stake το νόμισμά σας LP στη Farm. Διεκδικήστε τις ανταμοιβές σας απευθείας στο ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Για την ενεργοποίηση των ενισχυτών απόδοσης farm απαιτείται μια ενεργή θέση staking veIGN.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Για την ενεργοποίηση των ενισχυτών απόδοσης farm απαιτείται μια ενεργή θέση staking veIGN.",
   "Yield booster active": "Ενεργή ενίσχυση απόδοσης",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Ενισχύστε απεριόριστο αριθμό θέσεων σε όλες τις Farm V3. Η ενίσχυση θα εφαρμοστεί κατά την τοποθέτηση του staking. Κλειδώστε περισσότερα IGN ή παρατείνετε το κλείδωμά σας για να λάβετε μεγαλύτερη ενίσχυση.",
   "Go to Lock": "Μετάβαση στο κλείδωμα",

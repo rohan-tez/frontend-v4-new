@@ -48,7 +48,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Claim freshly cooked IGN rewards weekly on Thursday from veIGN gauge emission as well as trading revenue sharing.',
+                  'Claim freshly cooked IGN rewards weekly on Thursday from veIGN gauge emissions as well as trading revenue sharing.',
                 )}
                 placement="top"
                 ml="4px"
@@ -64,7 +64,7 @@ const CakeStaking = () => {
               <QuestionHelper
                 size="20px"
                 text={t(
-                  'Use your veIGN to vote for your favorite farms and any upcoming IGN emission product to increase your allocation and get more IGN rewards.',
+                  'Use your veIGN to vote for your favorite farms and any upcoming IGN emissions product to increase your allocation and get more IGN rewards.',
                 )}
                 placement="top"
                 ml="4px"

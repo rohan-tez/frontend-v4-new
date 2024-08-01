@@ -50,7 +50,7 @@ export const BENEFITS: Record<BenefitCardType, BenefitItem> = {
     subTitle: <Trans>Number of Proposals</Trans>,
     btnText: <Trans>Check Snapshot Voting</Trans>,
     link: '/voting',
-    desc: [<Trans>Use your veCAKE to vote on important governance proposals</Trans>],
+    desc: [<Trans>Use your veIGN to vote on important governance proposals</Trans>],
     key: 'benefit-snapshot-voting',
   },
   ifo: {
@@ -71,7 +71,7 @@ export const BENEFITS: Record<BenefitCardType, BenefitItem> = {
       <Trans>Boost your earnings in fixed staking.</Trans>,
       <Trans>More to come...</Trans>,
     ],
-    link: 'https://docs.pancakeswap.finance/products',
+    link: 'https://docs.iguanadex.com/products',
     key: 'benefit-more',
   },
 }

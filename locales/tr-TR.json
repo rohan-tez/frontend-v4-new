@@ -3039,7 +3039,7 @@
   "Incentives can be earned on either Merkl or Farm but NOT both": "Teşvikler Merkl'de veya Farm'da kazanılabilir ancak aynı anda her ikisinde KAZANILAMAZ",
   "To earn Farm rewards, continue seeding liquidity on PanIGNSwap and stake your LP token in the Farm.": "Farm ödülleri kazanmak için PanIGNSwap'ta likidite sağlamaya devam edin ve Farm'da LP token'ınızı stake edin.",
   "To earn Merkl rewards, continue seeding liquidity on PanIGNSwap but DO NOT stake your LP token in the Farm. Claim your rewards directly on ": "Merkl ödülleri kazanmak için PanIGNSwap'ta likidite sağlamaya devam edin ancak Farm'da LP token'ınızı stake ETMEYİN. Ödüllerinizi doğrudan şuradan alın: ",
-  "An active veIGN staking position is required for activating farm yield boosters.": "Farm fayda artışlarını etkinleştirmek için aktif bir veIGN staking pozisyonu gereklidir.",
+  "An active veIGN staking position is required to activate farm yield boosters.": "Farm fayda artışlarını etkinleştirmek için aktif bir veIGN staking pozisyonu gereklidir.",
   "Yield booster active": "Fayda artışı aktif",
   "Boost unlimited number of positions on all V3 Farms. Boost will be applied when staking. Lock more IGN or extend your lock to receive a higher boost.": "Tüm V3 Farmlarında sınırsız sayıda pozisyona artış uygulayın. Artış, staking sırasında uygulanır. Daha yüksek bir artış elde etmek için daha fazla IGN kilitleyin veya kilidinizin süresini uzatın.",
   "Go to Lock": "Kilide git",

@@ -67,13 +67,13 @@ const etherlinkTestnet = {
     default: { http: ['https://node.ghostnet.etherlink.com'] },
   },
   blockExplorers: {
-    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
-    default: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
+    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet.explorer.etherlink.com/' },
+    default: { name: 'Testnet Etherscout', url: 'https://testnet.explorer.etherlink.com/' },
   },
   contracts: {
     multicall3: {
       address: '0xcA11bde05977b3631167028862bE2a173976CA11',
-      blockCreated: 500,
+      blockCreated: 220050,
     },
   },
 } as const satisfies Chain
@@ -88,8 +88,8 @@ const etherlink = {
     symbol: 'XTZ',
   },
   rpcUrls: {
-    public: { http: ['https://node.etherlink.com'] },
-    default: { http: ['https://node.etherlink.com'] },
+    public: { http: ['https://node.mainnet.etherlink.com'] },
+    default: { http: ['https://node.mainnet.etherlink.com'] },
   },
   blockExplorers: {
     etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
@@ -98,7 +98,7 @@ const etherlink = {
   contracts: {
     multicall3: {
       address: '0xcA11bde05977b3631167028862bE2a173976CA11',
-      blockCreated: 500,
+      blockCreated: 33899,
     },
   },
 } as const satisfies Chain
