@@ -54,7 +54,7 @@ const bsc = {
 } satisfies Chain
 
 const etherlinkTestnet = {
-  id: ChainId.ETHERLINK_TESTNET,
+  id: 128123,
   name: 'Etherlink Testnet',
   network: 'Etherlink Testnet',
   nativeCurrency: {
@@ -79,7 +79,7 @@ const etherlinkTestnet = {
 } as const satisfies Chain
 
 const etherlink = {
-  id: ChainId.ETHERLINK,
+  id: 42793,
   name: 'Etherlink',
   network: 'Etherlink',
   nativeCurrency: {
