@@ -1,7 +1,7 @@
 import { ChainId, getV3Subgraphs } from '@pancakeswap/chains'
 import { OnChainProvider, SubgraphProvider } from '@pancakeswap/smart-router'
 import { GraphQLClient } from 'graphql-request'
-import { createPublicClient, http } from 'viem'
+import { Chain, createPublicClient, http } from 'viem'
 import { bsc, bscTestnet, goerli, mainnet } from 'viem/chains'
 
 import { SupportedChainId } from './constants'
@@ -22,7 +22,7 @@ requireCheck.forEach((node) => {
 })
 
 const etherlinkTestnet = {
-  id: 128123,
+  id: 128_123,
   name: 'Etherlink Testnet',
   network: 'etherlink-testnet',
   nativeCurrency: {
@@ -35,19 +35,19 @@ const etherlinkTestnet = {
     default: { http: ['https://node.ghostnet.etherlink.com'] },
   },
   blockExplorers: {
-    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
-    default: { name: 'Testnet Etherscout', url: 'https://testnet-explorer.etherlink.com/' },
+    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet.explorer.etherlink.com/' },
+    default: { name: 'Testnet Etherscout', url: 'https://testnet.explorer.etherlink.com/' },
   },
   contracts: {
     multicall3: {
       address: '0xcA11bde05977b3631167028862bE2a173976CA11',
-      blockCreated: 500,
+      blockCreated: 220050,
     },
   },
 } as const satisfies Chain
 
 const etherlink = {
-  id: 42793,
+  id: 42_793,
   name: 'Etherlink',
   network: 'etherlink',
   nativeCurrency: {
@@ -56,8 +56,8 @@ const etherlink = {
     symbol: 'XTZ',
   },
   rpcUrls: {
-    public: { http: ['https://node.etherlink.com'] },
-    default: { http: ['https://node.etherlink.com'] },
+    public: { http: ['https://node.mainnet.etherlink.com'] },
+    default: { http: ['https://node.mainnet.etherlink.com'] },
   },
   blockExplorers: {
     etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
@@ -66,7 +66,7 @@ const etherlink = {
   contracts: {
     multicall3: {
       address: '0xcA11bde05977b3631167028862bE2a173976CA11',
-      blockCreated: 500,
+      blockCreated: 33899,
     },
   },
 } as const satisfies Chain

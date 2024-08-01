@@ -19,7 +19,23 @@ const CACHE_TIME = {
   [ChainId.BSC]: 2,
   [ChainId.BSC_TESTNET]: 2,
   [ChainId.ETHERLINK_TESTNET]: 10,
-  [ChainId.ETHERLINK]: 2,
+  [ChainId.ETHERLINK]: 10,
+  [ChainId.ZKSYNC_TESTNET]: 10,
+  [ChainId.ZKSYNC]: 10,
+  [ChainId.OPBNB_TESTNET]: 10,
+  [ChainId.OPBNB]: 10,
+  [ChainId.POLYGON_ZKEVM]: 10,
+  [ChainId.POLYGON_ZKEVM_TESTNET]: 10,
+  [ChainId.ARBITRUM_GOERLI]: 10,
+  [ChainId.ARBITRUM_ONE]: 10,
+  [ChainId.ARBITRUM_SEPOLIA]: 10,
+  [ChainId.SCROLL_SEPOLIA]: 10,
+  [ChainId.LINEA]: 10,
+  [ChainId.LINEA_TESTNET]: 10,
+  [ChainId.BASE]: 10,
+  [ChainId.BASE_TESTNET]: 10,
+  [ChainId.BASE_SEPOLIA]: 10,
+  [ChainId.SEPOLIA]: 10,
 }
 
 const onChainQuoteProvider = SmartRouter.createQuoteProvider({ onChainProvider: viemProviders })
@@ -218,3 +234,7 @@ addEventListener('fetch', (event) =>
       .then((res) => wrapCorsHeader(event.request, res, { allowedOrigin: CORS_ALLOW })),
   ),
 )
+
+function sendLog(_e: unknown): any {
+  throw new Error('Function not implemented.')
+}
