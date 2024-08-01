@@ -9,6 +9,7 @@ export const DEFAULT_GAS_LIMIT_BY_CHAIN: { [key in ChainId]?: bigint } = {
   [ChainId.BASE]: 60000000n,
   [ChainId.OPBNB]: 100_000_000n,
   [ChainId.OPBNB_TESTNET]: 100_000_000n,
+  [ChainId.ETHERLINK_TESTNET]: 100000000n,
 }
 
 export const DEFAULT_GAS_BUFFER = 3000000n
