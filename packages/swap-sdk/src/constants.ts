@@ -60,7 +60,7 @@ export const INIT_CODE_HASH_MAP = {
   [ChainId.ARBITRUM_SEPOLIA]: INIT_CODE_HASH_ETH,
   [ChainId.BASE_SEPOLIA]: INIT_CODE_HASH_ETH,
   [ChainId.ETHERLINK]: INIT_CODE_HASH_ETH,
-  [ChainId.ETHERLINK_TESTNET]: INIT_CODE_HASH_ETH,
+  [ChainId.ETHERLINK_TESTNET]: '0xa5934690703a592a07e841ca29d5e5c79b5e22ed4749057bb216dc31100be1c0',
 } as const satisfies Record<ChainId, Hash>
 
 export const WXTZ = {
@@ -74,7 +74,7 @@ export const WXTZ = {
   ),
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
-    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
+    '0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb',
     18,
     'WXTZ',
     'Wrapped XTZ',
@@ -245,7 +245,7 @@ export const WETH9 = {
   ),
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
-    '0x8DEF68408Bc96553003094180E5C90d9fe5b88C1',
+    '0xfc24f770F94edBca6D6f885E12d4317320BcB401',
     18,
     'ETH',
     'Ether',
@@ -297,6 +297,14 @@ export const WBNB = {
   [ChainId.OPBNB]: new ERC20Token(
     ChainId.OPBNB,
     '0x4200000000000000000000000000000000000006',
+    18,
+    'WBNB',
+    'Wrapped BNB',
+    'https://www.binance.org'
+  ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xaA40A1cc1561c584B675cbD12F1423A32E2a0d8C',
     18,
     'WBNB',
     'Wrapped BNB',

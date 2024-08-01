@@ -9,6 +9,8 @@ import { baseTestnetTokens } from './constants/baseTestnet'
 import { bscTokens } from './constants/bsc'
 import { bscTestnetTokens } from './constants/bscTestnet'
 import { ethereumTokens } from './constants/eth'
+import { etherlinkTokens } from './constants/etherlink'
+import { etherlinkTestnetTokens } from './constants/etherlinkTestnet'
 import { goerliTestnetTokens } from './constants/goerli'
 import { lineaTokens } from './constants/linea'
 import { lineaTestnetTokens } from './constants/lineaTestnet'
@@ -42,4 +44,6 @@ export const allTokens = {
   [ChainId.SEPOLIA]: sepoliaTokens,
   [ChainId.ARBITRUM_SEPOLIA]: arbSepoliaTokens,
   [ChainId.BASE_SEPOLIA]: baseSepoliaTokens,
+  [ChainId.ETHERLINK]: etherlinkTokens,
+  [ChainId.ETHERLINK_TESTNET]: etherlinkTestnetTokens,
 }

@@ -76,8 +76,8 @@ export const V2_ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.SEPOLIA]: '0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb',
   [ChainId.ARBITRUM_SEPOLIA]: '0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb',
   [ChainId.BASE_SEPOLIA]: '0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb',
-  [ChainId.ETHERLINK_TESTNET]: '0x82AAbf3C2e7f7c23A1D709A88A52f890b076A873',
-  [ChainId.ETHERLINK]: '0x82AAbf3C2e7f7c23A1D709A88A52f890b076A873',
+  [ChainId.ETHERLINK_TESTNET]: '0x498f589069B238dC4C3C71eCC703A1FC6600e724',
+  [ChainId.ETHERLINK]: '0x498f589069B238dC4C3C71eCC703A1FC6600e724',
 }
 
 export const STABLE_SWAP_INFO_ADDRESS: ChainMap<string> = {
@@ -135,8 +135,8 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.SEPOLIA]: [sepoliaTokens.usdc, sepoliaTokens.weth],
   [ChainId.ARBITRUM_SEPOLIA]: [arbSepoliaTokens.usdc, arbSepoliaTokens.weth],
   [ChainId.BASE_SEPOLIA]: [baseSepoliaTokens.usdc, baseSepoliaTokens.weth],
-  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.eusd, etherlinkTestnetTokens.wxtz],
-  [ChainId.ETHERLINK]: [etherlinkTokens.eusd, etherlinkTokens.usdc, etherlinkTokens.usdt, etherlinkTokens.wxtz],
+  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.usdc, etherlinkTokens.usdt, etherlinkTestnetTokens.wxtz],
+  [ChainId.ETHERLINK]: [etherlinkTokens.usdc, etherlinkTokens.usdt, etherlinkTokens.wxtz],
 }
 
 const czusd = new ERC20Token(ChainId.BSC, '0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70', 18, 'CZUSD', 'CZUSD')

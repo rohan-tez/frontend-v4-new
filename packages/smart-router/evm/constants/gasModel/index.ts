@@ -11,6 +11,7 @@ import {
   bscTokens,
   ethereumTokens,
   etherlinkTestnetTokens,
+  etherlinkTokens,
   goerliTestnetTokens,
   lineaTestnetTokens,
   lineaTokens,
@@ -45,7 +46,7 @@ export const usdGasTokensByChain = {
   [ChainId.ARBITRUM_SEPOLIA]: [arbSepoliaTokens.usdc],
   [ChainId.BASE_SEPOLIA]: [baseSepoliaTokens.usdc],
   [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.usdc],
-  [ChainId.ETHERLINK]: [ethereumTokens.usdc],
+  [ChainId.ETHERLINK]: [etherlinkTokens.usdc],
 } satisfies Record<ChainId, Token[]>
 
 export * from './stableSwap'

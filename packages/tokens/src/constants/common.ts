@@ -349,6 +349,13 @@ export const USDC = {
     'USDC',
     'USD Coin',
   ),
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9',
+    18,
+    'USDC',
+    'USD Coin',
+  ),
 }
 
 export const WXTZ = {
@@ -362,7 +369,7 @@ export const WXTZ = {
   ),
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
-    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
+    '0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb',
     18,
     'WXTZ',
     'Wrapped XTZ',
@@ -425,7 +432,7 @@ export const USDT = {
   ),
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
-    '0xD21B917D2f4a4a8E3D12892160BFFd8f4cd72d4F',
+    '0x2C03058C8AFC06713be23e58D2febC8337dbfE6A',
     18,
     'USDT',
     'Tether USD',
@@ -446,6 +453,16 @@ export const eUSD = {
     18,
     'eUSD',
     'Etherlink USD',
+  ),
+}
+
+export const WBTC = {
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F',
+    18,
+    'WBTC',
+    'WBTC',
   ),
 }
 
@@ -495,6 +512,6 @@ export const STABLE_COIN = {
   [ChainId.SEPOLIA]: USDC[ChainId.SEPOLIA],
   [ChainId.ARBITRUM_SEPOLIA]: USDC[ChainId.ARBITRUM_SEPOLIA],
   [ChainId.BASE_SEPOLIA]: USDC[ChainId.BASE_SEPOLIA],
-  [ChainId.ETHERLINK_TESTNET]: eUSD[ChainId.ETHERLINK_TESTNET],
-  [ChainId.ETHERLINK]: eUSD[ChainId.ETHERLINK],
+  [ChainId.ETHERLINK_TESTNET]: USDC[ChainId.ETHERLINK_TESTNET],
+  [ChainId.ETHERLINK]: USDC[ChainId.ETHERLINK],
 } satisfies Record<ChainId, ERC20Token>

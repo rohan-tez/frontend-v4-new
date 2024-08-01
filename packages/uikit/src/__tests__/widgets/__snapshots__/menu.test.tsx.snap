@@ -2449,7 +2449,7 @@ exports[`renders correctly 1`] = `
             <a
               class="c12 c13"
               data-theme="dark"
-              href="https://github.com/pancakeswap"
+              href="https://github.com/iguana-dex"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2786,7 +2786,7 @@ exports[`renders correctly 1`] = `
         <a
           aria-label="Github"
           class="c20 c13"
-          href="https://github.com/pancakeswap/"
+          href="https://github.com/iguana-dex/"
           rel="noreferrer noopener"
           target="_blank"
         >

@@ -1,20 +1,20 @@
 import { ChainId } from '@pancakeswap/chains'
 import {
-  bsc,
-  bscTestnet,
-  goerli,
-  mainnet,
-  zkSync,
-  zkSyncTestnet,
-  polygonZkEvmTestnet,
-  polygonZkEvm,
-  lineaTestnet,
   arbitrum,
   arbitrumGoerli,
   base,
   baseGoerli,
-  scrollSepolia as scrollSepolia_,
+  bsc,
+  bscTestnet,
   Chain,
+  goerli,
+  lineaTestnet,
+  mainnet,
+  polygonZkEvm,
+  polygonZkEvmTestnet,
+  scrollSepolia as scrollSepolia_,
+  zkSync,
+  zkSyncTestnet,
 } from 'viem/chains'
 
 const scrollSepolia = {
@@ -53,6 +53,58 @@ export const opbnbTestnet = {
     },
   },
   testnet: true,
+} as const satisfies Chain
+
+const etherlinkTestnet = {
+  id: 128_123,
+  name: 'Etherlink Testnet',
+  network: 'etherlink-testnet',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.ghostnet.etherlink.com'] },
+    default: { http: ['https://node.ghostnet.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Testnet Etherscout', url: 'https://testnet.explorer.etherlink.com/' },
+    default: { name: 'Testnet Etherscout', url: 'https://testnet.explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 220050,
+    },
+  },
+  testnet: true,
+} as const satisfies Chain
+
+const etherlink = {
+  id: 42_793,
+  name: 'Etherlink',
+  network: 'etherlink',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.mainnet.etherlink.com'] },
+    default: { http: ['https://node.mainnet.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+    default: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 33899,
+    },
+  },
+  testnet: false,
 } as const satisfies Chain
 
 export const linea = {
@@ -109,6 +161,8 @@ export const L2_CHAIN_IDS: ChainId[] = [
   ChainId.BASE,
   ChainId.BASE_TESTNET,
   ChainId.OPBNB_TESTNET,
+  ChainId.ETHERLINK,
+  ChainId.ETHERLINK_TESTNET,
 ]
 
 export const CHAINS = [
@@ -128,6 +182,8 @@ export const CHAINS = [
   arbitrum,
   base,
   baseGoerli,
+  etherlink,
+  etherlinkTestnet,
   opbnbTestnet,
   scrollSepolia,
 ]

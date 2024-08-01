@@ -9,5 +9,6 @@ declare global {
   const ETHERLINK_NODE: string
   const ETHERLINK_TESTNET_NODE: string
   const NODE_REAL_SUBGRAPH_API_KEY: string
+
   const SUBGRAPH_POOLS: R2Bucket
 }

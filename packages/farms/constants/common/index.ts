@@ -60,16 +60,11 @@ export const priceHelperTokens = {
   },
   [ChainId.ETHERLINK]: {
     chain: 'etherlink',
-    list: [etherlinkTokens.eusd, etherlinkTokens.usdt, etherlinkTokens.usdc, etherlinkTokens.wxtz],
+    list: [etherlinkTokens.usdt, etherlinkTokens.usdc, etherlinkTokens.wxtz],
   },
   [ChainId.ETHERLINK_TESTNET]: {
     chain: 'etherlink-testnet',
-    list: [
-      etherlinkTestnetTokens.eusd,
-      etherlinkTestnetTokens.usdt,
-      etherlinkTestnetTokens.usdc,
-      etherlinkTestnetTokens.wxtz,
-    ],
+    list: [etherlinkTestnetTokens.usdt, etherlinkTestnetTokens.usdc, etherlinkTestnetTokens.wxtz],
   },
 } satisfies Record<number, PriceHelper>
 
@@ -100,11 +95,9 @@ export const DEFAULT_COMMON_PRICE: Record<FarmV3SupportedChainId, CommonPrice> =
   [ChainId.ETHERLINK_TESTNET]: {
     [etherlinkTestnetTokens.usdt.address]: '1',
     [etherlinkTestnetTokens.usdc.address]: '1',
-    [etherlinkTestnetTokens.eusd.address]: '1',
   },
   [ChainId.ETHERLINK]: {
     [etherlinkTokens.usdt.address]: '1',
     [etherlinkTokens.usdc.address]: '1',
-    [etherlinkTokens.eusd.address]: '1',
   },
 }

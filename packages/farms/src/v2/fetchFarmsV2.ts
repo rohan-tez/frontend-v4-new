@@ -1,6 +1,6 @@
 import { ChainId } from '@pancakeswap/chains'
-import { BIG_TWO, BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { CurrencyParams, getCurrencyKey, getCurrencyListUsdPrice } from '@pancakeswap/price-api-sdk'
+import { BIG_TWO, BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import BN from 'bignumber.js'
 import { Address, PublicClient, formatUnits } from 'viem'
 import { FarmV2SupportedChainId, supportedChainIdV2 } from '../const'
@@ -37,16 +37,6 @@ const evmNativeStableLpMap: Record<
     address: '0x4E96D2e92680Ca65D58A0e2eB5bd1c0f44cAB897',
     wNative: 'WBNB',
     stable: 'BUSD',
-  },
-  [ChainId.ETHERLINK_TESTNET]: {
-    address: '0x9644e26Ef0Ec0659E453dD8035d6b2A169Eb65aa',
-    wNative: 'WXTZ',
-    stable: 'eUSD',
-  },
-  [ChainId.ETHERLINK]: {
-    address: '0x9644e26Ef0Ec0659E453dD8035d6b2A169Eb65aa',
-    wNative: 'WXTZ',
-    stable: 'eUSD',
   },
 }
 

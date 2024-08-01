@@ -19,8 +19,8 @@ export const ICAKE = {
   [ChainId.LINEA_TESTNET]: '0x',
   [ChainId.POLYGON_ZKEVM_TESTNET]: '0x',
   [ChainId.OPBNB]: '0x',
-  [ChainId.ETHERLINK]: '0xBeEfb119631691a1e0D9378fA7864fC6E67A72Ad',
-  [ChainId.ETHERLINK_TESTNET]: '0xBeEfb119631691a1e0D9378fA7864fC6E67A72Ad',
+  [ChainId.ETHERLINK]: '0x',
+  [ChainId.ETHERLINK_TESTNET]: '0x',
 } as const satisfies ContractAddresses<SupportedChainId>
 
 export const CAKE_VAULT = {

@@ -1,6 +1,6 @@
-import { PublicClient, parseUnits } from 'viem'
 import { ChainId } from '@pancakeswap/chains'
 import chunk from 'lodash/chunk'
+import { PublicClient, parseUnits } from 'viem'
 import { SerializedStableFarmConfig } from '../types'
 
 const stableSwapAbi = [
@@ -43,25 +43,25 @@ export async function fetchStableFarmData(
           abi: stableSwapAbi,
           address: f.stableSwapAddress,
           functionName: 'balances',
-          args: [0n],
+          args: [BigInt(0)],
         },
         {
           abi: stableSwapAbi,
           address: f.stableSwapAddress,
           functionName: 'balances',
-          args: [1n],
+          args: [BigInt(1)],
         },
         {
           abi: stableSwapAbi,
           address: f.stableSwapAddress,
           functionName: 'get_dy',
-          args: [0n, 1n, parseUnits('1', f.token.decimals)],
+          args: [BigInt(0), BigInt(1), parseUnits('1', f.token.decimals)],
         },
         {
           abi: stableSwapAbi,
           address: f.stableSwapAddress,
           functionName: 'get_dy',
-          args: [1n, 0n, parseUnits('1', f.quoteToken.decimals)],
+          args: [BigInt(1), BigInt(0), parseUnits('1', f.quoteToken.decimals)],
         },
       ] as const,
   )

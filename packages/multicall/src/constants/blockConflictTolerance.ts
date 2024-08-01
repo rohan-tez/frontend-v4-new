@@ -11,6 +11,7 @@ export const BLOCK_CONFLICT_TOLERANCE: { [key in ChainId]?: number } = {
   [ChainId.LINEA]: 3,
   [ChainId.BASE]: 3,
   [ChainId.OPBNB]: 3,
+  [ChainId.ETHERLINK]: 5,
 
   // Testnets
   [ChainId.BSC_TESTNET]: 3,
@@ -22,4 +23,5 @@ export const BLOCK_CONFLICT_TOLERANCE: { [key in ChainId]?: number } = {
   [ChainId.OPBNB_TESTNET]: 3,
   [ChainId.BASE_TESTNET]: 3,
   [ChainId.SCROLL_SEPOLIA]: 3,
+  [ChainId.ETHERLINK_TESTNET]: 5,
 }
