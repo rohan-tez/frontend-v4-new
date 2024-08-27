@@ -83,8 +83,8 @@ const Menu = (props) => {
         footerLinks={getFooterLinks}
         activeItem={activeMenuItem?.href}
         activeSubItem={activeSubMenuItem?.href}
-        buyCakeLabel={t('Buy IGN')}
-        buyCakeLink={`https://iguanadex.com/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=${chainId}`}
+        buyCakeLabel={t('Buy XTZ')}
+        buyCakeLink={`https://iguanadex.com/swap?outputCurrency=XTZ&chainId=${chainId}`}
         {...props}
       />
     </>

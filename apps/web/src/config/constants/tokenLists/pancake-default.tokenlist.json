@@ -587,14 +587,6 @@
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/wbtc.png"
     },
     {
-      "name": "Iguana Token",
-      "symbol": "IGN",
-      "address": "0x17F9805664347022b59a8F67C1b8237b0AC5E89B",
-      "chainId": 42793,
-      "decimals": 18,
-      "logoURI": "https://raw.githubusercontent.com/IguanaDEX/assets/main/assets/0xBeEfb119631691a1e0D9378fA7864fC6E67A72Ad.png"
-    },
-    {
       "name": "Wrapped XTZ",
       "symbol": "WXTZ",
       "address": "0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb",
