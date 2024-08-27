@@ -7,12 +7,16 @@ export const footerLinks: FooterLinkType[] = [
     label: "About",
     items: [
       {
+        label: "Help",
+        href: "https://docs.iguanadex.com/help",
+      },
+      {
         label: "Contact",
         href: "https://docs.iguanadex.com/contact-us",
       },
       {
-        label: "Community",
-        href: "https://discord.gg/yq5bUaT7Cm",
+        label: "Etherlink Community",
+        href: "https://discord.gg/etherlink",
       },
       {
         label: "IGN",
@@ -21,28 +25,11 @@ export const footerLinks: FooterLinkType[] = [
     ],
   },
   {
-    label: "Help",
-    items: [
-      {
-        label: "Customer",
-        href: "Support https://docs.pancakeswap.finance/contact-us/customer-support",
-      },
-      {
-        label: "Troubleshooting",
-        href: "https://docs.pancakeswap.finance/help/troubleshooting",
-      },
-      {
-        label: "Guides",
-        href: "https://docs.pancakeswap.finance/get-started",
-      },
-    ],
-  },
-  {
     label: "Developers",
     items: [
       {
         label: "GitHub",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/iguanadex?tab=repositories",
       },
       {
         label: "Documentation",
@@ -60,7 +47,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://x.com/iguanadex",
+    href: "https://x.com/etherlink",
   },
   {
     label: "GitHub",
@@ -70,7 +57,7 @@ export const socials = [
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "https://discord.gg/yq5bUaT7Cm",
+    href: "https://discord.gg/etherlink",
   },
 ];
 

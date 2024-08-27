@@ -51,7 +51,7 @@ export const SMART_ROUTER_ADDRESSES = {
   [ChainId.SEPOLIA]: '0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86',
   [ChainId.ARBITRUM_SEPOLIA]: '0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86',
   [ChainId.BASE_SEPOLIA]: '0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86',
-  [ChainId.ETHERLINK]: '0x8a7bBf269B95875FC1829901bb2c815029d8442e',
+  [ChainId.ETHERLINK]: '0xbfe9C246A5EdB4F021C8910155EC93e7CfDaB7a0',
   [ChainId.ETHERLINK_TESTNET]: '0x8a7bBf269B95875FC1829901bb2c815029d8442e',
 } as const satisfies Record<ChainId, string>
 
@@ -77,7 +77,7 @@ export const V2_ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.ARBITRUM_SEPOLIA]: '0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb',
   [ChainId.BASE_SEPOLIA]: '0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb',
   [ChainId.ETHERLINK_TESTNET]: '0x498f589069B238dC4C3C71eCC703A1FC6600e724',
-  [ChainId.ETHERLINK]: '0x498f589069B238dC4C3C71eCC703A1FC6600e724',
+  [ChainId.ETHERLINK]: '0xC00c41492e243ec24Bf0B3038b74d7Bd48411e63',
 }
 
 export const STABLE_SWAP_INFO_ADDRESS: ChainMap<string> = {
@@ -135,7 +135,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.SEPOLIA]: [sepoliaTokens.usdc, sepoliaTokens.weth],
   [ChainId.ARBITRUM_SEPOLIA]: [arbSepoliaTokens.usdc, arbSepoliaTokens.weth],
   [ChainId.BASE_SEPOLIA]: [baseSepoliaTokens.usdc, baseSepoliaTokens.weth],
-  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.usdc, etherlinkTokens.usdt, etherlinkTestnetTokens.wxtz],
+  [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.usdc, etherlinkTestnetTokens.usdt, etherlinkTestnetTokens.wxtz],
   [ChainId.ETHERLINK]: [etherlinkTokens.usdc, etherlinkTokens.usdt, etherlinkTokens.wxtz],
 }
 

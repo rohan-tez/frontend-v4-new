@@ -311,6 +311,7 @@ export const useGetChainName = () => {
   const { pathname, query } = useRouter()
 
   const getChain = useCallback(() => {
+    if (pathname.includes('etherlink') || query.chain === 'etherlink') return 'ETHERLINK'
     if (pathname.includes('eth') || query.chain === 'eth') return 'ETH'
     return 'BSC'
   }, [pathname, query])
@@ -342,6 +343,8 @@ export const useChainNameByQuery = (): MultiChainName => {
         return 'BASE'
       case 'opbnb':
         return 'OPBNB'
+      case 'etherlink':
+        return 'ETHERLINK'
       default:
         return 'BSC'
     }

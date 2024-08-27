@@ -1,5 +1,5 @@
-import { useTranslation } from '@pancakeswap/localization'
 import { ChainId } from '@pancakeswap/chains'
+import { useTranslation } from '@pancakeswap/localization'
 import {
   Box,
   ButtonMenu,
@@ -13,16 +13,41 @@ import {
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
 import { ChainLogo } from 'components/Logo/ChainLogo'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import { useRouter } from 'next/router'
 import { useCallback, useMemo } from 'react'
 import { multiChainId, multiChainPaths, multiChainShortName } from 'state/info/constant'
 import { useChainNameByQuery, useMultiChainPath } from 'state/info/hooks'
 import { styled } from 'styled-components'
 import { chains } from 'utils/wagmi'
-import { arbitrum, bsc, mainnet, polygonZkEvm, zkSync, linea, base, opBNB } from 'wagmi/chains'
+import { bsc, Chain, mainnet } from 'wagmi/chains'
 import { v3InfoPath } from '../../constants'
 import Search from '../Search'
+
+const etherlink = {
+  id: 42_793,
+  name: 'Etherlink',
+  network: 'etherlink',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.mainnet.etherlink.com'] },
+    default: { http: ['https://node.mainnet.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+    default: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 33899,
+    },
+  },
+} as const satisfies Chain
 
 const NavWrapper = styled(Flex)`
   background: ${({ theme }) => theme.colors.gradientCardHeader};
@@ -75,7 +100,7 @@ const InfoNav: React.FC<{ isStableSwap: boolean }> = ({ isStableSwap }) => {
   )
 }
 
-const targetChains = [mainnet, bsc, polygonZkEvm, zkSync, arbitrum, linea, base, opBNB]
+const targetChains = [etherlink, mainnet, bsc]
 
 export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex }) => {
   const { t } = useTranslation()
@@ -97,7 +122,7 @@ export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex
     <UserMenu
       alignItems="top"
       ml="8px"
-      avatarSrc={`${ASSET_CDN}/web/chains/${multiChainId[chainName]}.png`}
+      avatarSrc={`${PANCAKE_ASSET_CDN}/web/chains/${multiChainId[chainName]}.png`}
       text={
         foundChain ? (
           <>

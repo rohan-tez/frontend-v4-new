@@ -81,7 +81,7 @@ const Header = styled.div`
   font-size: 25px;
   line-height: 98%;
   letter-spacing: 0.01em;
-  color: #f2d76d;
+  color: #ffffff;
   margin-top: 18px;
   margin-bottom: 20px;
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -139,7 +139,7 @@ const BaseBanner = () => {
               unoptimized
             />
           </Flex>
-          <Header color="#f2d76d">{t('Swap and Provide Liquidity Now')}</Header>
+          <Header color="primary">{t('Swap and Provide Liquidity Now')}</Header>
           {/* {!isMobile && <SubTitle>{t('Swap and Provide Liquidity Now')}</SubTitle>} */}
           <NextLinkFromReactRouter to="/swap">
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>

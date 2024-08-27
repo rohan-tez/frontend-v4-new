@@ -4,15 +4,15 @@ import { Token } from '@pancakeswap/swap-sdk-core'
 import { Box, Skeleton, TokenPairImage } from '@pancakeswap/uikit'
 import { FiatLogo } from 'components/Logo/CurrencyLogo'
 import { getImageUrlFromToken } from 'components/TokenImage'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { ASSET_CDN, PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/image'
 import { HtmlHTMLAttributes } from 'react'
 import { ONRAMP_PROVIDERS, isNativeBtc } from 'views/BuyCrypto/constants'
 
 const PROVIDER_ICONS = {
-  [ONRAMP_PROVIDERS.MoonPay]: `${ASSET_CDN}/web/onramp/moonpay.svg`,
-  [ONRAMP_PROVIDERS.Mercuryo]: `${ASSET_CDN}/web/onramp/mercuryo.svg`,
-  [ONRAMP_PROVIDERS.Transak]: `${ASSET_CDN}/web/onramp/transak.svg`,
+  [ONRAMP_PROVIDERS.MoonPay]: `${PANCAKE_ASSET_CDN}/web/onramp/moonpay.svg`,
+  [ONRAMP_PROVIDERS.Mercuryo]: `${PANCAKE_ASSET_CDN}/web/onramp/mercuryo.svg`,
+  [ONRAMP_PROVIDERS.Transak]: `${PANCAKE_ASSET_CDN}/web/onramp/transak.svg`,
 } satisfies Record<keyof typeof ONRAMP_PROVIDERS, any>
 
 const OnRampProviderLogo = ({
@@ -49,7 +49,7 @@ export const EvmLogo = ({ mode, currency, size = 24 }: { mode: string; currency:
             width={size}
             height={size}
             primarySrc={getImageUrlFromToken(currency)}
-            secondarySrc={`https://assets.pancakeswap.finance/web/chains/${currency.chainId}.png`}
+            secondarySrc={`${ASSET_CDN}/chains/${currency.chainId}.png`}
           />
         </Box>
       )}
@@ -57,7 +57,7 @@ export const EvmLogo = ({ mode, currency, size = 24 }: { mode: string; currency:
   )
 }
 export const BtcLogo = ({ size = 24 }: { size?: number }) => (
-  <Image src={`${ASSET_CDN}/web/onramp/btc.svg`} alt="bitcoin-logo" width={size} height={size} />
+  <Image src={`${PANCAKE_ASSET_CDN}/web/onramp/btc.svg`} alt="bitcoin-logo" width={size} height={size} />
 )
 
 export const OnRampCurrencyLogo = ({ mode, currency, size = 28 }: { mode: string; currency: Token; size?: number }) => {

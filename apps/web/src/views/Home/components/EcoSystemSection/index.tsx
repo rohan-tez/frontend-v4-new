@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, ChevronRightIcon, Flex, Text, useMatchBreakpoints, useModal } from '@pancakeswap/uikit'
 import USCitizenConfirmModal from 'components/Modal/USCitizenConfirmModal'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import useTheme from 'hooks/useTheme'
 import { IdType, useUserNotUsCitizenAcknowledgement } from 'hooks/useUserIsUsCitizenAcknowledgement'
@@ -172,32 +172,32 @@ const useTradeBlockData = () => {
         title: t('Swap'),
         description: t('Trade crypto instantly across multiple chains'),
         ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/trade-swap.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-swap-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/trade-swap.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/trade-swap-purple.png`,
         path: '/swap',
       },
       {
         title: t('Liquidity'),
         description: t('Fund liquidity pools, earn trading fees'),
         ctaTitle: t('Add Now'),
-        image: `${ASSET_CDN}/web/landing/trade-liquidity.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-liquidity-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/trade-liquidity.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/trade-liquidity-purple.png`,
         path: '/liquidity',
       },
       {
         title: t('Bridge'),
         description: t('Seamlessly transfer assets across chains'),
         ctaTitle: t('Bridge Now'),
-        image: `${ASSET_CDN}/web/landing/trade-bridge.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-bridge-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/trade-bridge.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/trade-bridge-purple.png`,
         path: 'https://bridge.pancakeswap.finance/',
       },
       {
         title: t('Perpetual'),
         description: t('Trade endlessly without expiration dates'),
         ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/trade-perpetual.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-perpetual-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/trade-perpetual.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/trade-perpetual-purple.png`,
         onClick: () => {
           if (!userNotUsCitizenAcknowledgement) {
             onUSCitizenModalPresent()
@@ -210,8 +210,8 @@ const useTradeBlockData = () => {
         title: t('Buy Crypto'),
         description: t('Buy crypto with your preferred currency and payment method'),
         ctaTitle: t('Buy Now'),
-        image: `${ASSET_CDN}/web/landing/trade-buy-crypto.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/trade-buy-crypto-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/trade-buy-crypto.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/trade-buy-crypto-purple.png`,
         path: '/buy-crypto',
       },
     ]
@@ -226,40 +226,40 @@ const useEarnBlockData = () => {
         title: t('Farm'),
         description: t('Stake LP tokens, harvest CAKE'),
         ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-farm.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-farm-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/earn-farm.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/earn-farm-purple.png`,
         path: '/farms',
       },
       {
         title: t('Pools'),
         description: t('Stake CAKE, earn various rewards'),
         ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-pools.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-pools-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/earn-pools.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/earn-pools-purple.png`,
         path: '/pools',
       },
       {
         title: t('Liquid Staking'),
         description: t('Earn rewards while retaining asset flexibility'),
         ctaTitle: t('Add Now'),
-        image: `${ASSET_CDN}/web/landing/earn-liquidity-staking.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-liquidity-staking-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/earn-liquidity-staking.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/earn-liquidity-staking-purple.png`,
         path: '/liquid-staking',
       },
       {
         title: t('Simple Staking'),
         description: t('Earn rewards hassle-free with single-sided staking'),
         ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-fixed-staking.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-fixed-staking-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/earn-fixed-staking.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/earn-fixed-staking-purple.png`,
         path: '/simple-staking',
       },
       {
         title: t('Position Manager'),
         description: t('Automate your PancakeSwap v3 liquidity'),
         ctaTitle: t('Stake Now'),
-        image: `${ASSET_CDN}/web/landing/earn-pm.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/earn-pm-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/earn-pm.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/earn-pm-purple.png`,
         path: '/position-managers',
         className: 'adjust-height',
       },
@@ -275,24 +275,24 @@ const useNftGameBlockData = () => {
         title: t('Gaming Marketplace'),
         description: t('Play, Build and Connect on PancakeSwap'),
         ctaTitle: t('Play Now'),
-        image: `${ASSET_CDN}/web/landing/game-pancake-protectors.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/game-pancake-protectors-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/game-pancake-protectors.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/game-pancake-protectors-purple.png`,
         path: 'https://pancakeswap.games/',
       },
       {
         title: t('Prediction'),
         description: t('Forecast token prices within minutes'),
         ctaTitle: t('Try Now'),
-        image: `${ASSET_CDN}/web/landing/game-prediction.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/game-prediction-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/game-prediction.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/game-prediction-purple.png`,
         path: '/prediction',
       },
       {
         title: t('NFT Marketplace'),
         description: t('Trade unique NFTs on BNB Chain'),
         ctaTitle: t('Trade Now'),
-        image: `${ASSET_CDN}/web/landing/nft-marketplace.png`,
-        defaultImage: `${ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
+        image: `${PANCAKE_ASSET_CDN}/web/landing/nft-marketplace.png`,
+        defaultImage: `${PANCAKE_ASSET_CDN}/web/landing/nft-marketplace-purple.png`,
         path: '/nfts',
         className: 'adjust-height',
       },
@@ -381,7 +381,7 @@ const EcoSystemSection: React.FC = () => {
         >
           <Image
             style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={`${ASSET_CDN}/web/landing/trade-bunny.png`}
+            src={`${PANCAKE_ASSET_CDN}/web/landing/trade-bunny.png`}
             alt="trade-bunny"
             width={340}
             height={340}
@@ -416,7 +416,7 @@ const EcoSystemSection: React.FC = () => {
         >
           <Image
             style={{ marginRight: isMobile || isMd ? 'auto' : -72, marginLeft: isMobile || isMd ? 0 : 'auto' }}
-            src={`${ASSET_CDN}/web/landing/earn-bunny.png`}
+            src={`${PANCAKE_ASSET_CDN}/web/landing/earn-bunny.png`}
             alt="earn-bunny"
             width={296}
             height={360}
@@ -450,7 +450,7 @@ const EcoSystemSection: React.FC = () => {
         >
           <Image
             style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={`${ASSET_CDN}/web/landing/game-nft-bunny.png`}
+            src={`${PANCAKE_ASSET_CDN}/web/landing/game-nft-bunny.png`}
             alt="game-nft-bunny"
             width={344}
             height={360}

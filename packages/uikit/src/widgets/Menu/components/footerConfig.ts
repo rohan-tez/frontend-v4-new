@@ -10,8 +10,8 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
         href: "https://docs.iguanadex.com/community/contact-us",
       },
       {
-        label: t("Community"),
-        href: "https://discord.com/invite/yq5bUaT7Cm",
+        label: t("Etherlink Community"),
+        href: "https://discord.gg/etherlink",
       },
       {
         label: t("Brand Assets"),
@@ -32,7 +32,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: "GitHub",
-        href: "https://github.com/Iguana-DEX",
+        href: "https://github.com/iguanadex?tab=repositories",
       },
       {
         label: t("Documentation"),

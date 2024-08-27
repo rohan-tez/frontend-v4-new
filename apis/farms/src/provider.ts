@@ -48,6 +48,7 @@ const etherlinkTestnet = {
       blockCreated: 220050,
     },
   },
+  testnet: true,
 } as const satisfies Chain
 
 const etherlink = {

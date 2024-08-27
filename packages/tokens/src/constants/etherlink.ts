@@ -1,13 +1,15 @@
 import { ChainId } from '@pancakeswap/chains'
-import { WETH9, WXTZ } from '@pancakeswap/sdk'
-import { IGN, USDC, USDT, eUSD, tzBTC } from './common'
+import { WBNB, WETH9, WXTZ } from '@pancakeswap/sdk'
+import { IGN, SHIB, USDC, USDT, WAVAX, WBTC } from './common'
 
 export const etherlinkTokens = {
-  wxtz: WXTZ[ChainId.ETHERLINK_TESTNET],
-  ign: IGN[ChainId.ETHERLINK_TESTNET],
-  eusd: eUSD[ChainId.ETHERLINK_TESTNET],
-  usdt: USDT[ChainId.ETHERLINK_TESTNET],
-  usdc: USDC[ChainId.ETHERLINK_TESTNET],
-  weth: WETH9[ChainId.ETHERLINK_TESTNET],
-  tzbtc: tzBTC[ChainId.ETHERLINK_TESTNET],
+  wxtz: WXTZ[ChainId.ETHERLINK],
+  ign: IGN[ChainId.ETHERLINK],
+  usdt: USDT[ChainId.ETHERLINK],
+  usdc: USDC[ChainId.ETHERLINK],
+  weth: WETH9[ChainId.ETHERLINK],
+  wbtc: WBTC[ChainId.ETHERLINK],
+  wbnb: WBNB[ChainId.ETHERLINK],
+  wavax: WAVAX[ChainId.ETHERLINK],
+  shib: SHIB[ChainId.ETHERLINK],
 }

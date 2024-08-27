@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Button, Flex, Link, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import useTheme from 'hooks/useTheme'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import React, { memo, useCallback, useLayoutEffect, useRef } from 'react'
 import { css, styled } from 'styled-components'
 import { useDrawCanvas } from '../../hooks/useDrawCanvas'
@@ -326,7 +326,7 @@ const CakeSection: React.FC = () => {
     video.autoplay = true
     video.playsInline = true
     video.width = width
-    video.src = `${ASSET_CDN}/web/landing/cake-alpha.webm`
+    video.src = `${PANCAKE_ASSET_CDN}/web/landing/cake-alpha.webm`
     video.muted = true
     videoRef.current = video
   }, [isMobile])
@@ -354,7 +354,7 @@ const CakeSection: React.FC = () => {
   })
 
   const { drawSequenceImage, playing } = useDrawSequenceImages(
-    `${ASSET_CDN}/web/landing/cake-token-sequence`,
+    `${PANCAKE_ASSET_CDN}/web/landing/cake-token-sequence`,
     checkIsIOS() || isMobile ? 201 : 0,
     canvasRef,
     seqIntervalRef,
@@ -408,7 +408,7 @@ const CakeSection: React.FC = () => {
           fontSize={['32px', null, null, '40px']}
           lineHeight="110%"
         >
-          {t('CAKE')}
+          {t('IGN')}
         </Text>
       </Text>
       <Flex justifyContent="center">
@@ -427,7 +427,7 @@ const CakeSection: React.FC = () => {
       </Flex>
       <Flex justifyContent="center" style={{ gap: 14 }}>
         <Link href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56">
-          <Button variant="primary">{t('Buy CAKE')}</Button>
+          <Button variant="primary">{t('Buy IGN')}</Button>
         </Link>
         <Link href="https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics">
           <Button pl="0" endIcon={<OpenNewIcon color="primary" />} variant="text">

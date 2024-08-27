@@ -16,6 +16,8 @@ import {
 } from '../../constant'
 import { fetchTopPoolAddresses } from './topPools'
 
+multiChainQueryMainToken.ETHERLINK = 'ETH'
+
 interface PoolFields {
   id: string
   reserve0: string

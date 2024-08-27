@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import { keyframes, styled } from 'styled-components'
 import { useAccount } from 'wagmi'
 import SunburstSvg from './SunburstSvg'
@@ -80,10 +80,10 @@ const ImageWrapper = styled.div`
 const ImageBox: React.FC = () => {
   return (
     <ImageWrapper>
-      <Image className="pancake" src={`${ASSET_CDN}/web/landing/cta-pancake.png`} alt="pancake" />
-      <Image className="rock" src={`${ASSET_CDN}/web/landing/cta-rock.png`} alt="rock" />
-      <Image className="big-pancake" src={`${ASSET_CDN}/web/landing/cta-pancake-big.png`} alt="big-pancake" />
-      <Image className="rock2" src={`${ASSET_CDN}/web/landing/cta-rock-2.png`} alt="rock2" />
+      <Image className="pancake" src={`${PANCAKE_ASSET_CDN}/web/landing/cta-pancake.png`} alt="pancake" />
+      <Image className="rock" src={`${PANCAKE_ASSET_CDN}/web/landing/cta-rock.png`} alt="rock" />
+      <Image className="big-pancake" src={`${PANCAKE_ASSET_CDN}/web/landing/cta-pancake-big.png`} alt="big-pancake" />
+      <Image className="rock2" src={`${PANCAKE_ASSET_CDN}/web/landing/cta-rock-2.png`} alt="rock2" />
     </ImageWrapper>
   )
 }

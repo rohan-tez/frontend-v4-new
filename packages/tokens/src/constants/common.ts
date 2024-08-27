@@ -4,7 +4,7 @@ import { ERC20Token } from '@pancakeswap/sdk'
 export const IGN = {
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0x17F9805664347022b59a8F67C1b8237b0AC5E89B',
     18,
     'IGN',
     'Iguana Token',
@@ -352,28 +352,9 @@ export const USDC = {
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
     '0x796Ea11Fa2dD751eD01b53C372fFDB4AAa8f00F9',
-    18,
+    6,
     'USDC',
     'USD Coin',
-  ),
-}
-
-export const WXTZ = {
-  [ChainId.ETHERLINK_TESTNET]: new ERC20Token(
-    ChainId.ETHERLINK_TESTNET,
-    '0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8',
-    18,
-    'WXTZ',
-    'Wrapped XTZ',
-    'https://tezos.com',
-  ),
-  [ChainId.ETHERLINK]: new ERC20Token(
-    ChainId.ETHERLINK,
-    '0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb',
-    18,
-    'WXTZ',
-    'Wrapped XTZ',
-    'https://tezos.com',
   ),
 }
 
@@ -433,7 +414,7 @@ export const USDT = {
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
     '0x2C03058C8AFC06713be23e58D2febC8337dbfE6A',
-    18,
+    6,
     'USDT',
     'Tether USD',
   ),
@@ -447,23 +428,6 @@ export const eUSD = {
     'eUSD',
     'Etherlink USD',
   ),
-  [ChainId.ETHERLINK]: new ERC20Token(
-    ChainId.ETHERLINK,
-    '0x1A71f491fb0Ef77F13F8f6d2a927dd4C969ECe4f',
-    18,
-    'eUSD',
-    'Etherlink USD',
-  ),
-}
-
-export const WBTC = {
-  [ChainId.ETHERLINK]: new ERC20Token(
-    ChainId.ETHERLINK,
-    '0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F',
-    18,
-    'WBTC',
-    'WBTC',
-  ),
 }
 
 export const tzBTC = {
@@ -474,12 +438,52 @@ export const tzBTC = {
     'tzBTC',
     'tzBTC',
   ),
+  // [ChainId.ETHERLINK]: new ERC20Token(
+  //   ChainId.ETHERLINK,
+  //   '0x6bDE94725379334b469449f4CF49bCfc85ebFb27',
+  //   18,
+  //   'tzBTC',
+  //   'tzBTC',
+  // ),
+}
+
+export const WBTC = {
   [ChainId.ETHERLINK]: new ERC20Token(
     ChainId.ETHERLINK,
-    '0x6bDE94725379334b469449f4CF49bCfc85ebFb27',
+    '0xbFc94CD2B1E55999Cfc7347a9313e88702B83d0F',
+    8,
+    'WBTC',
+    'Wrapped BTC',
+  ),
+}
+
+export const WBNB = {
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xaA40A1cc1561c584B675cbD12F1423A32E2a0d8C',
     18,
-    'tzBTC',
-    'tzBTC',
+    'WBNB',
+    'Wrapped BNB',
+  ),
+}
+
+export const WAVAX = {
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xe820995cD39B6E09EAa7e4e16337184b4A61B644',
+    18,
+    'WAVAX',
+    'Wrapped AVAX',
+  ),
+}
+
+export const SHIB = {
+  [ChainId.ETHERLINK]: new ERC20Token(
+    ChainId.ETHERLINK,
+    '0xBBD1F50A212357067318a84179892684e1Ac5181',
+    18,
+    'SHIB',
+    'SHIBA INU',
   ),
 }
 

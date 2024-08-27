@@ -2449,7 +2449,7 @@ exports[`renders correctly 1`] = `
             <a
               class="c12 c13"
               data-theme="dark"
-              href="https://github.com/iguana-dex"
+              href="https://github.com/iguanadex?tab=repositories"
               rel="noreferrer noopener"
               target="_blank"
             >
@@ -2462,7 +2462,7 @@ exports[`renders correctly 1`] = `
             <a
               class="c12 c13"
               data-theme="dark"
-              href="https://docs.pancakeswap.finance"
+              href="https://docs.iguanadex.com"
               rel="noreferrer noopener"
               target="_blank"
             >

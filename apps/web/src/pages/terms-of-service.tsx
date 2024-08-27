@@ -34,7 +34,7 @@ const TermsOfService = () => {
   return (
     <Container>
       <Text as="h1">IguanaDEX Terms of Service</Text>
-      <Text as="h3">Last modified: Mar 29, 2024</Text>
+      <Text as="h3">Last modified: Aug 23, 2024</Text>
       <Text as="p">
         <Text as="span">
           These Terms of Service (the “Agreement”) explains the terms and conditions by which you may access and use

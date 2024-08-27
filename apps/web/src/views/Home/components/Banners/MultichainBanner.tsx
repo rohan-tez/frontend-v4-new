@@ -12,10 +12,10 @@ import {
   LinkExternalAction,
   PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 
-const bgMobile = `${ASSET_CDN}/web/banners/multichain/bg-mobile.png`
-const bgDesktop = `${ASSET_CDN}/web/banners/multichain/bg-desktop.png`
+const bgMobile = `${PANCAKE_ASSET_CDN}/web/banners/multichain/bg-mobile.png`
+const bgDesktop = `${PANCAKE_ASSET_CDN}/web/banners/multichain/bg-desktop.png`
 
 const bgSmVariant: GraphicDetail = {
   src: bgMobile,

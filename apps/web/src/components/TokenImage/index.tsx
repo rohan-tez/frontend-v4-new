@@ -6,7 +6,7 @@ import {
   TokenPairImage as UIKitTokenPairImage,
   TokenPairImageProps as UIKitTokenPairImageProps,
 } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { ASSET_CDN, PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 
 interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc' | 'secondarySrc'> {
   primaryToken: Token
@@ -22,17 +22,18 @@ export const tokenImageChainNameMapping = {
   [ChainId.LINEA]: 'linea/',
   [ChainId.BASE]: 'base/',
   [ChainId.OPBNB]: 'opbnb/',
+  [ChainId.ETHERLINK]: 'etherlink/',
 }
 
 export const getImageUrlFromToken = (token: Token) => {
   const address = token?.isNative ? token.wrapped.address : token.address
 
   if (token.chainId === ChainId.ETHERLINK_TESTNET || token.chainId === ChainId.ETHERLINK) {
-    return `https://raw.githubusercontent.com/Iguana-DEX/assets/main/assets/${address}.png`
+    return `${ASSET_CDN}/assets/${address}.png`
   }
 
   return token?.isNative && token.chainId !== ChainId.BSC
-    ? `${ASSET_CDN}/web/native/${token.chainId}.png`
+    ? `${PANCAKE_ASSET_CDN}/web/native/${token.chainId}.png`
     : `https://tokens.pancakeswap.finance/images/${tokenImageChainNameMapping[token.chainId]}${address}.png`
 }
 

@@ -1,5 +1,5 @@
 import { Svg, SvgProps } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/image'
 import React from 'react'
 
@@ -378,5 +378,5 @@ export const PartnerMetaMask: React.FC<React.PropsWithChildren<SvgProps>> = (pro
 )
 
 export const PartnerMobox: React.FC = () => (
-  <Image alt="mobox-logo" src={`${ASSET_CDN}/web/landing/mobox.png`} width={24} height={14} unoptimized />
+  <Image alt="mobox-logo" src={`${PANCAKE_ASSET_CDN}/web/landing/mobox.png`} width={24} height={14} unoptimized />
 )

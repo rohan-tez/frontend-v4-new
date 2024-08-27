@@ -1,5 +1,5 @@
 import { Image, Link } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import throttle from 'lodash/throttle'
 import { useEffect, useState } from 'react'
 import { styled } from 'styled-components'
@@ -36,7 +36,7 @@ export const V4CakeIcon = () => {
 
   return (
     <Container hasScrollToTopButton={hasScrollToTopButton} href="/v4">
-      <Image src={`${ASSET_CDN}/web/v4-landing/v4-icon.png`} alt="introducing-v4-icon" width={48} height={48} />
+      <Image src={`${PANCAKE_ASSET_CDN}/web/v4-landing/v4-icon.png`} alt="introducing-v4-icon" width={48} height={48} />
     </Container>
   )
 }

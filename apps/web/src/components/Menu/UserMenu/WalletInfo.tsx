@@ -35,6 +35,7 @@ import { Address, useBalance } from 'wagmi'
 const COLORS = {
   ETH: '#627EEA',
   BNB: '#14151A',
+  XTZ: `${({ theme }) => theme.colors.primary}`,
 }
 
 interface WalletInfoProps {
@@ -47,14 +48,14 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
   const { t } = useTranslation()
   const { account, chainId, chain } = useActiveWeb3React()
   const { domainName } = useDomainNameForAddress(account ?? '')
-  const isBSC = chainId === ChainId.BSC
-  const bnbBalance = useBalance({ address: account ?? undefined, chainId: ChainId.BSC })
-  const nativeBalance = useBalance({ address: account ?? undefined, enabled: !isBSC })
+  const isEtherlink = chainId === ChainId.ETHERLINK
+  const xtzBalance = useBalance({ address: account ?? undefined, chainId: ChainId.ETHERLINK })
+  const nativeBalance = useBalance({ address: account ?? undefined, enabled: !isEtherlink })
   const native = useNativeCurrency()
-  const wNativeToken = !isBSC ? WNATIVE[chainId as ChainId] : null
-  const wBNBToken = WNATIVE[ChainId.BSC]
+  const wNativeToken = !isEtherlink ? WNATIVE[chainId as ChainId] : null
+  const wXTZToken = WNATIVE[ChainId.ETHERLINK]
   const { balance: wNativeBalance, fetchStatus: wNativeFetchStatus } = useTokenBalance(wNativeToken?.address as Address)
-  const { balance: wBNBBalance, fetchStatus: wBNBFetchStatus } = useTokenBalance(wBNBToken?.address, true)
+  const { balance: wXTZBalance, fetchStatus: wXTZFetchStatus } = useTokenBalance(wXTZToken?.address, true)
   const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useBSCCakeBalance()
   const [mobileTooltipShow, setMobileTooltipShow] = useState(false)
   const { logout } = useAuth()
@@ -90,7 +91,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
     },
   )
 
-  const showBscEntryPoint = Number(bnbBalance?.data?.value) === 0
+  const showXtzEntryPoint = Number(xtzBalance?.data?.value) === 0
   const showNativeEntryPoint = Number(nativeBalance?.data?.value) === 0
 
   return (
@@ -120,7 +121,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
           </Box>
         </Message>
       )}
-      {!isBSC && chain && (
+      {!isEtherlink && chain && (
         <Box mb="12px">
           <Flex justifyContent="space-between" alignItems="center" mb="8px">
             <Flex bg={COLORS.ETH} borderRadius="16px" pl="4px" pr="8px" py="2px">
@@ -180,30 +181,30 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
 
       <Box mb="24px">
         <Flex justifyContent="space-between" alignItems="center" mb="8px">
-          <Flex bg={COLORS.BNB} borderRadius="16px" pl="4px" pr="8px" py="2px">
-            <ChainLogo chainId={ChainId.BSC} />
+          <Flex bg={COLORS.XTZ} borderRadius="16px" pl="4px" pr="8px" py="2px">
+            <ChainLogo chainId={ChainId.ETHERLINK} />
             <Text color="white" ml="4px">
-              BNB Smart Chain
+              Etherlink
             </Text>
           </Flex>
-          <ScanLink useBscCoinFallback href={getBlockExploreLink(account, 'address', ChainId.BSC)}>
-            {getBlockExploreName(ChainId.BSC)}
+          <ScanLink useBscCoinFallback href={getBlockExploreLink(account, 'address', ChainId.ETHERLINK)}>
+            {getBlockExploreName(ChainId.ETHERLINK)}
           </ScanLink>
         </Flex>
-        {chainId === 56 ? (
+        {chainId === 42793 ? (
           <Flex alignItems="center" justifyContent="space-between">
-            <Text color="textSubtle">BNB {t('Balance')}</Text>
-            {!bnbBalance.isFetched ? (
+            <Text color="textSubtle">XTZ {t('Balance')}</Text>
+            {!xtzBalance.isFetched ? (
               <Skeleton height="22px" width="60px" />
             ) : (
               <Flex alignItems="center" justifyContent="center">
                 <Text
-                  fontWeight={showBscEntryPoint ? 'bold' : 'normal'}
-                  color={showBscEntryPoint ? 'warning' : 'normal'}
+                  fontWeight={showXtzEntryPoint ? 'bold' : 'normal'}
+                  color={showXtzEntryPoint ? 'warning' : 'normal'}
                 >
-                  {formatBigInt(bnbBalance?.data?.value ?? 0n, 6)}
+                  {formatBigInt(xtzBalance?.data?.value ?? 0n, 6)}
                 </Text>
-                {showBscEntryPoint ? (
+                {showXtzEntryPoint ? (
                   <TooltipText
                     ref={buyCryptoTargetRef}
                     onClick={() => setMobileTooltipShow(false)}
@@ -218,18 +219,18 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
             )}
           </Flex>
         ) : null}
-        {wBNBBalance.gt(0) && (
+        {wXTZBalance.gt(0) && (
           <Flex alignItems="center" justifyContent="space-between">
-            <Text color="textSubtle">WBNB {t('Balance')}</Text>
-            {wBNBFetchStatus !== FetchStatus.Fetched ? (
+            <Text color="textSubtle">WXTZ {t('Balance')}</Text>
+            {wXTZFetchStatus !== FetchStatus.Fetched ? (
               <Skeleton height="22px" width="60px" />
             ) : (
-              <Text>{getFullDisplayBalance(wBNBBalance, wBNBToken.decimals, 6)}</Text>
+              <Text>{getFullDisplayBalance(wXTZBalance, wXTZToken.decimals, 6)}</Text>
             )}
           </Flex>
         )}
         <Flex alignItems="center" justifyContent="space-between">
-          <Text color="textSubtle">{t('CAKE Balance')}</Text>
+          <Text color="textSubtle">{t('IGN Balance')}</Text>
           {cakeFetchStatus !== FetchStatus.Fetched ? (
             <Skeleton height="22px" width="60px" />
           ) : (

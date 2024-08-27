@@ -3,28 +3,53 @@ import {
   ButtonMenu,
   ButtonMenuItem,
   Flex,
+  Message,
+  MessageText,
+  Text,
   UserMenu,
   UserMenuDivider,
   UserMenuItem,
-  Text,
-  Message,
-  MessageText,
 } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
-import { useCallback, useMemo } from 'react'
-import {} from 'hooks/useSwitchNetwork'
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
-import { useRouter } from 'next/router'
-import { styled } from 'styled-components'
-import Search from 'views/Info/components/InfoSearch'
-import { useMultiChainPath, useChainNameByQuery, useChainIdByQuery } from 'state/info/hooks'
-import { multiChainId, multiChainPaths, multiChainShortName } from 'state/info/constant'
-import { chains } from 'utils/wagmi'
 import { ChainLogo } from 'components/Logo/ChainLogo'
-import { arbitrum, bsc, mainnet, polygonZkEvm, zkSync, linea, base, opBNB } from 'wagmi/chains'
 import { ASSET_CDN } from 'config/constants/endpoints'
+import {} from 'hooks/useSwitchNetwork'
+import { useRouter } from 'next/router'
+import { useCallback, useMemo } from 'react'
+import { multiChainId, multiChainPaths, multiChainShortName } from 'state/info/constant'
+import { useChainIdByQuery, useChainNameByQuery, useMultiChainPath } from 'state/info/hooks'
+import { styled } from 'styled-components'
+import { chains } from 'utils/wagmi'
+import Search from 'views/Info/components/InfoSearch'
+import { bsc, Chain, mainnet } from 'wagmi/chains'
+
+const etherlink = {
+  id: 42_793,
+  name: 'Etherlink',
+  network: 'etherlink',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'tez',
+    symbol: 'XTZ',
+  },
+  rpcUrls: {
+    public: { http: ['https://node.mainnet.etherlink.com'] },
+    default: { http: ['https://node.mainnet.etherlink.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+    default: { name: 'Etherscout', url: 'https://explorer.etherlink.com/' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0xcA11bde05977b3631167028862bE2a173976CA11',
+      blockCreated: 33899,
+    },
+  },
+} as const satisfies Chain
 
 const NavWrapper = styled(Flex)`
   background: ${({ theme }) => theme.colors.gradientCardHeader};
@@ -86,7 +111,7 @@ const InfoNav: React.FC<{ isStableSwap: boolean }> = ({ isStableSwap }) => {
                 )}
               </Text>
               <Text color="warning" ml="4px" bold as="span">
-                {t('Before trading any token, please DYOR, and pay attention to the risk scanner.')}
+                {t('Please DYOR before trading any token.')}
               </Text>
             </MessageText>
           </Message>
@@ -96,7 +121,7 @@ const InfoNav: React.FC<{ isStableSwap: boolean }> = ({ isStableSwap }) => {
   )
 }
 
-const targetChains = [mainnet, bsc, polygonZkEvm, zkSync, arbitrum, linea, base, opBNB]
+const targetChains = [mainnet, bsc, etherlink]
 
 export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex }) => {
   const { t } = useTranslation()

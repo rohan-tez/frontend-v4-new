@@ -1,28 +1,6 @@
 import { ChainId, chainNames } from '@pancakeswap/chains'
 import memoize from 'lodash/memoize'
-import {
-  Chain,
-  arbitrum,
-  arbitrumGoerli,
-  arbitrumSepolia,
-  base,
-  baseGoerli,
-  baseSepolia,
-  bscTestnet,
-  bsc as bsc_,
-  goerli,
-  linea,
-  lineaTestnet,
-  mainnet,
-  opBNB,
-  opBNBTestnet,
-  polygonZkEvm,
-  polygonZkEvmTestnet,
-  scrollSepolia,
-  sepolia,
-  zkSync,
-  zkSyncTestnet,
-} from 'wagmi/chains'
+import { Chain, bsc as bsc_, mainnet } from 'wagmi/chains'
 
 export const CHAIN_QUERY_NAME = chainNames
 
@@ -54,9 +32,9 @@ const bsc = {
 } satisfies Chain
 
 const etherlinkTestnet = {
-  id: 128123,
+  id: 128_123,
   name: 'Etherlink Testnet',
-  network: 'Etherlink Testnet',
+  network: 'etherlink-testnet',
   nativeCurrency: {
     decimals: 18,
     name: 'tez',
@@ -76,12 +54,13 @@ const etherlinkTestnet = {
       blockCreated: 220050,
     },
   },
+  testnet: true,
 } as const satisfies Chain
 
 const etherlink = {
-  id: 42793,
+  id: 42_793,
   name: 'Etherlink',
-  network: 'Etherlink',
+  network: 'etherlink',
   nativeCurrency: {
     decimals: 18,
     name: 'tez',
@@ -128,25 +107,25 @@ export const L2_CHAIN_IDS: ChainId[] = [
 
 export const CHAINS = [
   bsc,
-  bscTestnet,
+  // bscTestnet,
   mainnet,
-  goerli,
-  sepolia,
-  polygonZkEvm,
-  polygonZkEvmTestnet,
-  zkSync,
-  zkSyncTestnet,
-  arbitrum,
-  arbitrumGoerli,
-  arbitrumSepolia,
-  linea,
-  lineaTestnet,
-  base,
-  baseGoerli,
-  baseSepolia,
-  opBNB,
-  opBNBTestnet,
-  scrollSepolia,
+  // goerli,
+  // sepolia,
+  // polygonZkEvm,
+  // polygonZkEvmTestnet,
+  // zkSync,
+  // zkSyncTestnet,
+  // arbitrum,
+  // arbitrumGoerli,
+  // arbitrumSepolia,
+  // linea,
+  // lineaTestnet,
+  // base,
+  // baseGoerli,
+  // baseSepolia,
+  // opBNB,
+  // opBNBTestnet,
+  // scrollSepolia,
   etherlinkTestnet,
   etherlink,
 ]

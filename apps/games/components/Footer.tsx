@@ -1,10 +1,10 @@
-import { useMemo } from 'react'
+import { ChainId } from '@pancakeswap/chains'
+import { languageList, useTranslation } from '@pancakeswap/localization'
 import { footerLinks } from '@pancakeswap/uikit'
 import Footer from '@pancakeswap/uikit/components/Footer'
-import { languageList, useTranslation } from '@pancakeswap/localization'
-import { useTheme } from 'next-themes'
-import { ChainId } from '@pancakeswap/chains'
 import { useCakePrice } from 'hooks/useCakePrice'
+import { useTheme } from 'next-themes'
+import { useMemo } from 'react'
 
 const FooterPage = () => {
   const { setTheme, resolvedTheme } = useTheme()
@@ -23,7 +23,7 @@ const FooterPage = () => {
 
   return (
     <Footer
-      chainId={ChainId.BSC}
+      chainId={ChainId.ETHERLINK}
       items={getFooterLinks}
       isDark={isDark}
       toggleTheme={toggleTheme}
@@ -31,8 +31,8 @@ const FooterPage = () => {
       setLang={setLanguage}
       currentLang={currentLanguage.code}
       cakePriceUsd={cakePrice ? Number(cakePrice) : undefined}
-      buyCakeLabel={t('Buy CAKE')}
-      buyCakeLink="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+      buyCakeLabel={t('Buy IGN')}
+      buyCakeLink="https://iguanadex.com/swap?outputCurrency=0x17F9805664347022b59a8F67C1b8237b0AC5E89B&chainId=42793"
     />
   )
 }

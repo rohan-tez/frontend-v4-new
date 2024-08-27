@@ -115,7 +115,7 @@ export const multiChainStartTime = {
   LINEA: 1692878400,
   BASE: 1693483200,
   OPBNB: 1695945600,
-  ETHERLINK: 1695945600,
+  ETHERLINK: 1721765600, // Tue 23 Jul 2024 08:13:20 UTC+0000
 }
 
 export const multiChainId: Record<MultiChainName, ChainId> = {

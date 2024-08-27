@@ -4,7 +4,7 @@ import { WalletFilledIcon } from '@pancakeswap/uikit'
 import { getTrustWalletProvider } from '@pancakeswap/wagmi/connectors/trustWallet'
 import type { ExtendEthereum } from 'global'
 import { walletConnectNoQrCodeConnector } from '../utils/wagmi'
-import { ASSET_CDN } from './constants/endpoints'
+import { PANCAKE_ASSET_CDN } from './constants/endpoints'
 
 export enum ConnectorNames {
   MetaMask = 'metaMask',
@@ -63,7 +63,7 @@ const walletsConfig = ({
     {
       id: 'metamask',
       title: 'Metamask',
-      icon: `${ASSET_CDN}/web/wallets/metamask.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/metamask.png`,
       get installed() {
         return isMetamaskInstalled()
         // && metaMaskConnector.ready
@@ -76,7 +76,7 @@ const walletsConfig = ({
     {
       id: 'BinanceW3W',
       title: 'Binance Web3 Wallet',
-      icon: `${ASSET_CDN}/web/wallets/binance-w3w.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/binance-w3w.png`,
       connectorId: isBinanceWeb3WalletInstalled() ? ConnectorNames.Injected : ConnectorNames.BinanceW3W,
       get installed() {
         if (isBinanceWeb3WalletInstalled()) {
@@ -89,7 +89,7 @@ const walletsConfig = ({
     // {
     //   id: 'binance',
     //   title: 'Binance Wallet',
-    //   icon: `${ASSET_CDN}/web/wallets/binance.png`,
+    //   icon: `${PANCAKE_ASSET_CDN}/web/wallets/binance.png`,
     //   get installed() {
     //     return typeof window !== 'undefined' && Boolean(window.BinanceChain)
     //   },
@@ -106,13 +106,13 @@ const walletsConfig = ({
     {
       id: 'coinbase',
       title: 'Coinbase Wallet',
-      icon: `${ASSET_CDN}/web/wallets/coinbase.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/coinbase.png`,
       connectorId: ConnectorNames.WalletLink,
     },
     {
       id: 'trust',
       title: 'Trust Wallet',
-      icon: `${ASSET_CDN}/web/wallets/trust.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/trust.png`,
       connectorId: ConnectorNames.TrustWallet,
       get installed() {
         return !!getTrustWalletProvider()
@@ -128,13 +128,13 @@ const walletsConfig = ({
     {
       id: 'walletconnect',
       title: 'WalletConnect',
-      icon: `${ASSET_CDN}/web/wallets/walletconnect.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/walletconnect.png`,
       connectorId: ConnectorNames.WalletConnect,
     },
     {
       id: 'opera',
       title: 'Opera Wallet',
-      icon: `${ASSET_CDN}/web/wallets/opera.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/opera.png`,
       connectorId: ConnectorNames.Injected,
       get installed() {
         return typeof window !== 'undefined' && Boolean(window.ethereum?.isOpera)
@@ -144,7 +144,7 @@ const walletsConfig = ({
     {
       id: 'brave',
       title: 'Brave Wallet',
-      icon: `${ASSET_CDN}/web/wallets/brave.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/brave.png`,
       connectorId: ConnectorNames.Injected,
       get installed() {
         return typeof window !== 'undefined' && Boolean(window.ethereum?.isBraveWallet)
@@ -154,7 +154,7 @@ const walletsConfig = ({
     {
       id: 'rabby',
       title: 'Rabby Wallet',
-      icon: `${ASSET_CDN}/web/wallets/rabby.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/rabby.png`,
       get installed() {
         return typeof window !== 'undefined' && Boolean(window.ethereum?.isRabby)
       },
@@ -169,7 +169,7 @@ const walletsConfig = ({
     {
       id: 'math',
       title: 'MathWallet',
-      icon: `${ASSET_CDN}/web/wallets/mathwallet.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/mathwallet.png`,
       connectorId: ConnectorNames.Injected,
       get installed() {
         return typeof window !== 'undefined' && Boolean(window.ethereum?.isMathWallet)
@@ -179,7 +179,7 @@ const walletsConfig = ({
     {
       id: 'tokenpocket',
       title: 'TokenPocket',
-      icon: `${ASSET_CDN}/web/wallets/tokenpocket.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/tokenpocket.png`,
       connectorId: ConnectorNames.Injected,
       get installed() {
         return typeof window !== 'undefined' && Boolean(window.ethereum?.isTokenPocket)
@@ -189,7 +189,7 @@ const walletsConfig = ({
     {
       id: 'safepal',
       title: 'SafePal',
-      icon: `${ASSET_CDN}/web/wallets/safepal.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/safepal.png`,
       connectorId: ConnectorNames.Injected,
       get installed() {
         return typeof window !== 'undefined' && Boolean((window.ethereum as ExtendEthereum)?.isSafePal)
@@ -201,7 +201,7 @@ const walletsConfig = ({
     {
       id: 'coin98',
       title: 'Coin98',
-      icon: `${ASSET_CDN}/web/wallets/coin98.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/coin98.png`,
       connectorId: ConnectorNames.Injected,
       get installed() {
         return (
@@ -214,7 +214,7 @@ const walletsConfig = ({
     {
       id: 'blocto',
       title: 'Blocto',
-      icon: `${ASSET_CDN}/web/wallets/blocto.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/blocto.png`,
       connectorId: ConnectorNames.Blocto,
       get installed() {
         return typeof window !== 'undefined' && Boolean((window.ethereum as ExtendEthereum)?.isBlocto)
@@ -225,7 +225,7 @@ const walletsConfig = ({
     {
       id: 'cyberwallet',
       title: 'CyberWallet',
-      icon: `${ASSET_CDN}/web/wallets/cyberwallet.png`,
+      icon: `${PANCAKE_ASSET_CDN}/web/wallets/cyberwallet.png`,
       connectorId: ConnectorNames.CyberWallet,
       get installed() {
         return typeof window !== 'undefined' && isCyberWallet()
@@ -238,7 +238,7 @@ const walletsConfig = ({
     // {
     //   id: 'ledger',
     //   title: 'Ledger',
-    //   icon: `${ASSET_CDN}/web/wallets/ledger.png`,
+    //   icon: `${PANCAKE_ASSET_CDN}/web/wallets/ledger.png`,
     //   connectorId: ConnectorNames.Ledger,
     // },
   ]

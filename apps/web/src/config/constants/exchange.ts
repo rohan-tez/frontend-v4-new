@@ -87,7 +87,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.ARBITRUM_SEPOLIA]: [arbSepoliaTokens.usdc, arbSepoliaTokens.weth],
   [ChainId.BASE_SEPOLIA]: [baseSepoliaTokens.usdc, baseSepoliaTokens.weth],
   [ChainId.ETHERLINK_TESTNET]: [etherlinkTestnetTokens.wxtz, etherlinkTestnetTokens.usdc],
-  [ChainId.ETHERLINK]: [etherlinkTokens.wxtz, etherlinkTokens.usdc],
+  [ChainId.ETHERLINK]: [etherlinkTokens.usdc, etherlinkTokens.weth, etherlinkTokens.wbtc],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

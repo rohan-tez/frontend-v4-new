@@ -1,4 +1,4 @@
-// import { ASSET_CDN } from "config/constants/endpoints"
+import { ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/image'
 import { isChainSupported } from 'utils/wagmi'
 
@@ -15,7 +15,7 @@ export const NetworkLogo: React.FC<{
       <Image
         alt={`chain-${chainId}`}
         style={{ maxHeight: `${height}px` }}
-        src={`https://raw.githubusercontent.com/Iguana-DEX/assets/main/chains/${chainId}.png`}
+        src={`${ASSET_CDN}/chains/${chainId}.png`}
         width={width}
         height={height}
         unoptimized

@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Button, Flex, Link, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { keyframes, styled } from 'styled-components'
@@ -15,11 +15,11 @@ import webNotificationBunny from './images/web3-notification-bunny.png'
 import webNotificationCheck from './images/web3-notification-check.png'
 
 const { liquidStakingBunnyBg3, liquidStakingBunnyBg4 } = {
-  liquidStakingBunnyBg3: `${ASSET_CDN}/web/banners/star-1.png`,
-  liquidStakingBunnyBg4: `${ASSET_CDN}/web/banners/star-2.png`,
+  liquidStakingBunnyBg3: `${PANCAKE_ASSET_CDN}/web/banners/star-1.png`,
+  liquidStakingBunnyBg4: `${PANCAKE_ASSET_CDN}/web/banners/star-2.png`,
 }
 
-const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
+const pancakeSwapLogo = `${PANCAKE_ASSET_CDN}/web/banners/ethXpancakeswap.png`
 
 const fading = keyframes`
   from {

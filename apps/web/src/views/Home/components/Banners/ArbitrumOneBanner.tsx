@@ -1,13 +1,13 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Link, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
 import * as S from './Styled'
 import { arbBg, arbBgMobile, arbBunny, arbLogo } from './images'
 
-const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
+const pancakeSwapLogo = `${PANCAKE_ASSET_CDN}/web/banners/ethXpancakeswap.png`
 
 const RightWrapper = styled.div`
   position: absolute;

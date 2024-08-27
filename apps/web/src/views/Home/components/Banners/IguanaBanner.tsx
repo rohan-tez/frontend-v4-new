@@ -135,8 +135,8 @@ const IguanaBanner = () => {
           </Flex> */}
           <Header data-text={title}>{title}</Header>
           {!isMobile && (
-            <Text color="#5ec4d1" fontSize={22} fontWeight={600} mb="0px" mt="10px">
-              {t('Crypto Coins and Perpetuals')}
+            <Text color="#18E764" fontSize={24} fontWeight={700} mb="0px" mt="10px">
+              {t('A liquidity hub for all assets on Etherlink')}
             </Text>
           )}
           <Flex mt="28px">

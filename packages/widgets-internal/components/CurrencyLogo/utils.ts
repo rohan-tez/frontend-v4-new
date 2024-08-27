@@ -48,6 +48,7 @@ const chainName: { [key: number]: string } = {
   [ChainId.LINEA]: "linea",
   [ChainId.BASE]: "base",
   [ChainId.OPBNB]: "opbnb",
+  [ChainId.ETHERLINK]: "etherlink",
 };
 
 // TODO: move to utils or token-list
@@ -91,7 +92,7 @@ type GetLogoUrlsOptions = {
 
 export const getCurrencyLogoUrls = memoize(
   (currency: Currency | undefined, { useTrustWallet = true }: GetLogoUrlsOptions = {}): string[] => {
-    return [`https://raw.githubusercontent.com/Iguana-DEX/assets/main/assets/${currency?.wrapped.address}.png`];
+    return [`https://raw.githubusercontent.com/IguanaDEX/assets/main/assets/${currency?.wrapped.address}.png`];
   }
 );
 

@@ -33,9 +33,9 @@ const CommunityTag = styled.div`
   }
 `
 const communityData = [
-  { icon: <TwitterIcon />, href: 'https://x.com/iguanadex', alt: 'XIcon' },
+  { icon: <TwitterIcon />, href: 'https://x.com/etherlink', alt: 'XIcon' },
   { icon: <GithubIcon />, href: 'https://github.com/iguana-dex', alt: 'GitHubIcon' },
-  { icon: <DiscordIcon />, href: 'https://discord.gg/yq5bUaT7Cm', alt: 'DiscordIcon' },
+  { icon: <DiscordIcon />, href: 'https://discord.gg/etherlink', alt: 'DiscordIcon' },
 ]
 
 export const CommunityTags: React.FC = () => {

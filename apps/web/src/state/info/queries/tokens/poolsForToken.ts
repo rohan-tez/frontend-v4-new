@@ -2,6 +2,8 @@ import { TOKEN_BLACKLIST } from 'config/constants/info'
 import { gql } from 'graphql-request'
 import { MultiChainName, getMultiChainQueryEndPointWithStableSwap, multiChainQueryMainToken } from '../../constant'
 
+multiChainQueryMainToken.ETHERLINK = 'ETH'
+
 /**
  * Data for showing Pools table on the Token page
  */
