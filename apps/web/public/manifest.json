@@ -1,7 +1,7 @@
 {
   "short_name": "IguanaDEX",
   "name": "IguanaDEX",
-  "description": "Farm CAKE with Pancake LP Tokens",
+  "description": "One-stop decentralized trading",
   "homepage_url": "https://iguanadex.com",
   "start_url": ".",
   "display": "standalone",
