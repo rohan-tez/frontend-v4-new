@@ -132,7 +132,7 @@ const Hero = () => {
             {t('Welcome to the rainforest.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t("Trade your tokens on Etherlink's top exchange.")}
+            {t('One-stop decentralized trading on Etherlink')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

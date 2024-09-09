@@ -154,7 +154,7 @@ const IguanaBanner = () => {
           <BGWrapper>
             <div style={{ borderRadius: '0px', overflow: 'hidden' }}>
               <Image
-                src="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/bg-header.webp"
+                src="https://raw.githubusercontent.com/IguanaDEX/assets/main/iguana_brand_assets/bg-header.webp"
                 alt="Background header"
                 layout="fill"
                 objectFit="cover"

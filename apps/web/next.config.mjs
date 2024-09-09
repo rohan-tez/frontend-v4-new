@@ -82,7 +82,7 @@ const config = {
       {
         protocol: 'https',
         hostname: 'raw.githubusercontent.com',
-        pathname: '/Iguana-DEX/assets/main/**',
+        pathname: '/IguanaDEX/assets/main/**',
       },
     ],
   },

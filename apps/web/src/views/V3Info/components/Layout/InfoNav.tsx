@@ -13,14 +13,14 @@ import {
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
 import { ChainLogo } from 'components/Logo/ChainLogo'
-import { PANCAKE_ASSET_CDN } from 'config/constants/endpoints'
+import { ASSET_CDN } from 'config/constants/endpoints'
 import { useRouter } from 'next/router'
 import { useCallback, useMemo } from 'react'
 import { multiChainId, multiChainPaths, multiChainShortName } from 'state/info/constant'
 import { useChainNameByQuery, useMultiChainPath } from 'state/info/hooks'
 import { styled } from 'styled-components'
 import { chains } from 'utils/wagmi'
-import { bsc, Chain, mainnet } from 'wagmi/chains'
+import { bsc, Chain } from 'wagmi/chains'
 import { v3InfoPath } from '../../constants'
 import Search from '../Search'
 
@@ -100,7 +100,7 @@ const InfoNav: React.FC<{ isStableSwap: boolean }> = ({ isStableSwap }) => {
   )
 }
 
-const targetChains = [etherlink, mainnet, bsc]
+const targetChains = [etherlink, bsc]
 
 export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex }) => {
   const { t } = useTranslation()
@@ -122,7 +122,7 @@ export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex
     <UserMenu
       alignItems="top"
       ml="8px"
-      avatarSrc={`${PANCAKE_ASSET_CDN}/web/chains/${multiChainId[chainName]}.png`}
+      avatarSrc={`${ASSET_CDN}/chains/${multiChainId[chainName]}.png`}
       text={
         foundChain ? (
           <>

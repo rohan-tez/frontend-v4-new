@@ -7,7 +7,6 @@ const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   return (
     <img
       src="https://raw.githubusercontent.com/IguanaDEX/assets/main/assets/0xB1Ea698633d57705e93b0E40c1077d46CD6A51d8.png"
-      // src="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/token_logo.png"
       alt="Iguana Logo"
       width={24}
       height={24}

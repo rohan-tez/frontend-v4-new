@@ -101,7 +101,7 @@ export const CakePoolLockStatus = () => {
               <Balance fontSize="20px" bold color="failure" value={0} decimals={2} />
             </AutoColumn>
             <img
-              srcSet="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/veIGN_logo.png"
+              srcSet="https://raw.githubusercontent.com/IguanaDEX/assets/main/iguana_brand_assets/veIGN_logo.png"
               alt="token-veign"
             />
           </RowBetween>

@@ -174,7 +174,7 @@ export const NetworkSwitcher = () => {
         mr="8px"
         placement="bottom"
         variant={isLoading ? 'pending' : isWrongNetwork ? 'danger' : 'default'}
-        avatarSrc={`https://raw.githubusercontent.com/Iguana-DEX/assets/main/chains/${chainId}.png`}
+        avatarSrc={`https://raw.githubusercontent.com/IguanaDEX/assets/main/chains/${chainId}.png`}
         disabled={cannotChangeNetwork}
         text={
           isLoading ? (

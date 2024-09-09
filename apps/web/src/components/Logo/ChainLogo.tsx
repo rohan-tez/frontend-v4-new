@@ -10,7 +10,7 @@ export const ChainLogo = memo(
         <Image
           alt={`chain-${chainId}`}
           style={{ maxHeight: `${height}px` }}
-          src={`https://raw.githubusercontent.com/Iguana-DEX/assets/main/chains/${chainId}.png`}
+          src={`https://raw.githubusercontent.com/IguanaDEX/assets/main/chains/${chainId}.png`}
           width={width}
           height={height}
           unoptimized

@@ -28,7 +28,7 @@ const TransferStage: React.FC<React.PropsWithChildren<TransferStageProps>> = ({
   const transferAddressEqualsConnectedAddress = safeGetAddress(transferAddress) === safeGetAddress(account)
   const getErrorText = () => {
     if (isInvalidTransferAddress) {
-      return t('That’s not a BNB Smart Chain wallet address.')
+      return t('This is not an Etherlink wallet address.')
     }
     if (transferAddressEqualsConnectedAddress) {
       return t('This address is the one that is currently connected')

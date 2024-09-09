@@ -1,5 +1,5 @@
-import { gql, GraphQLClient } from 'graphql-request'
 import BigNumber from 'bignumber.js'
+import { gql, GraphQLClient } from 'graphql-request'
 import { Block } from 'state/info/types'
 import { PoolData } from '../../types'
 import { get2DayChange } from '../../utils/data'

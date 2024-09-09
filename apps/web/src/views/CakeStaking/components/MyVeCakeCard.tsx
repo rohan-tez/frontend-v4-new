@@ -23,7 +23,7 @@ export const MyVeCakeCard: React.FC<{
   return (
     <StyledBox px={type === 'row' ? '16px' : '24px'}>
       <img
-        src="https://raw.githubusercontent.com/Iguana-DEX/assets/main/iguana_brand_assets/veIGN_logo.png"
+        src="https://raw.githubusercontent.com/IguanaDEX/assets/main/iguana_brand_assets/veIGN_logo.png"
         alt="token-veign"
         width="58px"
       />

@@ -51,7 +51,7 @@ export const INFO_CLIENT_WITH_CHAIN = V2_SUBGRAPHS
 
 export const BLOCKS_CLIENT_WITH_CHAIN = BLOCKS_SUBGRAPHS
 
-export const ASSET_CDN = 'https://raw.githubusercontent.com/Iguana-DEX/assets/main'
+export const ASSET_CDN = 'https://raw.githubusercontent.com/IguanaDEX/assets/main'
 export const PANCAKE_ASSET_CDN = 'https://assets.pancakeswap.finance'
 
 export const V3_SUBGRAPH_URLS = V3_SUBGRAPHS

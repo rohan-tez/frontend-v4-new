@@ -24,7 +24,7 @@ import { useChainIdByQuery, useChainNameByQuery, useMultiChainPath } from 'state
 import { styled } from 'styled-components'
 import { chains } from 'utils/wagmi'
 import Search from 'views/Info/components/InfoSearch'
-import { bsc, Chain, mainnet } from 'wagmi/chains'
+import { bsc, Chain } from 'wagmi/chains'
 
 const etherlink = {
   id: 42_793,
@@ -121,7 +121,7 @@ const InfoNav: React.FC<{ isStableSwap: boolean }> = ({ isStableSwap }) => {
   )
 }
 
-const targetChains = [mainnet, bsc, etherlink]
+const targetChains = [bsc, etherlink]
 
 export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex }) => {
   const { t } = useTranslation()
@@ -143,7 +143,7 @@ export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex
     <UserMenu
       alignItems="top"
       ml="8px"
-      avatarSrc={`${ASSET_CDN}/web/chains/${multiChainId[chainName]}.png`}
+      avatarSrc={`${ASSET_CDN}/chains/${multiChainId[chainName]}.png`}
       text={
         foundChain ? (
           <>

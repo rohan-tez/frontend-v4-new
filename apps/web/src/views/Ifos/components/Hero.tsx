@@ -96,7 +96,7 @@ const Hero = () => {
               <StyledHeading as="h1" mb={['12px', '12px', '24px']}>
                 {t('IFO: Initial Farm Offerings')}
               </StyledHeading>
-              <StyledSubTitle bold>{t('Buy new tokens launching on BNB Smart Chain')}</StyledSubTitle>
+              <StyledSubTitle bold>{t('Buy new tokens launching on Etherlink')}</StyledSubTitle>
             </Box>
             {isMobile ? (
               <StyledButton onClick={handleClick} mt="0.375rem">
