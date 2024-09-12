@@ -6,11 +6,15 @@ export const formatDollarAmount = (num: number | undefined, digits = 2, round = 
     return '<$0.001'
   }
 
-  return Intl.NumberFormat('en-US', {
-    notation: round ? 'compact' : 'standard',
-    minimumFractionDigits: num > 1000 ? 2 : digits,
-    maximumFractionDigits: num > 1000 ? 2 : digits,
-  }).format(num)
+  // eslint-disable-next-line prefer-template
+  return (
+    '$' +
+    Intl.NumberFormat('en-US', {
+      notation: round ? 'compact' : 'standard',
+      minimumFractionDigits: num > 1000 ? 2 : digits,
+      maximumFractionDigits: num > 1000 ? 2 : digits,
+    }).format(num)
+  )
 }
 
 // using a currency library here in case we want to add more in future
