@@ -155,7 +155,7 @@ export default function PoolTable({ poolDatas, maxItems = MAX_ITEMS }: { poolDat
           <ResponsiveGrid>
             <Text color="secondary">#</Text>
             <ClickableColumnHeader color="secondary">
-              {t('Pair')}
+              {t('Pool')}
               <SortButton
                 scale="sm"
                 variant="subtle"

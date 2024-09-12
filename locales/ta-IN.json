@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "%token0% மற்றும் %token1% சேர்",
   "Remove %token0% and %token1%": "%token0% மற்றும் %token1% அகற்று",
   "Swap %token0% for %token1%": "%token1% க்கு %token0% ஸ்வாப் செய்",
-  "Search liquidity pairs or tokens": "லிக்விடிட்டி ஜோடிகள் அல்லது டோக்கன்களைத் தேடவும்",
+  "search liquidity pools or tokens": "லிக்விடிட்டி ஜோடிகள் அல்லது டோக்கன்களைத் தேடவும்",
   "Watchlist": "வாட்ச்லிஸ்ட்",
   "See more...": "மேலும் காண்க...",
   "No results": "முடிவுகள் இல்லை",

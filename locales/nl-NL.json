@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "Voeg %token0% en %token1% toe",
   "Remove %token0% and %token1%": "Verwijder %token0% en %token1%",
   "Swap %token0% for %token1%": "%token0% swappen voor %token1%",
-  "Search liquidity pairs or tokens": "Zoek liquiditeitsparen of tokens",
+  "search liquidity pools or tokens": "Zoek liquiditeitsparen of tokens",
   "Watchlist": "Volglijst",
   "See more...": "Meer bekijken ...",
   "No results": "Geen resultaten",

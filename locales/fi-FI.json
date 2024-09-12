@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "Lisää %token0% ja %token1%",
   "Remove %token0% and %token1%": "Poista %token0% ja %token1%",
   "Swap %token0% for %token1%": "Vaihda %token0% polettiin %token1%",
-  "Search liquidity pairs or tokens": "Hae likviditeettipareja tai poletteja",
+  "search liquidity pools or tokens": "Hae likviditeettipareja tai poletteja",
   "Watchlist": "Tarkkailulista",
   "See more...": "Katso lisää...",
   "No results": "Ei tuloksia",

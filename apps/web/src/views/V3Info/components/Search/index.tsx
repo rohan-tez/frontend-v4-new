@@ -249,7 +249,7 @@ const Search = () => {
         {isLoading && debouncedSearchTerm && <Skeleton />}
         {showMessage && <Text>{noTokensMessage}</Text>}
         {!showWatchlist && debouncedSearchTerm.length < MINIMUM_SEARCH_CHARACTERS && (
-          <Text>{t('Search liquidity pairs or tokens')}</Text>
+          <Text>{t('Search liquidity pools or tokens')}</Text>
         )}
       </>
     )
@@ -267,7 +267,7 @@ const Search = () => {
         {isLoading && debouncedSearchTerm && <Skeleton />}
         {showMessage && <Text>{noPoolsMessage}</Text>}
         {!showWatchlist && debouncedSearchTerm.length < MINIMUM_SEARCH_CHARACTERS && (
-          <Text>{t('Search liquidity pairs or tokens')}</Text>
+          <Text>{t('Search liquidity pools or tokens')}</Text>
         )}
       </>
     )
@@ -284,7 +284,7 @@ const Search = () => {
           onChange={(e) => {
             setValue(e.target.value)
           }}
-          placeholder={t('Search liquidity pairs or tokens')}
+          placeholder={t('Search liquidity pools or tokens')}
           ref={inputRef}
           onFocus={() => {
             setShowMenu(true)

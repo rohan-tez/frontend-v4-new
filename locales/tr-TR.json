@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "%token0% ve %token1% ekle",
   "Remove %token0% and %token1%": "%token0% ve %token1% kaldır",
   "Swap %token0% for %token1%": "%token1% karşılığında %token0% dönüştür",
-  "Search liquidity pairs or tokens": "Likidite veya token ara",
+  "search liquidity pools or tokens": "Likidite veya token ara",
   "Watchlist": "İzleme Listesi",
   "See more...": "Daha fazlasını görüntüle...",
   "No results": "Sonuç yok",

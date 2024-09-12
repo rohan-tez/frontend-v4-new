@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "إضافة %token0% و%token1%",
   "Remove %token0% and %token1%": "إزالة %token0% و%token1%",
   "Swap %token0% for %token1%": "مبادلة %token0% بـ %token1%",
-  "Search liquidity pairs or tokens": "بحث عن سيولة الأصول أو الرموز المميزة",
+  "search liquidity pools or tokens": "بحث عن سيولة الأصول أو الرموز المميزة",
   "Watchlist": "قائمة المشاهدة",
   "See more...": "عرض المزيد...",
   "No results": "لا يوجد نتائج",

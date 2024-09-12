@@ -43,14 +43,14 @@ const config: (
       showItemsOnMobile: false,
       items: [],
     },
-    // {
-    //   label: t('Explore'),
-    //   icon: SwapIcon,
-    //   fillIcon: SwapFillIcon,
-    //   href: '/info/v3',
-    //   showItemsOnMobile: false,
-    //   items: [],
-    // },
+    {
+      label: t('Explore'),
+      icon: SwapIcon,
+      fillIcon: SwapFillIcon,
+      href: '/info/v3',
+      showItemsOnMobile: false,
+      items: [],
+    },
     {
       label: t('Pool'),
       href: '/liquidity',
@@ -166,7 +166,7 @@ const config: (
     // },
     {
       label: '',
-      href: '/info',
+      href: '/more',
       icon: MoreIcon,
       hideSubNav: true,
       items: [

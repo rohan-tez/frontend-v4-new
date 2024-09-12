@@ -35,7 +35,7 @@ const ConnectWalletButton = ({ children, ...props }: ButtonProps) => {
     }
   }
 
-  const wallets = useMemo(() => createWallets(chainId || ChainId.BSC, connectAsync), [chainId, connectAsync])
+  const wallets = useMemo(() => createWallets(chainId || ChainId.ETHERLINK, connectAsync), [chainId, connectAsync])
 
   return (
     <>

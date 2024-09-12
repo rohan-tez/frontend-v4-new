@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "%token0% und %token1% hinzufügen",
   "Remove %token0% and %token1%": "%token0% und %token1% entfernen",
   "Swap %token0% for %token1%": "%token0% und %token1% tauschen",
-  "Search liquidity pairs or tokens": "Nach Liquiditätspaaren oder Tokens suchen",
+  "search liquidity pools or tokens": "Nach Liquiditätspaaren oder Tokens suchen",
   "Watchlist": "Beobachtungsliste",
   "See more...": "Mehr anzeigen ...",
   "No results": "Keine Ergebnisse",

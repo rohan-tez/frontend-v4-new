@@ -20,17 +20,12 @@ export const SwapFeaturesContext = createContext<{
   isStableSupported: false,
   isAccessTokenSupported: false,
   isChartExpanded: false,
-  isChartDisplayed: false,
+  isChartDisplayed: true,
   setIsChartExpanded: null,
   setIsChartDisplayed: null,
 })
 
-const CHART_SUPPORT_CHAIN_IDS = [
-  ChainId.BSC,
-  ChainId.BSC_TESTNET,
-  ChainId.ETHERLINK,
-  // ChainId.ETHEREUM
-]
+const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHERLINK, ChainId.ETHEREUM]
 const STABLE_SUPPORT_CHAIN_IDS = [ChainId.BSC_TESTNET, ChainId.BSC]
 const HOT_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.ETHEREUM]
 

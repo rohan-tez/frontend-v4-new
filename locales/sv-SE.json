@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "Lägg till %token0% och %token1%",
   "Remove %token0% and %token1%": "Ta bort %token0% och %token1%",
   "Swap %token0% for %token1%": "Växla %token0% mot %token1%",
-  "Search liquidity pairs or tokens": "Sök likviditetspar eller token",
+  "search liquidity pools or tokens": "Sök likviditetspar eller token",
   "Watchlist": "Bevakningslista",
   "See more...": "Visa mer...",
   "No results": "Resultat saknas",

@@ -10,7 +10,6 @@ import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useCakePrice } from 'hooks/useCakePrice'
 import useTheme from 'hooks/useTheme'
 import { IdType } from 'hooks/useUserIsUsCitizenAcknowledgement'
-// import { useWebNotifications } from 'hooks/useWebNotifications'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import GlobalSettings from './GlobalSettings'
@@ -24,7 +23,6 @@ const LinkComponent = (linkProps) => {
 }
 
 const Menu = (props) => {
-  // const { enabled } = useWebNotifications()
   const { chainId } = useActiveChainId()
   const { isDark, setTheme } = useTheme()
   const cakePrice = useCakePrice()
@@ -59,11 +57,6 @@ const Menu = (props) => {
         rightSide={
           <>
             <GlobalSettings mode={SettingsMode.GLOBAL} />
-            {/* {enabled && (
-              <Suspense fallback={null}>
-                <Notifications />
-              </Suspense>
-            )} */}
             <NetworkSwitcher />
             <UserMenu />
           </>

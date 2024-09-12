@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "Додати %token0% і %token1%",
   "Remove %token0% and %token1%": "Вилучити %token0% та %token1%",
   "Swap %token0% for %token1%": "Обміняти %token0% на %token1%",
-  "Search liquidity pairs or tokens": "Пошук пар або токенів ліквідності",
+  "search liquidity pools or tokens": "Пошук пар або токенів ліквідності",
   "Watchlist": "Список стеження",
   "See more...": "Показати більше…",
   "No results": "Результатів немає",

@@ -108,7 +108,7 @@ export const L2_CHAIN_IDS: ChainId[] = [
 export const CHAINS = [
   etherlink,
   etherlinkTestnet,
-  bsc,
+  // bsc,
   // bscTestnet,
   // mainnet,
   // goerli,

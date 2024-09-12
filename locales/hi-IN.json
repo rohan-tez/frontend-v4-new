@@ -1105,7 +1105,7 @@
   "Add %token0% and %token1%": "%token0% और %token1% जोड़ें",
   "Remove %token0% and %token1%": "%token0% और %token1% हटाएं",
   "Swap %token0% for %token1%": "%token1% को %token0% से स्वैप करें",
-  "Search liquidity pairs or tokens": "लिक्विडिटी पेयर या टोकन खोजें",
+  "search liquidity pools or tokens": "लिक्विडिटी पेयर या टोकन खोजें",
   "Watchlist": "वॉचलिस्ट",
   "See more...": "और देखें...",
   "No results": "कोई परिणाम नहीं",

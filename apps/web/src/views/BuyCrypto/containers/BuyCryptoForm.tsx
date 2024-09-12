@@ -224,7 +224,7 @@ export function BuyCryptoForm() {
               style={{ color: `${theme.colors.primary}` }}
               display="flex"
               fontSize="14px"
-              href="https://pancakeswap.finance/terms-of-service"
+              href="https://iguanadex.com/terms-of-service"
               referrerPolicy="no-referrer"
               target="_blank"
             >

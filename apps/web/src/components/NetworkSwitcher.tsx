@@ -25,6 +25,7 @@ import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
 import { chainNameConverter } from 'utils/chainNameConverter'
 import { chains } from 'utils/wagmi'
 import { useNetwork } from 'wagmi'
+import { ASSET_CDN } from '../config/constants/endpoints'
 import { ChainLogo } from './Logo/ChainLogo'
 
 const NetworkSelect = ({ switchNetwork, chainId }) => {
@@ -174,7 +175,7 @@ export const NetworkSwitcher = () => {
         mr="8px"
         placement="bottom"
         variant={isLoading ? 'pending' : isWrongNetwork ? 'danger' : 'default'}
-        avatarSrc={`https://raw.githubusercontent.com/IguanaDEX/assets/main/chains/${chainId}.png`}
+        avatarSrc={`${ASSET_CDN}/chains/${chainId}.png`}
         disabled={cannotChangeNetwork}
         text={
           isLoading ? (
