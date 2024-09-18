@@ -35,7 +35,7 @@ export default function Swap() {
   const { t } = useTranslation()
   const [firstTime, setFirstTime] = useState(true)
 
-  setIsChartDisplayed?.(() => true)
+  // setIsChartDisplayed?.(() => true)
 
   useEffect(() => {
     if (firstTime && query.showTradingReward) {

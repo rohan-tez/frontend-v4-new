@@ -20,7 +20,7 @@ export const SwapFeaturesContext = createContext<{
   isStableSupported: false,
   isAccessTokenSupported: false,
   isChartExpanded: false,
-  isChartDisplayed: true,
+  isChartDisplayed: false,
   setIsChartExpanded: null,
   setIsChartDisplayed: null,
 })
