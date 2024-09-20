@@ -1,6 +1,6 @@
 import { Currency, CurrencyAmount, Pair, ZERO } from '@pancakeswap/sdk'
 import { getQuoteExactIn, getQuoteExactOut } from '@pancakeswap/stable-swap-sdk'
-import { TickList, Pool as V3Pool } from '@pancakeswap/v3-sdk'
+import { Tick, TickList, Pool as V3Pool } from '@pancakeswap/v3-sdk'
 import {
   Pool as IPool,
   V3Pool as IV3Pool,
@@ -164,6 +164,14 @@ function createGetV3Quote(isExactIn = true) {
       console.log('BEFORE TICK:', tick)
       console.log('AFTER TICK:', tickAfter)
       console.log('TICKS:', ticks)
+
+      if (tickAfter < ticks[0].index) {
+        console.log('TICK BELOW')
+        ticks.unshift(new Tick({ index: tickAfter, liquidityGross: 0, liquidityNet: 0 }))
+      } else if (tickAfter > ticks[ticks.length - 1].index) {
+        console.log('TICK ABOVE')
+        ticks.push(new Tick({ index: tickAfter, liquidityGross: 0, liquidityNet: 0 }))
+      }
 
       const numOfTicksCrossed = TickList.countInitializedTicksCrossed(ticks, tick, tickAfter)
       return {
