@@ -1,8 +1,9 @@
 import { Currency, CurrencyAmount, Pair, ZERO } from '@pancakeswap/sdk'
-import { Pool as V3Pool, TickList } from '@pancakeswap/v3-sdk'
 import { getQuoteExactIn, getQuoteExactOut } from '@pancakeswap/stable-swap-sdk'
+import { TickList, Pool as V3Pool } from '@pancakeswap/v3-sdk'
 import {
   Pool as IPool,
+  V3Pool as IV3Pool,
   Pool,
   QuoteProvider,
   QuoterOptions,
@@ -10,7 +11,6 @@ import {
   RouteWithQuote,
   StablePool,
   V2Pool,
-  V3Pool as IV3Pool,
 } from '../types'
 import { getOutputCurrency, isStablePool, isV2Pool, isV3Pool } from '../utils'
 
@@ -143,6 +143,7 @@ function createGetV3Quote(isExactIn = true) {
     }
     try {
       const v3Pool = new V3Pool(token0.wrapped, token1.wrapped, fee, sqrtRatioX96, liquidity, tick, ticks)
+      console.log('POOL CANDIDATE:', v3Pool.token0, v3Pool.token1, v3Pool.fee)
       const [quote, poolAfter] = isExactIn
         ? await v3Pool.getOutputAmount(amount.wrapped)
         : await v3Pool.getInputAmountByExactOut(amount.wrapped)
@@ -159,6 +160,11 @@ function createGetV3Quote(isExactIn = true) {
         sqrtRatioX96: poolAfter.sqrtRatioX96,
         liquidity: poolAfter.liquidity,
       }
+      // console.log("POOL:", newPool.fee, newPool.token0, newPool.token1, newPool.address)
+      console.log('BEFORE TICK:', tick)
+      console.log('AFTER TICK:', tickAfter)
+      console.log('TICKS:', ticks)
+
       const numOfTicksCrossed = TickList.countInitializedTicksCrossed(ticks, tick, tickAfter)
       return {
         quote,
@@ -190,6 +196,7 @@ export function createPoolQuoteGetter(isExactIn = true) {
     }
     if (isV3Pool(pool)) {
       const quote = await getV3Quote(pool, amount)
+      // console.log("V3 ROUTER QUOTE:", quote)
       return quote ? { quote: quote.quote, pool, poolAfter: quote.pool } : undefined
     }
     if (isStablePool(pool)) {

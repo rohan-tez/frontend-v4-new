@@ -1,9 +1,9 @@
 /* eslint-disable operator-assignment */
-import { BigintIsh, CurrencyAmount, Price, Token } from '@pancakeswap/sdk'
 import { ChainId } from '@pancakeswap/chains'
+import { BigintIsh, CurrencyAmount, Price, Token } from '@pancakeswap/sdk'
 import invariant from 'tiny-invariant'
 import { Address, Hash } from 'viem'
-import { FeeAmount, TICK_SPACINGS, DEPLOYER_ADDRESSES } from '../constants'
+import { DEPLOYER_ADDRESSES, FeeAmount, TICK_SPACINGS } from '../constants'
 import { NEGATIVE_ONE, ONE, Q192, ZERO } from '../internalConstants'
 import { computePoolAddress } from '../utils/computePoolAddress'
 import { LiquidityMath } from '../utils/liquidityMath'
@@ -285,6 +285,7 @@ export class Pool {
 
     // start swap while loop
     while (state.amountSpecifiedRemaining !== ZERO && state.sqrtPriceX96 != sqrtPriceLimitX96) {
+      console.log('INIT STATE:', state)
       const step: Partial<StepComputations> = {}
       step.sqrtPriceStartX96 = state.sqrtPriceX96
 
@@ -340,6 +341,7 @@ export class Pool {
         // recompute unless we're on a lower tick boundary (i.e. already transitioned ticks), and haven't moved
         state.tick = TickMath.getTickAtSqrtRatio(state.sqrtPriceX96)
       }
+      console.log('FINAL STATE:', state)
     }
 
     return {
