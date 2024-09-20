@@ -23,6 +23,11 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler publish"
+    "list-workers": "wrangler whoami",
+    "create-bucket": "wrangler r2 bucket create subgraph-pools",
+    "create-kv-namespace": "wrangler kv:namespace create POOLS --env production",
+    "create-env-var": "echo https://eth.llamarpc.com | wrangler secret put ETH_NODE --env production",
+    "deploy": "wrangler publish --env production",
+    "logout": "wrangler logout"
   }
 }
